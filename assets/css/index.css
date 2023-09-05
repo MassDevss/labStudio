@@ -5,17 +5,27 @@ html, body {
 .lab-font-color {
   color: #693572;
 }
-
 .lab-font-color:hover {
   color: #693572;
+}
+.lab-font-color:active {
+  color: #62326b !important;
+}
+.lab-font-color:focus {
+  color: #62326b !important;
 }
 
 .lab-back-color {
   background-color: #633fb9;
 }
-
 .lab-back-color:hover {
   background-color: #6741c0;
+}
+.lab-back-color:active {
+  background-color: #6741c0 !important;
+}
+.button-knowus:active {
+  background-color: rgba(51,94,234,.1) !important;
 }
 
 .icon-continer {
