@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -12,6 +13,7 @@ html, body {
   transition-property: box-shadow, bottom;
   transition-duration: 0.5s;
 }
+
 .card-best-pricing:hover {
   bottom: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -24,32 +26,48 @@ html, body {
   transition-property: box-shadow, bottom;
   transition-duration: 0.5s;
 }
+
 .card-pricing:hover {
   bottom: 0.4rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
+.img-card-fixing {
+  position: relative;
+  left: 1rem;
+  height: 140px;
+}
+
 .year-pricing {
   font-size: 1rem;
 }
+
 .list-group-pricing {
   list-style: none;
 }
+
 .card-list-item {
   font-size: 1rem;
 }
+
 .check-icon {
   width: 2.6rem;
 }
+
 .check-icon path {
   stroke: var(--bs-gray-700);
 }
 
 .web-s-control {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
-.web-s-control img{
-  width: 100%;;
+
+.web-s-control img {
+  width: 100%;
 }
+
 .pricing-ribbon {
   position: absolute;
   top: 0rem;
@@ -59,6 +77,7 @@ html, body {
   overflow: hidden;
   height: 10rem;
 }
+
 .ribbon-body {
   width: 12rem;
   position: relative;
@@ -66,28 +85,26 @@ html, body {
   left: -3.1rem;
   transform: rotate(-45deg);
   padding: 0.6rem;
-  background: rgb(47,7,199);
-  background: linear-gradient(90deg, rgba(47,7,199,1) 0%, rgba(105,17,179,1) 36%, rgba(87,17,196,1) 71%, rgba(170,22,187,1) 100%);
+  background: rgb(47, 7, 199);
+  background: linear-gradient(90deg, rgba(47, 7, 199, 1) 0%, rgba(105, 17, 179, 1) 36%, rgba(87, 17, 196, 1) 71%, rgba(170, 22, 187, 1) 100%);
 }
 
 .img-introduction {
   width: 92%;
 }
-/*  #58dd1c icon green 
-  lp #6f6aff
-  #5c56ff
-  dp #3932f3
-*/
 
 .lab-font-color {
   color: #693572;
 }
+
 .lab-font-color:hover {
   color: #693572;
 }
+
 .lab-font-color:active {
   color: #62326b !important;
 }
+
 .lab-font-color:focus {
   color: #62326b !important;
 }
@@ -95,17 +112,21 @@ html, body {
 .soft-lab-back-color {
   background-color: #530bff14;
 }
+
 .lab-back-color {
   background-color: #633fb9;
 }
+
 .lab-back-color:hover {
   background-color: #6741c0;
 }
+
 .lab-back-color:active {
   background-color: #6741c0 !important;
 }
+
 .button-knowus:active {
-  background-color: rgba(51,94,234,.1) !important;
+  background-color: rgba(51, 94, 234, .1) !important;
 }
 
 .icon-continer {
@@ -123,23 +144,23 @@ html, body {
 }
 
 .videos-img-resize {
-  width: 60%;      
+  width: 60%;
 }
 
 .lab-logo {
   width: 140px;
   height: auto;
 }
-.footer-brand  {
+
+.footer-brand {
   margin-top: 2rem;
 }
 
-
 .footer-background {
   background-color: #dee2e6;
-}  
+}
 
-.lab-brand-filter img{
+.lab-brand-filter img {
   filter: hue-rotate(90deg) grayscale(100%);
 }
 
@@ -153,7 +174,7 @@ html, body {
   color: #633fb9;
 }
 
-.link-scroller:hover{
+.link-scroller:hover {
   color: #633fb9;
   text-decoration: none;
 }
@@ -172,16 +193,21 @@ html, body {
 
 @media (max-width: 992px) {
   .videos-img-resize {
-    width: 72%;    
+    width: 72%;
   }
 }
+
 @media (max-width: 915px) {
   .map-cyber {
     height: 190px;
   }
 }
+
 @media (max-width: 767px) {
   .videos-img-resize {
-    width: 52%;    
+    width: 52%;
+  }
+  .web-s-control img {
+    width: 70%;
   }
 }
