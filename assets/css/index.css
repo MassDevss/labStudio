@@ -2,45 +2,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* p bar */
-.loader-scene {
-  z-index: 1031;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(248, 248, 248);
-}
-/* resize in diferent screens pending */
-.loader-body {
-  width: 800px;
-}
-.pb-wrap .progress{
-  height: 1.8rem;
-}
-.pb-transition {
-  background-color: #633fb9;
-  width: 100%;
-  animation-name: progress-bar;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
-}
-@keyframes progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-/* p bar */
-
 /** PRICING CARDS */
 
 .card-best-pricing {
@@ -109,6 +70,9 @@ html, body {
   background: linear-gradient(90deg, rgba(47,7,199,1) 0%, rgba(105,17,179,1) 36%, rgba(87,17,196,1) 71%, rgba(170,22,187,1) 100%);
 }
 
+.img-introduction {
+  width: 92%;
+}
 /*  #58dd1c icon green 
   lp #6f6aff
   #5c56ff
@@ -128,6 +92,9 @@ html, body {
   color: #62326b !important;
 }
 
+.soft-lab-back-color {
+  background-color: #530bff14;
+}
 .lab-back-color {
   background-color: #633fb9;
 }
