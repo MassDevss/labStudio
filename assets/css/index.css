@@ -38,12 +38,20 @@ body {
   height: 140px;
 }
 
+.img-store-size {
+  width: 82%;
+}
+
 .year-pricing {
   font-size: 1rem;
 }
 
 .list-group-pricing {
   list-style: none;
+}
+
+.card-width {
+  width: 21rem;
 }
 
 .card-list-item {
@@ -189,6 +197,11 @@ body {
 .footer-links {
   position: relative;
   z-index: 1;
+}
+
+.footer-icons {
+  height: 25px;
+  width: 25px;
 }
 
 @media (max-width: 992px) {
