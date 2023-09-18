@@ -60,6 +60,38 @@ body {
 
 .check-icon {
   width: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pricing-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-pricing-title h5 {
+  background-color: #633fb9;
+  border-radius: 2rem;
+  color: white;
+  padding: 6px 22px 5px 22px;
+}
+
+.bg-labstudio-soft {
+  background-color: rgba(128, 0, 255, 0.1);
+  color: #7d33ea;
+}
+
+.before-price {
+  position: relative;
+  /* left: 1.4rem; */
+  color: #7d33ea;
+  top: 1.3rem;
+}
+
+.before-price h4 {
+  text-decoration: line-through;
 }
 
 .check-icon path {
