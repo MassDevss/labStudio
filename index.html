@@ -944,11 +944,26 @@
   <footer class="pt-md-6 bg-gray-200">
     <div class="d-flex justify-content-center pt-8">
       <div class="col-12 d-flex justify-content-center">
-        <iframe
+
+        <!-- <iframe
+
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2015.9121102586469!2d-108.99641455057196!3d25.805318285774096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba28aa186aa895%3A0xdc66731b267932f7!2sIgnacio%20Manuel%20Altamirano%20e%2C%20Scally%2C%2081240%20Los%20Mochis%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1692428595249!5m2!1ses-419!2smx"
           class="map-cyber" style="border:0;" allowfullscreen loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+        <!-- <img width="100%" height="1080" src="https://maps.googleapis.com/maps/api/staticmap?size=640x80&scale=2&center=Labstudio+Media&key=AIzaSyAjLuO9HRAUgr7ryKTKYZspmnvK8mRtwdM" alt=""> -->
+      
+        <!-- <div style="width:100%; background-image: url('https://maps.googleapis.com/maps/api/staticmap?size=1920x1080&scale=2&center=Labstudio+Media&key=AIzaSyAjLuO9HRAUgr7ryKTKYZspmnvK8mRtwdM');"></div> -->
+
+
+        <div id="map" class="map-cyber"></div>
+
+
+
+
+
+
+        </div>
     </div>
     <div class="footer-background pt-6">
       <div class="container">
@@ -992,10 +1007,12 @@
     </div>
   </footer>
   <!-- JAVASCRIPT -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({key: "AIzaSyAjLuO9HRAUgr7ryKTKYZspmnvK8mRtwdM", v: "beta"});</script>
+  <script src="./assets/js/map.js"></script>
   <script src="./assets/js/vendor.bundle.js"></script>
   <script src="./assets/js/theme.bundle.js"></script>
   <script src="./assets/js/carousel.js"></script>
+      
 </body>
 
 </html>
