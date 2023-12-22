@@ -3,14 +3,9 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Google maps */
 #map {
-  /* height: 320px; */
   width: 100%;
 }
-
-
-/** PRICING CARDS */
 
 .card-best-pricing {
   transform: scale(1.02);
@@ -231,8 +226,6 @@ body {
 .map-cyber {
   width: 100%;
   height: 420px;
-  /* transition-property: height; */
-  /* transition-duration: 200ms; */
 }
 
 .footer-links {
@@ -261,6 +254,7 @@ body {
   .videos-img-resize {
     width: 52%;
   }
+
   .web-s-control img {
     width: 70%;
   }
