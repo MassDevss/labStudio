@@ -22,7 +22,7 @@ async function initMap() {
     glyphColor: "#5636a1",
   });
 
-  // The marker, positioned at Uluru
+  // The marker, positioned at LabStudio
   const marker = new AdvancedMarkerView({
     map: map,
     position: position,
