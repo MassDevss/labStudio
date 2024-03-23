@@ -1,7 +1,6 @@
 
 // Initialize and add the map
 let map;
-
 async function initMap() {
 
   const position = { lat: 25.8055853, lng: -108.9964254 };
