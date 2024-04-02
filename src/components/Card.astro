@@ -1,36 +1,52 @@
 ---
-import WhatsAppShadow from "../img/labstudio/pageImages/w-shadow.webp";
+interface Props {
+  title: string;
+  description: string;
+  price: string;
+  features: string[];
+  image: string;
+  fade: string;
+}
+
+const { title, description, price, features, image, fade } = Astro.props;
+
 ---
 
-<article class="card-width" data-aos="fade-right">
+<article class="card-width" data-aos={fade}>
   <div class="position-relative card card-pricing-new">
     <div class="card-micro-title">
       <p
         class="bg-labstudio-soft m-0 fw-bold text-center"
         style="font-size: 0.9rem !important;"
       >
-        WhatsApp Business
+        { title }
       </p>
     </div>
 
     <div class="top-card-content">
-      <img
-        loading="lazy"
-        src={WhatsAppShadow.src}
-        alt="WhatsApp business logo"
-        class="card-mini-img"
-      />
-      <div class="title-card-service">
-        <h2 class="mb-1">WhatsApp Business</h2>
+
+      { image !== '' ? 
+        <img
+          loading="lazy"
+          src={ image }
+          alt="WhatsApp business logo"
+          class="card-mini-img"
+        />
+        :
+        <></>
+      }
+      
+      <div class={'title-card-service ' + (image === '' ? 'pt-8' : '')}>
+        <h2 class="mb-1">{ title }</h2>
         <p class="text-muted text-start">
-          convierte cada conversación en una oportunidad de ventas.
+          { description }
         </p>
       </div>
     </div>
 
     <div class="content-secondary-card pt-4 rounded-bottom-4">
       <div class="title-card-service">
-        <h2>$5,999</h2>
+        <h2>${ price }</h2>
       </div>
 
       <div class="bottom-card d-flex justify-content-center padding-card-rl">
@@ -43,6 +59,8 @@ import WhatsAppShadow from "../img/labstudio/pageImages/w-shadow.webp";
       </div>
 
       <ul class="list-group-pricing-new w-100 ps-0">
+
+        { features.map(( f: string ) => 
         <li class="card-text card-list-item d-flex align-items-center">
           <div class="check-icon">
             <div
@@ -51,58 +69,9 @@ import WhatsAppShadow from "../img/labstudio/pageImages/w-shadow.webp";
               <i class="fe fe-check"></i>
             </div>
           </div>
-          <p class="mb-1">Configuración de Plataforma</p>
+          <p class="mb-1">{ f }</p>
         </li>
-        <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
-          <p class="mb-1">Diseño de Catalogo</p>
-        </li>
-        <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
-          <p class="mb-1">Hasta 50 Respuestas Rápidas</p>
-        </li>
-        <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
-          <p class="mb-1">Etiquetas</p>
-        </li>
-        <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
-          <p class="mb-1">Anuncios desde WhatsApp</p>
-        </li>
-        <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
-          <p class="mb-1">Implementación</p>
-        </li>
+        ) }
       </ul>
     </div>
   </div>
