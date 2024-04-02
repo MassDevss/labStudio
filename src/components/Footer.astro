@@ -1,0 +1,154 @@
+---
+import InstagramIcon from "../img/icons/social/instagram.svg";
+import FacebookICon from "../img/icons/social/facebook.svg";
+import LabsLogo from "../img/labstudio/usBrand/logo-purple.png";
+import WhatsappIcon from "../img/icons/social/whatsapp.svg";
+
+const actualYear = new Date().getFullYear();
+
+---
+
+<footer class="pt-md-6 bg-gray-200">
+  <div class="d-flex justify-content-center pt-8">
+    <div class="col-12 d-flex justify-content-center">
+      <div id="map" class="map-cyber"></div>
+    </div>
+  </div>
+  <div class="footer-background pt-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <img
+            loading="lazy"
+            src={LabsLogo.src}
+            alt="LabStudio logo"
+            class="footer-brand lab-logo aos-init aos-animate"
+          />
+          <ul
+            class="list-unstyled list-inline list-social mb-6 mb-md-0 footer-links"
+          >
+            <li class="list-inline-item list-social-item me-3">
+              <a
+                href="https://www.instagram.com/labstudi0/"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  loading="lazy"
+                  src={InstagramIcon.src}
+                  class="list-social-icon"
+                  alt="instagram icon"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a
+                href="https://m.facebook.com/profile.php/?id=100063680193194"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  loading="lazy"
+                  src={FacebookICon.src}
+                  class="list-social-icon"
+                  alt="facebook icon"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a
+                href="https://www.tiktok.com/@labstudio.media"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <svg
+                  style="width: 28px; height: 28px;"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,256,256"
+                  ><g
+                    style="width: 100%; height: 100%;"
+                    fill="#869ab8"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                    ><g transform="scale(8.53333,8.53333)"
+                      ><path
+                        d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.896,-2 -2,-2zM22.689,13.474c-0.13,0.012 -0.261,0.02 -0.393,0.02c-1.495,0 -2.809,-0.768 -3.574,-1.931c0,3.049 0,6.519 0,6.577c0,2.685 -2.177,4.861 -4.861,4.861c-2.684,-0.001 -4.861,-2.178 -4.861,-4.862c0,-2.685 2.177,-4.861 4.861,-4.861c0.102,0 0.201,0.009 0.3,0.015v2.396c-0.1,-0.012 -0.197,-0.03 -0.3,-0.03c-1.37,0 -2.481,1.111 -2.481,2.481c0,1.37 1.11,2.481 2.481,2.481c1.371,0 2.581,-1.08 2.581,-2.45c0,-0.055 0.024,-11.17 0.024,-11.17h2.289c0.215,2.047 1.868,3.663 3.934,3.811z"
+                      ></path></g
+                    ></g
+                  ></svg
+                >
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a
+                href="https://wa.me/526688257868"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  loading="lazy"
+                  src={WhatsappIcon.src}
+                  class="footer-icons"
+                  alt="WhatsApp icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-2 pt-6 pb-2">
+      <p class="text-muted">
+        2020-
+        {actualYear} LABSTUDIO &#169;
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-brand {
+    position: relative;
+    left: -1rem;
+    margin-top: 1rem;
+  }
+
+  .footer-background {
+    background-color: #dee2e6;
+  }
+
+  .map-cyber {
+    width: 100%;
+    height: 420px;
+  }
+
+  .footer-links {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-icons {
+    height: 25px;
+    width: 25px;
+  }
+
+  .lab-logo {
+    width: 220px;
+    height: auto;
+  }
+
+  @media (max-width: 915px) {
+    .map-cyber {
+      height: 190px;
+    }
+  }
+</style>

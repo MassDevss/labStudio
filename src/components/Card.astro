@@ -1,0 +1,233 @@
+---
+import WhatsAppShadow from "../img/labstudio/pageImages/w-shadow.webp";
+---
+
+<article class="card-width" data-aos="fade-right">
+  <div class="position-relative card card-pricing-new">
+    <div class="card-micro-title">
+      <p
+        class="bg-labstudio-soft m-0 fw-bold text-center"
+        style="font-size: 0.9rem !important;"
+      >
+        WhatsApp Business
+      </p>
+    </div>
+
+    <div class="top-card-content">
+      <img
+        loading="lazy"
+        src={WhatsAppShadow.src}
+        alt="WhatsApp business logo"
+        class="card-mini-img"
+      />
+      <div class="title-card-service">
+        <h2 class="mb-1">WhatsApp Business</h2>
+        <p class="text-muted text-start">
+          convierte cada conversación en una oportunidad de ventas.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-secondary-card pt-4 rounded-bottom-4">
+      <div class="title-card-service">
+        <h2>$5,999</h2>
+      </div>
+
+      <div class="bottom-card d-flex justify-content-center padding-card-rl">
+        <a
+          href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20vender%20por%20Whatsapp"
+          target="_blank"
+          class="btn w-100 py-2 lab-back-color text-light rounded-3 mb-4"
+          >¡Lo Quiero!</a
+        >
+      </div>
+
+      <ul class="list-group-pricing-new w-100 ps-0">
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Configuración de Plataforma</p>
+        </li>
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Diseño de Catalogo</p>
+        </li>
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Hasta 50 Respuestas Rápidas</p>
+        </li>
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Etiquetas</p>
+        </li>
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Anuncios desde WhatsApp</p>
+        </li>
+        <li class="card-text card-list-item d-flex align-items-center">
+          <div class="check-icon">
+            <div
+              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+            >
+              <i class="fe fe-check"></i>
+            </div>
+          </div>
+          <p class="mb-1">Implementación</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<style>
+  .card-width {
+    width: 21rem;
+  }
+  .card-pricing-new {
+    width: 20.5rem;
+    position: relative;
+    bottom: 0;
+    transition-property: box-shadow, bottom;
+    transition-duration: 0.5s;
+    border-radius: 1rem;
+  }
+  .card-pricing-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-pricing-title h5 {
+    background-color: #633fb9;
+    border-radius: 2rem;
+    color: white;
+    padding: 6px 22px 5px 22px;
+  }
+  .bg-labstudio-soft {
+    background-color: rgba(128, 0, 255, 0.1);
+    color: #7d33ea;
+  }
+  .before-price {
+    position: relative;
+    color: #7d33ea;
+    top: 1.3rem;
+  }
+
+  .before-price h4 {
+    text-decoration: line-through;
+  }
+  .list-group-pricing-new {
+    list-style: none;
+    position: relative;
+    left: 1.4rem;
+  }
+  .card-list-item {
+    font-size: 1rem;
+  }
+
+  .check-icon {
+    width: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .check-icon path {
+    stroke: var(--bs-gray-700);
+  }
+
+  .soft-lab-back-color {
+    background-color: #530bff14;
+  }
+
+  .lab-font-color {
+    color: #693572;
+  }
+
+  .lab-font-color:hover {
+    color: #693572;
+  }
+
+  .lab-font-color:active {
+    color: #62326b !important;
+  }
+
+  .lab-font-color:focus {
+    color: #62326b !important;
+  }
+  .card-mini-img {
+    width: 120px;
+    height: auto;
+  }
+
+  .lab-back-color {
+    background-color: #633fb9;
+  }
+
+  .lab-back-color:hover {
+    background-color: #6f46cf;
+  }
+
+  .lab-back-color:active {
+    background-color: #6741c0 !important;
+  }
+
+  .padding-card-rl {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .title-card-service {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .title-card-service h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  .card-micro-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-micro-title p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+  .content-secondary-card {
+    background-color: #f5faff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+</style>

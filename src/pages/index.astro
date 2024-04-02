@@ -1,0 +1,1380 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+// imagenes
+import IntroImage from "../img/labstudio/pageImages/intro-image-2.webp";
+import WebDev from "../img/labstudio/pageImages/webdev-ico.webp";
+import Branding from "../img/labstudio/pageImages/branding-ico.webp";
+import Rocket from "../img/labstudio/pageImages/rocket-ico.webp";
+import WebTable from "../img/labstudio/pageImages/webTable.webp";
+import Store from "../img/labstudio/pageImages/store-1.webp";
+import GoogleBusiness from "../img/labstudio/pageImages/g-shadow.webp";
+import VideoImage from "../img/labstudio/pageImages/videos-1.webp";
+import BrandingImage from "../img/labstudio/pageImages/creative-branding.webp";
+
+// brands
+import AlferLogo from "../img/labstudio/brands/brands-alfer.webp";
+import ValleyLogo from "../img/labstudio/brands/brands-valley-farms.webp";
+import TonerLogo from "../img/labstudio/brands/brands-toner.webp";
+import TotalLogo from "../img/labstudio/brands/brands-total.webp";
+import SavingLogo from "../img/labstudio/brands/brands-pharmacy.png";
+import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="LABSTUDIO | Soluciones Digitales">
+  <Nav />
+  <main>
+    <section class="pt-4 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+            <img
+              src={IntroImage.src}
+              alt="Imagen de introducción en la portada"
+              class="img-introduction img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+            <h1 class="display-3 text-center text-md-start">
+              Bienvenido a <span class="lab-font-color">LABSTUDIO</span>. <br />
+            </h1>
+            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+              Vemos un futuro donde todos los negocios físicos tienen presencia
+              de manera digital.
+            </p>
+            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+              Digitaliza tu negocio ahora mismo
+            </p>
+            <div class="text-center text-md-start">
+              <a
+                href="https://wa.me/526688257868"
+                target="_blank"
+                class="btn lab-back-color shadow lift me-1 text-light"
+              >
+                Mas Información <i
+                  class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@labstudio.media"
+                target="_blank"
+                class="btn btn-primary-soft lift lab-font-color button-knowus"
+              >
+                Conócenos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-8 py-md-11 border-bottom">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon-continer mb-3">
+                <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
+              </div>
+              <a href="#web-design-scroll" class="link-scroller">
+                Desarrollo Web
+              </a>
+              <p class="text-muted mb-0">
+                Desarrollamos tu sitio web de tu negocio para que llegues a
+                nuevos clientes.
+              </p>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="icon-continer brand-resize mb-3">
+                <img src={Branding.src} alt="Ilustración sobre diseño" />
+              </div>
+              <a href="#branding-scroll" class="link-scroller"> Branding </a>
+              <p class="text-muted mb-6 mb-md-0">
+                Diseñamos el futuro de tu negocio con estrategia y creatividad.
+              </p>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+              <div class="icon-continer mb-3">
+                <img src={Rocket.src} alt="Ilustración de un cohete" />
+              </div>
+              <a href="#video-scroll" class="link-scroller">
+                Producción Audiovisual
+              </a>
+              <p class="text-muted mb-6 mb-md-0">
+                "Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
+                Espectaculares.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-8 pt-md-11 bg-gray-200">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11"
+        >
+          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
+            <!-- Heading -->
+            <h2>
+              Creamos tu pagina web<br /><span class="lab-font-color"
+                >Una web para
+              </span><span
+                class="lab-font-color"
+                data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "ti..."]}'
+              ></span>
+            </h2>
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-6">
+              "En un mundo digitalizado, tu presencia en línea es fundamental.
+              Es por eso que en
+              <span class="lab-font-color">LabStudio</span> Creamos sitios web impactantes
+              y a tu medida que no solo destacan en Internet, sino que también ayudan
+              a conectarte de manera efectiva con tus clientes, Creando una presencia
+              digital más efectiva lo que se traduce en mas ventas para tu negocio."
+            </p>
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="d-flex">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                  <p class="lab-font-color">Creativo</p>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                  <p class="lab-font-color mb-lg-0">Original</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mb-6 mb-md-0">
+                <div class="d-flex">
+                  <span
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </span>
+                  <p class="lab-font-color">Funcional</p>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                  <p class="lab-font-color mb-0">Efectivo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-5 order-md-1"
+            data-aos="fade-right"
+          >
+            <div class="web-s-control">
+              <img src={WebTable.src} alt="Imagen de una búsqueda web" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-8 pt-md-11 bg-gray-200" id="web-design-scroll">
+      <div class="container pb-8">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
+            <h2>
+              Diseño de <br /><span class="lab-font-color"
+                >Tiendas en linea</span
+              >.
+            </h2>
+
+            <p class="fs-lg text-muted mb-6">
+              "Creamos tu tienda en linea para que tus productos lleguen a
+              nuevos clientes"
+            </p>
+
+            <div class="d-flex">
+              <div class="icon icon-labs">
+                <span class="fe fe-eye"></span>
+              </div>
+              <div class="ms-5">
+                <h4 class="mb-1">La primera impresión importa</h4>
+                <p class="text-muted mb-6">
+                  Entendemos como funciona el mundo digital, es por eso que
+                  sabemos mejorar la experiencia de usuario con sitios web
+                  atractivos y responsivos.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="icon icon-labs">
+                <span class="fe fe-clock"></span>
+              </div>
+              <div class="ms-5">
+                <h4 class="mb-1">Optimizamos tu pagina</h4>
+                <p class="text-muted mb-6 mb-md-0 justify-text">
+                  Implementamos estrategias de SEO (Search Engine Optimization)
+                  para el posicionamiento, visibilidad y relevancia de tu página
+                  web mostrándose dentro de las primeras posiciones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-6">
+            <div
+              class="w-md-150 w-lg-130 position-relative"
+              data-aos="fade-left"
+            >
+              <div class="img-skewed img-skewed-start">
+                <!-- Image -->
+                <img
+                  src={Store.src}
+                  class="img-store-size screenshot img-fluid img-skewed-item"
+                  alt="Ilustración tienda en linea"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200"
+    >
+      <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
+      <div
+        class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
+      >
+        <article class="card-width" data-aos="fade-right">
+          <div class="position-relative card rounded-4 card-body card-pricing">
+            <div class="card-pricing-title mb-1 mt-3">
+              <div class="text-center mb-4">
+                <span class="badge rounded-pill bg-labstudio-soft">
+                  <span class="h5 fw-bold text-uppercase">BÁSICO</span>
+                </span>
+              </div>
+            </div>
+            <p class="card-subtitle mb-0 text-muted text-center">
+              Lo básico para tu negocio
+            </p>
+            <div>
+              <div
+                class="before-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h6">$</span>
+                <h4 class="h2 fw-bold text-center">6,999</h4>
+              </div>
+              <div
+                class="now-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h2 mb-1">$</span>
+                <h4 class="display-2 fw-bold text-center">5,499</h4>
+              </div>
+            </div>
+            <p class="fw-bold mt-5 mb-1">Incluye:</p>
+            <ul class="list-group-pricing w-100 ps-0">
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Dominio Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Hosting Gratis por 1 año</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Diseño Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Certificado SSL</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Maps</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Botón WhatsApp</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-card d-flex justify-content-center">
+              <a
+                href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20la%20Pagina%20web%20Basica"
+                target="_blank"
+                class="btn w-100 py-2 lab-back-color text-light rounded-pill"
+                >¡Lo Quiero!</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="card-width" data-aos="fade-up">
+          <div class="position-relative card rounded-4 card-body card-pricing">
+            <div class="pricing-ribbon">
+              <div class="ribbon-body">
+                <p class="text-light mb-0 fw-bold text-center">NUEVO</p>
+              </div>
+            </div>
+            <div class="card-pricing-title mb-1 mt-3">
+              <div class="text-center mb-4">
+                <span class="badge rounded-pill bg-labstudio-soft">
+                  <span class="h5 fw-bold text-uppercase">LANDING</span>
+                </span>
+              </div>
+            </div>
+            <p class="card-subtitle mb-0 text-muted text-center">
+              Lo Esencial para tu negocio
+            </p>
+            <div>
+              <div
+                class="before-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h6">$</span>
+                <h4 class="h2 fw-bold text-center">10,999</h4>
+              </div>
+              <div
+                class="now-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h2 mb-1">$</span>
+                <h4 class="display-2 fw-bold text-center">8,999</h4>
+              </div>
+            </div>
+            <p class="fw-bold mt-5 mb-1">Incluye:</p>
+            <ul class="list-group-pricing w-100 ps-0">
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Dominio Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Hosting Gratis por 1 año</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Diseño Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Certificado SSL</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Maps</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Botón WhatsApp</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización Web & Móvil</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización SEO</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-card d-flex justify-content-center">
+              <a
+                href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20una%20Landing%20page%20para%20mi%20Negocio"
+                target="_blank"
+                class="btn w-100 py-2 lab-back-color text-light rounded-pill"
+                >¡Lo Quiero!</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="card-width" data-aos="fade-left">
+          <div class="position-relative card rounded-4 card-body card-pricing">
+            <div class="card-pricing-title mb-1 mt-3">
+              <div class="text-center mb-4">
+                <span class="badge rounded-pill bg-labstudio-soft">
+                  <span class="h5 fw-bold text-uppercase">VIP</span>
+                </span>
+              </div>
+            </div>
+            <p class="card-subtitle mb-0 text-muted text-center">
+              Lo que tu negocio se Merece
+            </p>
+            <div>
+              <div
+                class="before-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h6">$</span>
+                <h4 class="h2 fw-bold text-center">15,999</h4>
+              </div>
+              <div
+                class="now-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h2 mb-1">$</span>
+                <h4 class="display-2 fw-bold text-center">12,999</h4>
+              </div>
+            </div>
+            <p class="fw-bold mt-5 mb-1">Incluye:</p>
+            <ul class="list-group-pricing w-100 ps-0">
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Dominio Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Hosting Gratis por 1 año</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Diseño Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Certificado SSL</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Maps</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Botón WhatsApp</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización Web & Móvil</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización SEO</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Google Analytics</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Animaciones</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Integración de video</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-card d-flex justify-content-center">
+              <a
+                href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20solo%20lo%20mejor%20para%mi%20Empresa"
+                target="_blank"
+                class="btn w-100 py-2 lab-back-color text-light rounded-pill"
+                >¡Lo Quiero!</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200"
+    >
+      <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
+      <div
+        class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
+      >
+        <article class="card-width" data-aos="fade-up">
+          <div class="position-relative card rounded-4 card-body card-pricing">
+            <div class="card-pricing-title mb-1 mt-3">
+              <div class="text-center mb-4">
+                <span class="badge rounded-pill bg-labstudio-soft">
+                  <span class="h5 fw-bold text-uppercase">MI TIENDA</span>
+                </span>
+              </div>
+            </div>
+            <p class="card-subtitle mb-0 text-muted text-center">
+              Lo Esencial para tu negocio
+            </p>
+            <div>
+              <div
+                class="before-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h6">$</span>
+                <h4 class="h2 fw-bold text-center">24,999</h4>
+              </div>
+              <div
+                class="now-price d-flex justify-content-center align-items-center"
+              >
+                <span class="h2 mb-1">$</span>
+                <h4 class="display-2 fw-bold text-center">19,999</h4>
+              </div>
+            </div>
+            <p class="fw-bold mt-5 mb-1">Incluye:</p>
+            <ul class="list-group-pricing w-100 ps-0">
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Dominio Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Hosting Gratis por 1 año</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Diseño Personalizado</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Certificado SSL</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización Web & Móvil</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Optimización SEO</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="card-text card-list-item d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-1">Avisos a Clientes por Email</p>
+                <div class="check-icon">
+                  <div
+                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-card d-flex justify-content-center">
+              <a
+                href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20una%20Landing%20page%20para%20mi%20Negocio"
+                target="_blank"
+                class="btn w-100 py-2 lab-back-color text-light rounded-pill"
+                >¡Lo Quiero!</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pt-8 pt-md-11 pb-12 bg-gray-200">
+      <div class="container">
+        <h2 class="display-4 text-center fw-bold">Mas Soluciones Digitales</h2>
+        <div class="col-12 pt-6 d-flex justify-content-center gap-4 flex-wrap">
+          
+          <Card />
+
+          <article class="card-width" data-aos="fade-right">
+            <div class="position-relative card card-pricing-new">
+              <div class="card-micro-title">
+                <p
+                  class="bg-labstudio-soft m-0 fw-bold text-center"
+                  style="font-size: 0.9rem !important;"
+                >
+                  Google My Business
+                </p>
+              </div>
+
+              <div class="top-card-content">
+                <img
+                  loading="lazy"
+                  src={GoogleBusiness.src}
+                  alt="WhatsApp business logo"
+                  class="card-mini-img"
+                />
+                <div class="title-card-service">
+                  <h2 class="mb-1">Google My Business</h2>
+                  <p class="text-muted text-start">
+                    No dejes que tu negocio se pierda en las búsquedas locales.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content-secondary-card pt-4 rounded-bottom-4">
+                <div class="title-card-service">
+                  <h2>$4,999</h2>
+                </div>
+
+                <div
+                  class="bottom-card d-flex justify-content-center padding-card-rl"
+                >
+                  <a
+                    href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20gustaria%20estar%20bien%20posicionado%20en%20Google"
+                    target="_blank"
+                    class="btn w-100 py-2 lab-back-color text-light rounded-3 mb-4"
+                    >¡Lo Quiero!</a
+                  >
+                </div>
+
+                <ul class="list-group-pricing-new w-100 ps-0">
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Verificación de tu Negocio</p>
+                  </li>
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Configuración del Perfil</p>
+                  </li>
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Configuración de Tienda</p>
+                  </li>
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Anuncios en Google</p>
+                  </li>
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Google Analytics</p>
+                  </li>
+                  <li
+                    class="card-text card-list-item d-flex align-items-center"
+                  >
+                    <div class="check-icon">
+                      <div
+                        class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
+                      >
+                        <i class="fe fe-check"></i>
+                      </div>
+                    </div>
+                    <p class="mb-1">Posicionamiento SEO</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <div class="py-5 py-md-6 border-bottom" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img loading="lazy" src={AlferLogo.src} alt="Alfer logo" />
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img loading="lazy" src={ValleyLogo.src} alt="Valley Farm logo" />
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img loading="lazy" src={TonerLogo.src} alt="Toner Depot logo" />
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img loading="lazy" src={TotalLogo.src} alt="Totalplay logo" />
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img
+                loading="lazy"
+                src={SavingLogo.src}
+                alt="Farmacias del ahorro logo"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+              <img loading="lazy" src={CyberLogo.src} alt="Cybercafe10m logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="video-scroll" class="pt-12 pt-md-13 bg-gray-200">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              loading="lazy"
+              src={VideoImage.src}
+              alt="Ilustración sobre videos"
+              class="videos-img-resize img-fluid mb-6 mb-md-0"
+            />
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+            <h2>
+              <span class="lab-font-color">Marketing digital</span>, el mejor
+              aliado de tu negocio.
+            </h2>
+            <p class="fs-lg text-gray-700 mb-6">
+              Soluciones digitales personalizadas para tu negocio. Genera nuevas
+              oportunidades con estrategias de marketing digital para acercarte
+              a tus clientes.
+            </p>
+            <div class="d-flex">
+              <div class="pe-5">
+                <h3 class="mb-0">
+                  <span
+                    data-countup='{"startVal": 0}'
+                    data-to="100"
+                    data-aos
+                    data-aos-id="countup:in"></span>%
+                </h3>
+                <p class="text-gray-700 mb-0">Satisfaction</p>
+              </div>
+              <div class="border-start border-gray-300"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start"
+            data-aos="fade-right"
+          >
+            <img
+              loading="lazy"
+              src={BrandingImage.src}
+              alt="branding image"
+              class="mb-6 mb-md-0 w-100"
+            />
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-2">
+            <h2>
+              Branding <span class="lab-font-color">Creativo</span>, Resultados <span
+                class="lab-font-color">Sorprendentes</span
+              >.
+            </h2>
+            <p class="fs-lg text-gray-700 mb-6">
+              La magia del Branding Creativo, es Descubrir Como Elevamos el
+              potencial de tu marca a traves de la Innovación y el Diseño.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  .card-best-pricing {
+    transform: scale(1.02);
+    width: 20.5rem;
+    position: relative;
+    bottom: 0.6rem;
+    transition-property: box-shadow, bottom;
+    transition-duration: 0.5s;
+  }
+
+  .card-best-pricing:hover {
+    bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .card-micro-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-micro-title p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+
+  .card-pricing-new {
+    width: 20.5rem;
+    position: relative;
+    bottom: 0;
+    transition-property: box-shadow, bottom;
+    transition-duration: 0.5s;
+    border-radius: 1rem;
+  }
+
+  .card-mini-img {
+    width: 120px;
+    height: auto;
+  }
+
+  .title-card-service {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .title-card-service h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  .content-secondary-card {
+    background-color: #f5faff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .padding-card-rl {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .list-group-pricing-new {
+    list-style: none;
+    position: relative;
+    left: 1.4rem;
+  }
+
+  .card-pricing {
+    width: 20.5rem;
+    position: relative;
+    bottom: 0;
+    transition-property: box-shadow, bottom;
+    transition-duration: 0.5s;
+  }
+
+  .card-pricing:hover {
+    bottom: 0.4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .img-card-fixing {
+    position: relative;
+    left: 1rem;
+    height: 140px;
+  }
+
+  .img-store-size {
+    width: 82%;
+  }
+
+  .year-pricing {
+    font-size: 1rem;
+  }
+
+  .list-group-pricing {
+    list-style: none;
+  }
+
+  .card-width {
+    width: 21rem;
+  }
+
+  .card-list-item {
+    font-size: 1rem;
+  }
+
+  .check-icon {
+    width: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-pricing-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-pricing-title h5 {
+    background-color: #633fb9;
+    border-radius: 2rem;
+    color: white;
+    padding: 6px 22px 5px 22px;
+  }
+
+  .bg-labstudio-soft {
+    background-color: rgba(128, 0, 255, 0.1);
+    color: #7d33ea;
+  }
+
+  .before-price {
+    position: relative;
+    color: #7d33ea;
+    top: 1.3rem;
+  }
+
+  .before-price h4 {
+    text-decoration: line-through;
+  }
+
+  .check-icon path {
+    stroke: var(--bs-gray-700);
+  }
+
+  .web-s-control {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .web-s-control img {
+    width: 100%;
+  }
+
+  .pricing-ribbon {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    z-index: 1;
+    text-align: right;
+    overflow: hidden;
+    height: 10rem;
+  }
+
+  .ribbon-body {
+    width: 12rem;
+    position: relative;
+    top: 1rem;
+    left: -3.1rem;
+    transform: rotate(-45deg);
+    padding: 0.6rem;
+    background: rgb(47, 7, 199);
+    background: linear-gradient(
+      90deg,
+      rgba(47, 7, 199, 1) 0%,
+      rgba(105, 17, 179, 1) 36%,
+      rgba(87, 17, 196, 1) 71%,
+      rgba(170, 22, 187, 1) 100%
+    );
+  }
+
+  .img-introduction {
+    width: 92%;
+  }
+
+  .lab-font-color {
+    color: #693572;
+  }
+
+  .lab-font-color:hover {
+    color: #693572;
+  }
+
+  .lab-font-color:active {
+    color: #62326b !important;
+  }
+
+  .lab-font-color:focus {
+    color: #62326b !important;
+  }
+
+  .soft-lab-back-color {
+    background-color: #530bff14;
+  }
+
+  .lab-back-color {
+    background-color: #633fb9;
+  }
+
+  .lab-back-color:hover {
+    background-color: #6f46cf;
+  }
+
+  .lab-back-color:active {
+    background-color: #6741c0 !important;
+  }
+
+  .button-knowus:active {
+    background-color: rgba(51, 94, 234, 0.1) !important;
+  }
+
+  .icon-labs {
+    color: #6039bd;
+    font-size: 1.6rem;
+  }
+
+  .icon-continer {
+    height: 100px;
+  }
+
+  .brand-resize img {
+    height: 122% !important;
+  }
+
+  .icon-continer img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .videos-img-resize {
+    width: 60%;
+  }
+
+  .lab-brand-filter img {
+    filter: hue-rotate(90deg) grayscale(100%);
+  }
+
+  .justify-text {
+    text-align: justify;
+  }
+
+  .link-scroller {
+    text-shadow: #c3aaff 2px 2px 4px;
+    font-size: 1.2rem;
+    color: #633fb9;
+  }
+
+  .link-scroller:hover {
+    color: #633fb9;
+    text-decoration: none;
+  }
+
+  @media (max-width: 992px) {
+    .videos-img-resize {
+      width: 72%;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .videos-img-resize {
+      width: 52%;
+    }
+
+    .web-s-control img {
+      width: 70%;
+    }
+  }
+</style>
