@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import IndexLayout from "../layouts/IndexLayout.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 
@@ -29,7 +29,13 @@ import Image from "astro/components/Image.astro";
 import { Fade } from "../enums/Fade";
 ---
 
-<Layout title="LABSTUDIO | Soluciones Digitales">
+<IndexLayout 
+  title="LABSTUDIO | Soluciones Digitales"
+  ogTitle="LABSTUDIO | Soluciones Digital"
+  description="En Labstudiomedia ofrecemos servicios de fotografía profesional, producción de video, desarrollo web personalizado y videos aéreos con dron. Nuestro enfoque centrado en el cliente y nuestra pasión por la creatividad nos distinguen. Con cada proyecto, nos comprometemos a brindar soluciones creativas que impulsen el éxito de tu marca. "
+  ogDescription="En Labstudiomedia ofrecemos servicios de fotografía, producción de video, desarrollo web y videos aéreos con dron en Los Mochis, Sinaloa. Destaca con nuestra experiencia en medios digitales. Contáctanos hoy."
+  keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
+  >
   <Nav />
   <main>
     <section class="pt-4 pt-md-11">
@@ -545,7 +551,7 @@ import { Fade } from "../enums/Fade";
     </section>
   </main>
   <Footer />
-</Layout>
+</IndexLayout>
 
 <style>
   html,
