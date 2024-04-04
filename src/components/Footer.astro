@@ -6,14 +6,27 @@ import WhatsappIcon from "../img/icons/social/whatsapp.svg";
 
 const actualYear = new Date().getFullYear();
 
+interface Props {
+  useMap: boolean;
+}
+
+const { useMap } = Astro.props;
+
 ---
 
-<footer class="pt-md-6 bg-gray-200">
-  <div class="d-flex justify-content-center pt-8">
-    <div class="col-12 d-flex justify-content-center">
-      <div id="map" class="map-cyber"></div>
-    </div>
-  </div>
+<footer>
+
+  { 
+  useMap ? 
+    <div class="d-flex justify-content-center ">
+      <div class="col-12 d-flex justify-content-center">
+        <div id="map" class="map-cyber"></div>
+      </div>
+    </div> 
+    :
+    <></>
+  }
+  
   <div class="footer-background pt-6">
     <div class="container">
       <div class="row">

@@ -3,5 +3,8 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
+Disallow: /fotografia
+Disallow: /desarrollo-web
+Disallow: /produccion-de-video
 
 Sitemap: https://www.labstudiomedia.com/sitemap.xml

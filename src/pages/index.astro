@@ -21,7 +21,7 @@ import TonerLogo from "../img/labstudio/brands/brands-toner.webp";
 import TotalLogo from "../img/labstudio/brands/brands-total.webp";
 import SavingLogo from "../img/labstudio/brands/brands-pharmacy.png";
 import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
-import Card from "../components/Card.astro";
+import Card from "../components/PricingCard.astro";
 
 // cards images
 import WhatsappBuisness from "../img/labstudio/pageImages/w-shadow.webp";
@@ -35,7 +35,7 @@ import { Fade } from "../enums/Fade";
   description="En Labstudiomedia ofrecemos servicios de fotografía profesional, producción de video, desarrollo web personalizado y videos aéreos con dron. Nuestro enfoque centrado en el cliente y nuestra pasión por la creatividad nos distinguen. Con cada proyecto, nos comprometemos a brindar soluciones creativas que impulsen el éxito de tu marca. "
   ogDescription="En Labstudiomedia ofrecemos servicios de fotografía, producción de video, desarrollo web y videos aéreos con dron en Los Mochis, Sinaloa. Destaca con nuestra experiencia en medios digitales. Contáctanos hoy."
   keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
-  >
+>
   <Nav />
   <main>
     <section class="pt-4 pt-md-11">
@@ -522,7 +522,7 @@ import { Fade } from "../enums/Fade";
     </section>
 
     <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
-      <div class="container">
+      <div class="container pb-6">
         <div class="row align-items-center">
           <div
             class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start"
@@ -550,7 +550,8 @@ import { Fade } from "../enums/Fade";
       </div>
     </section>
   </main>
-  <Footer />
+  <Footer useMap={true} />
+  <script src="../js/map.js"></script>
 </IndexLayout>
 
 <style>
