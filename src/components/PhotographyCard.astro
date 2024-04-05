@@ -1,16 +1,19 @@
 ---
-
 interface Porps {
-  
+  title: string;
+  location: string;
+  image: string;
 }
+
+const { title, location, image } = Astro.props;
 
 ---
 
-<a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+<div class="card mb-6 mb-lg-0 shadow-light-lg">
   <div class="card-zoom">
     <img
       class="card-img-top"
-      src="assets/img/portfolio/portfolio-1.jpg"
+      src={ image }
       alt="..."
     />
   </div>
@@ -18,7 +21,7 @@ interface Porps {
     <div class="shape shape-bottom-100 shape-fluid-x text-white">
       <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
     </div>
-    <h6 class="text-uppercase mb-1 text-body-secondary">Branding</h6>
-    <h4 class="mb-0">Curology Campaign</h4>
+    <h6 class="text-uppercase mb-1 text-body-secondary">{ location }</h6>
+    <h4 class="mb-0">{ title }</h4>
   </div>
-</a>
+</div>

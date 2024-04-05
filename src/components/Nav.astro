@@ -1,14 +1,57 @@
 ---
-import NavLogo from '../img/labstudio/usBrand/logo-purple.png';
+import NavLogo from "../img/labstudio/usBrand/logo-purple.png";
+
 ---
 
-<!-- NAVBAR -->
 <header>
-  <nav class="navbar navbar-light bg-white navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg p-0">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">
-        <img src={ NavLogo.src } alt="labstudio logo" class="lab-logo mb-2">
+      <a class="navbar-brand" href="/">
+        <img src={NavLogo.src} alt="labstudio logo" class="lab-logo mb-2" />
       </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navBarLabstudio"
+        aria-controls="navBarLabstudio"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="labs-elements-nav collapse navbar-collapse justify-content-md-end"
+        id="navBarLabstudio"
+      >
+        <div class="navbar-nav">
+          <div class="w-100 d-flex justify-content-end d-lg-none">
+            <button
+              class="position-relative bg-white text-bg-light border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#navBarLabstudio"
+              aria-controls="navBarLabstudio"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.2rem"
+                height="2.2rem"
+                fill="#506690"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <a class="nav-link" href="/fotografia">Fotografia</a>
+          <a class="nav-link" href="#">Desarrollo Web</a>
+          <a class="nav-link" href="#">Video</a>
+          <a class="nav-link" href="#">Diseño</a>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
@@ -18,5 +61,28 @@ import NavLogo from '../img/labstudio/usBrand/logo-purple.png';
     width: 220px;
     height: auto;
   }
-</style>
+  .nav-link:hover {
+    color: #633fb9;
+  }
+  .nav-link:focus {
+    color: #633fb9 !important;
+  }
 
+  .navbar-nav button {
+    right: 1rem;
+    top: 1rem;
+  }
+
+  @media (width <= 991px) {
+    .nav-link:hover {
+      color: #633fb9;
+      box-shadow: none;
+    }
+    .nav-link {
+      padding-left: 2rem;
+      padding-top: 1.2rem !important;
+      padding-bottom: 1.2rem !important;
+      font-size: 1.2rem;
+    }
+  }
+</style>

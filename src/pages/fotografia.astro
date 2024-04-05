@@ -8,14 +8,15 @@ import Cofee2 from "../img/labstudio/design/coffe-cup-min.jpeg";
 import Cofee3 from "../img/labstudio/design/coffe-red-1.png";
 import Cofee4 from "../img/labstudio/design/red-coffe-bag.jpeg";
 import Footer from "../components/Footer.astro";
+import PhotographyCard from "../components/PhotographyCard.astro";
 ---
 
 <IndexLayout
   title="LABSTUDIO | Fotografia"
   ogTitle="LASBSTUDIO | Fotografia"
-  description=""
-  ogDescription=""
-  keywords=""
+  description="Descubre nuestro mundo de Fotografía profesional en Los Mochis, Sinaloa. Desde retratos hasta fotografía de productos, en Labstudio Media capturamos momentos con precisión y creatividad para destacar tu marca."
+  ogDescription="Descubre la excelencia en fotografía con Labstudio Media. Momentos capturados con precisión y creatividad para destacar tu marca. Desde retratos profesionales hasta fotografía de productos, nuestro equipo te brinda imágenes que cuentan historias."
+  keywords="Fotografía profesional, Fotografía en Los Mochis, Fotografía en Sinaloa, Fotógrafo profesional, Estudio fotográfico, Fotografía de retratos, Fotografía comercial, Sesiones fotográficas, Fotografía creativa, Fotografía artística, Fotografía de eventos, Fotografía de productos, Fotografía México"
 >
   <Nav />
   <div class="container">
@@ -24,13 +25,12 @@ import Footer from "../components/Footer.astro";
         class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100"
         style="top: 0;"
       >
-        <!-- Sidebar -->
         <aside class="py-4 py-md-6 position-relative" style="top: -100px">
           <div class="img-fluid mb-4 text-body">
             <h1>Fotografia</h1>
           </div>
           <p class="fs-lg mb-7 text-body-secondary">
-            We created a photographic brand for Larq that’s fun and exciting.
+            Descubre la excelencia en fotografía con Labstudio. Momentos capturados con precisión y creatividad para destacar tu marca.
           </p>
 
           <ul class="list-group list-group-flush">
@@ -82,17 +82,6 @@ import Footer from "../components/Footer.astro";
           >
             <img class="img-fluid rounded" src={Cofee4.src} alt="..." />
           </a>
-          <a
-            class="d-block mt-7"
-            data-bigpicture='{"imgSrc": "assets/img/portfolio/portfolio-25.jpg"}'
-            href="#"
-          >
-            <img
-              class="img-fluid rounded"
-              src="assets/img/portfolio/portfolio-25.jpg"
-              alt="..."
-            />
-          </a>
         </section>
       </div>
     </div>
@@ -108,115 +97,37 @@ import Footer from "../components/Footer.astro";
   <section class="pt-7 pb-10 py-md-10 bg-light">
     <div class="container">
       <div class="row align-items-center mb-5">
-        <div class="col-12 col-md">
-
-          <h3 class="mb-0">Related Work</h3>
-
+        <div class="col-12 col-md mb-2">
+          <h2 class="mb-0">Conoce Nuestro Portafolio</h2>
           <p class="mb-0 text-body-secondary">
-            Other goodies that are similar to this one.
+            Échale un vistazo a nuestros proyectos realizados.
           </p>
-        </div>
-        <div class="col-12 col-md-auto">
-          <a
-            href="#!"
-            class="btn btn-sm btn-outline-gray-300 d-none d-md-inline"
-          >
-            View all
-          </a>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-          <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
-            <div class="card-zoom">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/portfolio-1.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <div class="shape shape-bottom-100 shape-fluid-x text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-              </div>
-              <h6 class="text-uppercase mb-1 text-body-secondary">Branding</h6>
-              <h4 class="mb-0">Curology Campaign</h4>
-            </div>
-          </a>
+          <PhotographyCard 
+            title="VolksWagen"
+            location="Ciudad Obregon"
+            image={Cofee1.src}
+          />
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex">
-          <!-- Card -->
-          <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
-            <!-- Image -->
-            <div class="card-zoom">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/portfolio-2.jpg"
-                alt="..."
-              />
-            </div>
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x text-white">
-                <svg
-                  viewBox="0 0 2880 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  ><path
-                    d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
-                    fill="currentColor"></path></svg
-                >
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-body-secondary">Branding</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">Honest Packaging</h4>
-            </div>
-          </a>
+          <PhotographyCard 
+            title="Cocinas Modulares"
+            location="Los Mochis"
+            image={Cofee1.src}
+          />
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex">
-          <!-- Card -->
-          <a class="card d-md-none d-lg-flex shadow-light-lg" href="#!">
-            <!-- Image -->
-            <div class="card-zoom">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/portfolio-4.jpg"
-                alt="..."
-              />
-            </div>
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x text-white">
-                <svg
-                  viewBox="0 0 2880 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  ><path
-                    d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
-                    fill="currentColor"></path></svg
-                >
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-body-secondary">Ideation</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">Doodle Pad</h4>
-            </div>
-          </a>
+          <PhotographyCard 
+            title="CUCII"
+            location="Choix"
+            image={Cofee1.src}
+          />
         </div>
       </div>
-      <!-- / .row -->
     </div>
-    <!-- / .container -->
   </section>
 
   <Footer useMap={false} />
