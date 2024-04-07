@@ -27,6 +27,7 @@ import Card from "../components/PricingCard.astro";
 import WhatsappBuisness from "../img/labstudio/pageImages/w-shadow.webp";
 import Image from "astro/components/Image.astro";
 import { Fade } from "../enums/Fade";
+import WhatsApp from "../components/WhatsApp.astro";
 ---
 
 <IndexLayout 
@@ -551,6 +552,7 @@ import { Fade } from "../enums/Fade";
     </section>
   </main>
   <Footer useMap={true} />
+  <WhatsApp />
   <script src="../js/map.js"></script>
 </IndexLayout>
 
@@ -769,21 +771,7 @@ import { Fade } from "../enums/Fade";
     background-color: #530bff14;
   }
 
-  .lab-back-color {
-    background-color: #633fb9;
-  }
-
-  .lab-back-color:hover {
-    background-color: #6f46cf;
-  }
-
-  .lab-back-color:active {
-    background-color: #6741c0 !important;
-  }
-
-  .button-knowus:active {
-    background-color: rgba(51, 94, 234, 0.1) !important;
-  }
+  
 
   .icon-labs {
     color: #6039bd;
@@ -843,3 +831,4 @@ import { Fade } from "../enums/Fade";
     }
   }
 </style>
+
