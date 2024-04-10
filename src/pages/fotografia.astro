@@ -7,6 +7,10 @@ import Cofee1 from "../img/labstudio/design/coffe-bran-cups.png";
 import Cofee2 from "../img/labstudio/design/coffe-cup-min.jpeg";
 import Cofee3 from "../img/labstudio/design/coffe-red-1.png";
 import Cofee4 from "../img/labstudio/design/red-coffe-bag.jpeg";
+
+// MCA
+import mc1 from '../img/clients/mca/1.webp';
+
 import Footer from "../components/Footer.astro";
 import PhotographyCard from "../components/PhotographyCard.astro";
 import WhatsApp from "../components/WhatsApp.astro";
@@ -26,7 +30,11 @@ import WhatsApp from "../components/WhatsApp.astro";
         class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100"
         style="top: 0;"
       >
-        <aside class="py-4 py-md-6 position-relative" style="top: -100px"  data-aos="fade-right">
+        <aside
+          class="py-4 py-md-6 position-relative"
+          style="top: -100px"
+          data-aos="fade-right"
+        >
           <div class="img-fluid mb-4 text-body">
             <h1>Fotografia</h1>
           </div>
@@ -64,28 +72,48 @@ import WhatsApp from "../components/WhatsApp.astro";
             data-bigpicture={'{"imgSrc":"' + Cofee2.src + '"}'}
             href="#"
           >
-            <img data-aos="fade-left" class="img-fluid rounded" src={Cofee2.src} alt="..." />
+            <img
+              data-aos="fade-left"
+              class="img-fluid rounded"
+              src={Cofee2.src}
+              alt="..."
+            />
           </a>
           <a
             class="d-block mt-7"
             data-bigpicture={'{"imgSrc":"' + Cofee1.src + '"}'}
             href="#"
           >
-            <img data-aos="fade-in" class="img-fluid rounded" src={Cofee1.src} alt="..." />
+            <img
+              data-aos="fade-in"
+              class="img-fluid rounded"
+              src={Cofee1.src}
+              alt="..."
+            />
           </a>
           <a
             class="d-block mt-7"
             data-bigpicture={'{"imgSrc":"' + Cofee3.src + '"}'}
             href="#"
           >
-            <img data-aos="fade-in" class="img-fluid rounded" src={Cofee3.src} alt="..." />
+            <img
+              data-aos="fade-in"
+              class="img-fluid rounded"
+              src={Cofee3.src}
+              alt="..."
+            />
           </a>
           <a
             class="d-block mt-7"
             data-bigpicture={'{"imgSrc":"' + Cofee4.src + '"}'}
             href="#"
           >
-            <img data-aos="fade-in" class="img-fluid rounded" src={Cofee4.src} alt="..." />
+            <img
+              data-aos="fade-in"
+              class="img-fluid rounded"
+              src={Cofee4.src}
+              alt="..."
+            />
           </a>
         </section>
       </div>
@@ -114,22 +142,33 @@ import WhatsApp from "../components/WhatsApp.astro";
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 d-flex" data-aos="fade-up">
+        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
           <PhotographyCard
             title="VolksWagen"
             location="Ciudad Obregon"
             image={Cofee1.src}
           />
         </div>
-        <div class="col-12 col-md-6 col-lg-4 d-flex" data-aos="fade-up">
+        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
           <PhotographyCard
             title="Cocinas Modulares"
             location="Los Mochis"
             image={Cofee1.src}
           />
         </div>
-        <div class="col-12 col-md-6 col-lg-4 d-flex" data-aos="fade-up">
-          <PhotographyCard title="CUCII" location="Choix" image={Cofee1.src} />
+        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
+          <PhotographyCard
+            title="CUCII"
+            location="Choix"
+            image={Cofee1.src}
+          />
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
+          <PhotographyCard
+            title="MCA Supplements"
+            location="Los Mochis"
+            image={mc1.src}
+          />
         </div>
       </div>
     </div>
