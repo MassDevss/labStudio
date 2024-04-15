@@ -2,13 +2,13 @@
 import LabsLogo from "../img/labstudio/usBrand/logo-purple.png";
 import Show from "./helpers/Show.astro";
 
-const actualYear = new Date().getFullYear();
-
 interface Props {
   useMap: boolean;
 }
 
 const { useMap } = Astro.props;
+
+const actualYear = new Date().getFullYear();
 ---
 
 <footer>
