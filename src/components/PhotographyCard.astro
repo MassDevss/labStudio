@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 interface Porps {
   title: string;
   location: string;
@@ -11,8 +13,8 @@ const { title, location, image } = Astro.props;
 
 <div class="card mb-6 mb-lg-0 shadow-light-lg">
   <div class="card-zoom">
-    <img
-      class="card-img-top"
+    <Image
+      class="card-img-top w-100 h-auto"
       src={ image }
       alt="..."
     />

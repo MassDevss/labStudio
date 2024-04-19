@@ -1,23 +1,20 @@
 ---
+// components
 import Nav from "../components/Nav.astro";
 import IndexLayout from "../layouts/IndexLayout.astro";
-
-// images
-import Cofee1 from "../img/labstudio/design/coffe-bran-cups.png";
-import Cofee3 from "../img/labstudio/design/coffe-red-1.png";
-import Cofee4 from "../img/labstudio/design/red-coffe-bag.jpeg";
-
-// cocinas modulares
-import CMVertical from '../img/clients/cm/1.webp';
-import CMHorizontal from '../img/clients/cm/2.webp';
-
-// MCA
-import MCAHorizontal from '../img/clients/mca/1.webp';
-import MCAVertical from '../img/clients/mca/2.webp';
-
 import Footer from "../components/Footer.astro";
 import PhotographyCard from "../components/PhotographyCard.astro";
 import WhatsApp from "../components/WhatsApp.astro";
+import { Image } from "astro:assets";
+
+// images
+import CMVertical from '../img/clients/cm/1.webp';
+import CMHorizontal from '../img/clients/cm/2.webp';
+import VWVertical from '../img/clients/vw/1.webp';
+import VWHorizontal from '../img/clients/vw/2.webp';
+import MCAHorizontal from '../img/clients/mca/1.webp';
+import MCAVertical from '../img/clients/mca/2.webp';
+
 ---
 
 <IndexLayout
@@ -28,7 +25,7 @@ import WhatsApp from "../components/WhatsApp.astro";
   keywords="Fotografía profesional, Fotografía en Los Mochis, Fotografía en Sinaloa, Fotógrafo profesional, Estudio fotográfico, Fotografía de retratos, Fotografía comercial, Sesiones fotográficas, Fotografía creativa, Fotografía artística, Fotografía de eventos, Fotografía de productos, Fotografía México"
 >
   <Nav />
-  <div class="container">
+  <div class="container mt-12 mt-sm-12 mt-md-0">
     <div class="row justify-content-between">
       <div
         class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100"
@@ -49,7 +46,7 @@ import WhatsApp from "../components/WhatsApp.astro";
           <a
             href="https://wa.me/526688257868?text=Hola%20LabStudio%2C%20quiero%20cotizar%20un%20paquete%20de%20fotograf%C3%ADa.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20eso%3F%F0%9F%93%B7"
             target="_blank"
-            class="btn btn-primary-soft lift lab-back-color button-knowus text-light w-75"
+            class="btn btn-primary-soft lift lab-back-color text-light w-75"
           >
             Cotiza Ahora
             <svg
@@ -76,49 +73,49 @@ import WhatsApp from "../components/WhatsApp.astro";
             data-bigpicture={'{"imgSrc":"' + CMVertical.src + '"}'}
             href="#"
           >
-            <img
+            <Image 
               data-aos="fade-left"
               class="img-fluid rounded"
-              src={CMVertical.src}
+              src={CMVertical}
               alt="Fotografia en formato vertical del fregadero de una cocina"
             />
           </a>
+          <a
+          class="d-block mt-7"
+          data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
+          href="#"
+        >
+          <Image
+            data-aos="fade-in"
+            class="img-fluid rounded"
+            src={VWVertical}
+            alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
+          />
+        </a>
           <a
             class="d-block mt-7"
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
             href="#"
           >
-            <img
+            <Image
               data-aos="fade-in"
               class="img-fluid rounded"
-              src={MCAVertical.src}
-              alt="Fotografia en formato vertical de un suplemento de proteina"
+              src={MCAVertical}
+              alt="Fotografia en formato vertical de un suplemento de proteina HYDROTEIN"
             />
           </a>
-          <a
-            class="d-block mt-7"
-            data-bigpicture={'{"imgSrc":"' + Cofee3.src + '"}'}
-            href="#"
-          >
-            <img
-              data-aos="fade-in"
-              class="img-fluid rounded"
-              src={Cofee3.src}
-              alt="..."
-            />
-          </a>
-          <a
+          <!-- <a
             class="d-block mt-7"
             data-bigpicture={'{"imgSrc":"' + Cofee4.src + '"}'}
             href="#"
           >
-            <img
+            <Image
               data-aos="fade-in"
               class="img-fluid rounded"
               src={Cofee4.src}
               alt="..."
             />
-          </a>
+          </a> -->
         </section>
       </div>
     </div>
@@ -150,28 +147,28 @@ import WhatsApp from "../components/WhatsApp.astro";
           <PhotographyCard
             title="VolksWagen"
             location="Ciudad Obregon"
-            image={Cofee1.src}
+            image={VWHorizontal}
           />
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
           <PhotographyCard
             title="Cocinas Modulares"
             location="Los Mochis"
-            image={CMHorizontal.src}
+            image={CMHorizontal}
           />
         </div>
-        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
+        <!-- <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
           <PhotographyCard
             title="CUCII"
             location="Choix"
             image={Cofee1.src}
           />
-        </div>
+        </div> -->
         <div class="col-12 col-md-6 col-lg-4 d-flex mb-4" data-aos="fade-up">
           <PhotographyCard
             title="MCA Supplements"
             location="Los Mochis"
-            image={MCAHorizontal.src}
+            image={MCAHorizontal}
           />
         </div>
       </div>

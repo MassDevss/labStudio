@@ -1,7 +1,12 @@
 ---
+// components
 import IndexLayout from "../layouts/IndexLayout.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import { Fade } from "../enums/Fade";
+import WhatsApp from "../components/WhatsApp.astro";
+import Card from "../components/PricingCard.astro";
 
 // imagenes
 import IntroImage from "../img/labstudio/pageImages/intro-image-2.webp";
@@ -13,24 +18,20 @@ import Store from "../img/labstudio/pageImages/store-1.webp";
 import GoogleBusiness from "../img/labstudio/pageImages/g-shadow.webp";
 import VideoImage from "../img/labstudio/pageImages/videos-1.webp";
 import BrandingImage from "../img/labstudio/pageImages/creative-branding.webp";
+import WhatsappBuisness from "../img/labstudio/pageImages/w-shadow.webp";
 
-// brands
+// clients logos
 import AlferLogo from "../img/labstudio/brands/brands-alfer.webp";
 import ValleyLogo from "../img/labstudio/brands/brands-valley-farms.webp";
 import TonerLogo from "../img/labstudio/brands/brands-toner.webp";
 import TotalLogo from "../img/labstudio/brands/brands-total.webp";
 import SavingLogo from "../img/labstudio/brands/brands-pharmacy.png";
 import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
-import Card from "../components/PricingCard.astro";
+import { imageMetadata } from "astro/assets/utils";
 
-// cards images
-import WhatsappBuisness from "../img/labstudio/pageImages/w-shadow.webp";
-import Image from "astro/components/Image.astro";
-import { Fade } from "../enums/Fade";
-import WhatsApp from "../components/WhatsApp.astro";
 ---
 
-<IndexLayout 
+<IndexLayout
   title="LABSTUDIO | Soluciones Digitales"
   ogTitle="LABSTUDIO | Soluciones Digital"
   description="En Labstudiomedia ofrecemos servicios de fotografía profesional, producción de video, desarrollo web personalizado y videos aéreos con dron. Nuestro enfoque centrado en el cliente y nuestra pasión por la creatividad nos distinguen. Con cada proyecto, nos comprometemos a brindar soluciones creativas que impulsen el éxito de tu marca. "
@@ -91,7 +92,7 @@ import WhatsApp from "../components/WhatsApp.astro";
               data-aos-delay="100"
             >
               <div class="icon-continer mb-3">
-                <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
+                <Image src={WebDev} alt="Ilustración sobre una pagina web" />
               </div>
               <a href="#web-design-scroll" class="link-scroller">
                 Desarrollo Web
@@ -103,7 +104,7 @@ import WhatsApp from "../components/WhatsApp.astro";
             </div>
             <div class="col-12 col-md-4" data-aos="fade-up">
               <div class="icon-continer brand-resize mb-3">
-                <img src={Branding.src} alt="Ilustración sobre diseño" />
+                <Image src={Branding} alt="Ilustración sobre diseño" />
               </div>
               <a href="#branding-scroll" class="link-scroller"> Branding </a>
               <p class="text-muted mb-6 mb-md-0">
@@ -112,7 +113,7 @@ import WhatsApp from "../components/WhatsApp.astro";
             </div>
             <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
               <div class="icon-continer mb-3">
-                <img src={Rocket.src} alt="Ilustración de un cohete" />
+                <Image src={Rocket} alt="Ilustración de un cohete" />
               </div>
               <a href="#video-scroll" class="link-scroller">
                 Producción Audiovisual
@@ -196,7 +197,7 @@ import WhatsApp from "../components/WhatsApp.astro";
             data-aos="fade-right"
           >
             <div class="web-s-control">
-              <img src={WebTable.src} alt="Imagen de una búsqueda web" />
+              <Image src={WebTable} alt="Imagen de una búsqueda web" />
             </div>
           </div>
         </div>
@@ -275,7 +276,7 @@ import WhatsApp from "../components/WhatsApp.astro";
           title="Básico"
           description="Lo básico para tu negocio"
           price="5,499"
-          image={""}
+          image={null}
           features={[
             "Dominio Personalizado",
             "Hosting Gratis por 1 año",
@@ -291,7 +292,7 @@ import WhatsApp from "../components/WhatsApp.astro";
           title="Landing"
           description="Lo Esencial para tu negocio"
           price="8,999"
-          image={""}
+          image={null}
           features={[
             "Dominio Personalizado",
             "Hosting Gratis por 1 año",
@@ -309,7 +310,7 @@ import WhatsApp from "../components/WhatsApp.astro";
           title="Vip"
           description="Lo que tu negocio se Merece"
           price="12,999"
-          image={""}
+          image={null}
           features={[
             "Dominio Personalizado",
             "Hosting Gratis por 1 año",
@@ -339,7 +340,7 @@ import WhatsApp from "../components/WhatsApp.astro";
           title="Mi Tienda"
           description="Lo Esencial para tu negocio"
           price="19,999"
-          image={""}
+          image={null}
           features={[
             "Dominio Personalizado",
             "Hosting Gratis por 1 año",
@@ -362,7 +363,7 @@ import WhatsApp from "../components/WhatsApp.astro";
             title="WhatsApp Business"
             description="Convierte cada conversación en una oportunidad de ventas."
             price="5,999"
-            image={WhatsappBuisness.src}
+            image={WhatsappBuisness}
             features={[
               "Configuración de Plataforma",
               "Diseño de Catalogo",
@@ -378,7 +379,7 @@ import WhatsApp from "../components/WhatsApp.astro";
             title="Google My Business"
             description="No dejes que tu negocio se pierda en las búsquedas locales."
             price="4,999"
-            image={GoogleBusiness.src}
+            image={GoogleBusiness}
             features={[
               "Verificación de tu Negocio",
               "Configuración del Perfil",
@@ -529,11 +530,11 @@ import WhatsApp from "../components/WhatsApp.astro";
             class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start"
             data-aos="fade-right"
           >
-            <img
+            <Image
               loading="lazy"
-              src={BrandingImage.src}
+              src={BrandingImage}
               alt="Ilustracion sobre Branding Creativo"
-              class="mb-6 mb-md-0 w-100"
+              class="mb-6 mb-md-0 w-100 h-auto"
             />
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-2">
@@ -718,6 +719,7 @@ import WhatsApp from "../components/WhatsApp.astro";
 
   .web-s-control img {
     width: 100%;
+    height: auto;
   }
 
   .pricing-ribbon {
@@ -771,8 +773,6 @@ import WhatsApp from "../components/WhatsApp.astro";
     background-color: #530bff14;
   }
 
-  
-
   .icon-labs {
     color: #6039bd;
     font-size: 1.6rem;
@@ -815,6 +815,9 @@ import WhatsApp from "../components/WhatsApp.astro";
     text-decoration: none;
   }
 
+  .button-knowus:active {
+    background-color: rgba(51, 94, 234, 0.1) !important;
+  }
   @media (max-width: 992px) {
     .videos-img-resize {
       width: 72%;
@@ -831,4 +834,3 @@ import WhatsApp from "../components/WhatsApp.astro";
     }
   }
 </style>
-

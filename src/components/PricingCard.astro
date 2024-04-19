@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+
 interface Props {
   title: string;
   description: string;
   price: string;
   features: string[];
-  image: string;
+  image: ImageMetadata;
   fade: string;
 }
 
@@ -25,10 +27,9 @@ const { title, description, price, features, image, fade } = Astro.props;
 
     <div class="top-card-content">
 
-      { image !== '' ? 
-        <img
-          loading="lazy"
-          src={ image }
+      { image !== null ? 
+        <Image
+          src={image}
           alt="WhatsApp business logo"
           class="card-mini-img"
         />
@@ -36,7 +37,7 @@ const { title, description, price, features, image, fade } = Astro.props;
         <></>
       }
       
-      <div class={'title-card-service ' + (image === '' ? 'pt-8' : '')}>
+      <div class={'title-card-service ' + (image === null ? 'pt-8' : '')}>
         <h2 class="mb-1">{ title }</h2>
         <p class="text-muted text-start">
           { description }

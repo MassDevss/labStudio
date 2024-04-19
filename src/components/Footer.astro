@@ -1,4 +1,5 @@
 ---
+import {Image} from "astro:assets";
 import LabsLogo from "../img/labstudio/usBrand/logo-purple.png";
 import Show from "./helpers/Show.astro";
 
@@ -24,9 +25,8 @@ const actualYear = new Date().getFullYear();
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
-          <img
-            loading="lazy"
-            src={LabsLogo.src}
+          <Image
+            src={LabsLogo}
             alt="LabStudio logo"
             class="footer-brand lab-logo aos-init aos-animate"
           />
