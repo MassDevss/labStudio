@@ -1,0 +1,75 @@
+---
+import BlogEntryCard from "../components/BlogEntryCard.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import SubPageLayout from "../layouts/SubPageLayout.astro";
+
+
+---
+
+<SubPageLayout
+  title=""
+  ogTitle=""
+  description=""
+  ogDescription=""
+  keywords=""
+>
+  <Nav />
+
+  <div class="w-100 d-flex flex-column justify-content-center align-items-center pb-11">
+    <div class="blog-container">
+      <h1>Post's Recientes</h1>
+
+
+      <div class="row row-cols-1 row-cols-md-2 gy-5 gx-6 pt-6">
+        <BlogEntryCard
+          title="Titulo del Post"
+          date="12 de Julio, 2021"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien."
+          image="/images/blog/1.jpg"
+          link="/blog/post"
+        />
+        <BlogEntryCard
+          title="Titulo del Post"
+          date="12 de Julio, 2021"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien."
+          image="/images/blog/1.jpg"
+          link="/blog/post"
+        />
+        <BlogEntryCard
+          title="Titulo del Post"
+          date="12 de Julio, 2021"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien."
+          image="/images/blog/1.jpg"
+          link="/blog/post"
+        />
+        <BlogEntryCard
+          title="Titulo del Post"
+          date="12 de Julio, 2021"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien."
+          image="/images/blog/1.jpg"
+          link="/blog/post"
+        />
+      </div>
+
+    </div>
+  </div>
+
+  <Footer
+    useMap={false}
+  />
+</SubPageLayout>
+
+
+<style>
+  .blog-container {
+    padding-top: 4rem;
+    width: 800px;
+  }
+
+  .blog-container h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+</style>

@@ -1,14 +1,14 @@
 ---
 
 import { Image } from "astro:assets";
-import NavLogo from "../img/labstudio/usBrand/logo-purple.png";
+import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
 
 ---
 
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="/" data-aos="fade-in">
         <Image src={NavLogo} alt="labstudio logo" class="lab-logo mb-2" />
       </a>
       <button
@@ -48,7 +48,9 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.png";
               </svg>
             </button>
           </div>
-          <a class="nav-link" href="/fotografia">Fotografia</a>
+          <a class="nav-link" data-aos="fade-in" href="/">Inicio</a>
+          <a class="nav-link" data-aos="fade-in" data-aos-delay="50" href="/fotografia">Fotografia</a>
+          <a class="nav-link" data-aos="fade-in" data-aos-delay="100" href="/blog">Blog</a>
           <!-- <a class="nav-link" href="#">Desarrollo Web</a> -->
           <!-- <a class="nav-link" href="#">Video</a> -->
           <!-- <a class="nav-link" href="#">Diseño</a> -->
@@ -58,7 +60,32 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.png";
   </nav>
 </header>
 
+<script>
+  const allLinks = document.querySelectorAll(".nav-link");
+
+  allLinks.forEach((link) => {
+    link.getAttribute("href") === window.location.pathname
+      ? link.classList.add("actual-link")
+      : link.classList.remove("actual-link");
+  });
+</script>
+
 <style>
+  .actual-link {
+    color: #633fb9;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+  }
+  .actual-link::after {
+    /* content: "";
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: #633fb9;
+    position: relative; */
+  }
   .lab-logo {
     width: 220px;
     height: auto;
