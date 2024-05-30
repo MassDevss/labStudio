@@ -64,9 +64,16 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
   const allLinks = document.querySelectorAll(".nav-link");
 
   allLinks.forEach((link) => {
-    link.getAttribute("href") === window.location.pathname
-      ? link.classList.add("actual-link")
-      : link.classList.remove("actual-link");
+    link.classList.remove("actual-link");
+
+    if (link.getAttribute("href") === window.location.pathname) {
+      link.classList.add("actual-link");
+    }
+    
+    if (window.location.toString().includes('blog') && link.getAttribute("href") === '/blog') {
+      link.classList.add("actual-link");
+    }
+
   });
 </script>
 
