@@ -39,7 +39,6 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
     <link rel="shortcut icon" type="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link rel="stylesheet" href="/styles/libs.bundle.css" />
     <link rel="stylesheet" href="/styles/theme.bundle.css" />
     <style is:global>
       .lab-back-color {
@@ -62,6 +61,4 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
   <body>
     <slot />
   </body>
-  <script src="../js/theme.bundle.js"></script>
-  <script src="../js/vendor.bundle.js"></script>
 </html>

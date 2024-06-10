@@ -44,14 +44,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
             <Image
+              id="welcome-image"
               src={IntroImage}
               alt="Ilustracion de introducción en la portada"
               class="img-introduction img-fluid mb-6 mb-md-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
             />
           </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
             <h1 class="display-3 text-center text-md-start">
               Bienvenido a <span class="lab-font-color">LABSTUDIO</span>. <br />
             </h1>
@@ -85,11 +84,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
       <div class="py-8 py-md-11 border-bottom">
         <div class="container">
           <div class="row">
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div id="services-intro-1" class="col-12 col-md-4">
               <div class="icon-continer mb-3">
                 <Image src={WebDev} alt="Ilustración sobre una pagina web" />
               </div>
@@ -101,7 +96,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
                 nuevos clientes.
               </p>
             </div>
-            <div class="col-12 col-md-4" data-aos="fade-up">
+            <div id="services-intro-2" class="col-12 col-md-4">
               <div class="icon-continer brand-resize mb-3">
                 <Image src={Branding} alt="Ilustración sobre diseño" />
               </div>
@@ -110,7 +105,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
                 Diseñamos el futuro de tu negocio con estrategia y creatividad.
               </p>
             </div>
-            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div id="services-intro-3" class="col-12 col-md-4">
               <div class="icon-continer mb-3">
                 <Image src={Rocket} alt="Ilustración de un cohete" />
               </div>
@@ -129,15 +124,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
 
     <section class="pt-8 pt-md-11 bg-gray-200">
       <div class="container">
-        <div
-          class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11"
-        >
-          <div class="col-12 col-md-6 order-md-2" data-aos="fade-in" data-aos-delay="100">
+        <div class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11">
+          <div class="col-12 col-md-6 order-md-2">
             <h2>
               Creamos tu pagina web<br />Una web para
               <span
+                id="for-your-text"
                 class="lab-font-color"
-                data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "ti..."]}'
               >
               </span>
             </h2>
@@ -153,17 +146,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             <div class="row">
               <div class="col-12 col-lg-6">
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <div id="check-1" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color">Creativo</p>
                 </div>
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <div id="check-2" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color mb-lg-0">Original</p>
@@ -171,17 +160,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
               <div class="col-12 col-lg-6 mb-6 mb-md-0">
                 <div class="d-flex">
-                  <span
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <span id="check-3" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4">
                     <i class="fe fe-check"></i>
                   </span>
                   <p class="lab-font-color">Funcional</p>
                 </div>
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4"
-                  >
+                  <div id="check-4" class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color mb-0">Efectivo</p>
@@ -189,7 +174,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-in" data-aos-delay="100">
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
             <div class="web-s-control">
               <Image src={WebTable} alt="Imagen de una búsqueda web" />
             </div>
@@ -201,7 +186,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section class="pt-8 pt-md-11 bg-gray-200" id="web-design-scroll">
       <div class="container pb-8">
         <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-in" data-aos-delay="100">
+          <div class="col-12 col-md-7 col-lg-6">
             <h2>
               Diseño de <br /><span class="lab-font-color"
                 >Tiendas en linea</span
@@ -213,7 +198,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </p>
 
             <div class="d-flex">
-              <div class="icon icon-labs">
+              <div id="eye-pages" class="icon icon-labs">
                 <span class="fe fe-eye"></span>
               </div>
               <div class="ms-5">
@@ -226,7 +211,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
             </div>
             <div class="d-flex">
-              <div class="icon icon-labs">
+              <div id="clock-pages" class="icon icon-labs">
                 <span class="fe fe-clock"></span>
               </div>
               <div class="ms-5">
@@ -240,7 +225,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
           <div class="col-12 col-md-5 col-lg-6">
-            <div class="position-relative" data-aos="fade-in" data-aos-delay="100">
+            <div class="position-relative">
               <div class="img-skewed img-skewed-start">
                 <Image
                   src={Store}
@@ -376,10 +361,10 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     </section>
 
     <!-- BRANDS -->
-    <div class="py-5 py-md-6 border-bottom" data-aos="fade-up">
+    <div class="py-5 py-md-6 border-bottom">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0" data-aos="fade-up">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -389,11 +374,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -403,11 +384,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -417,11 +394,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -431,11 +404,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="350"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -445,11 +414,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="450"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -465,7 +430,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section id="video-scroll" class="pt-12 pt-md-13 bg-gray-200">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center" data-aos="fade-up">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center">
             <Image
               loading="lazy"
               src={VideoImage}
@@ -487,11 +452,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             <div class="d-flex">
               <div class="pe-5">
                 <h3 class="mb-0">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="100"
-                    data-aos
-                    data-aos-id="countup:in">0</span>%
+                  <span>0</span>%
                 </h3>
                 <p class="text-gray-700 mb-0">Satisfaction</p>
               </div>
@@ -505,7 +466,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
       <div class="container pb-6">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start" data-aos="fade-up">
+          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start">
             <Image
               loading="lazy"
               src={BrandingImage}
@@ -531,8 +492,86 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
   </main>
   <Footer useMap={true} />
   <WhatsApp />
-  <script src="../js/map.js"></script>
 </IndexLayout>
+
+<script>
+  import { fadeUp, fadeUpOnView, elasticSpawn } from "../helpers/animations";
+  import { gsap } from "gsap";
+
+  // welcome image fade
+  fadeUp("#welcome-image", 0.5);
+
+  // welcome services
+  fadeUp("#services-intro-1", 0.5, 0.2);
+  fadeUp("#services-intro-2", 0.5, 0.6);
+  fadeUp("#services-intro-3", 0.5, 1);
+
+  // web design
+  // fadeUpOnView(["#web-design-scroll h2", "#web-design-scroll p", "#web-design-scroll .d-flex"], 0.5, 8);
+
+  const typeAnimation = () => {
+    gsap.to('#for-your-text', {
+      text: "tu Empresa...",
+      duration: 1,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 2,
+    });
+
+    gsap.to('#for-your-text', {
+      text: "tu Proyecto...",
+      duration: 1,
+      delay: 3,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 5,
+    });
+
+    gsap.to('#for-your-text', {
+      text: "ti...",
+      duration: 1,
+      delay: 7,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 9,
+    });
+  }
+
+  typeAnimation();
+
+  // interval for character type effect
+  setInterval(() => {
+    typeAnimation();
+  }, 11000);
+
+  elasticSpawn("#check-1",0.8, 0.2);
+  elasticSpawn("#check-2",0.8, 0.5);
+  elasticSpawn("#check-3",0.8, 0.8);
+  elasticSpawn("#check-4",0.8, 1.1);
+
+  elasticSpawn("#eye-pages", 1, 0.2);
+  elasticSpawn("#clock-pages", 1, 0.4);
+  
+
+</script>
 
 <style>
   html,
