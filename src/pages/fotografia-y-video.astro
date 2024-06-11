@@ -69,7 +69,7 @@ import MCAVertical from '../img/clients/mca/2.webp';
       <div class="col-12 col-md-7">
         <section class="pb-8 pt-md-8 pb-md-8">
           <a
-            class="d-block"
+            class="d-block photo-v-1 photo-v"
             data-bigpicture={'{"imgSrc":"' + CMVertical.src + '"}'}
             href="#"
           >
@@ -81,7 +81,7 @@ import MCAVertical from '../img/clients/mca/2.webp';
             />
           </a>
           <a
-          class="d-block mt-7"
+          class="d-block mt-7 photo-v-2 photo-v"
           data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
           href="#"
         >
@@ -93,7 +93,7 @@ import MCAVertical from '../img/clients/mca/2.webp';
           />
         </a>
           <a
-            class="d-block mt-7"
+            class="d-block mt-7 photo-v-3 photo-v"
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
             href="#"
           >
@@ -168,5 +168,52 @@ import MCAVertical from '../img/clients/mca/2.webp';
   <WhatsApp />
 </SubPageLayout>
 
+<script>
+  import gsap from "gsap"
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger)
+
+  gsap.from('.photo-v-1', {
+    scrollTrigger: {
+      trigger: '.photo-v-1',
+      toggleActions: 'play none none none',
+    },
+    ease: 'sine',
+    opacity: 0,
+    duration: 0.6,
+    scale: 0,
+  })
+
+  gsap.from('.photo-v-2', {
+    scrollTrigger: {
+      trigger: '.photo-v-2',
+      toggleActions: 'play none none none',
+    },
+    ease: 'sine',
+    opacity: 0,
+    duration: 0.6,
+    scale: 0,
+  })
+
+  gsap.from('.photo-v-3', {
+    scrollTrigger: {
+      trigger: '.photo-v-3',
+      toggleActions: 'play none none none',
+      onUpdate: self => {
+        console.log('update', self.progress)
+      }
+    },
+    ease: 'sine',
+    opacity: 0,
+    duration: 0.6,
+    scale: 0,
+  })
+
+</script>
+
 <style>
+  .photo-v {
+    aspect-ratio: 2/3;
+  }
 </style>

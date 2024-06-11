@@ -60,6 +60,8 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
 </header>
 
 <script>
+  import gsap from "gsap";
+
   const allLinks = document.querySelectorAll(".nav-link");
 
   allLinks.forEach((link) => {
@@ -74,6 +76,22 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
     }
 
   });
+
+  gsap.from(".navbar", {
+    duration: 0.8,
+    y: -100,
+    opacity: 0,
+    ease: "power2.out",
+  });
+
+  gsap.from(".nav-link", {
+    duration: 0.8,
+    y: -100,
+    opacity: 0,
+    ease: "power2.out",
+    stagger: 0.1,
+  });
+
 </script>
 
 <style>
