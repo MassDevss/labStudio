@@ -175,10 +175,6 @@ import MCAVertical from '../img/clients/mca/2.webp';
   gsap.registerPlugin(ScrollTrigger)
 
   gsap.from('.photo-v-1', {
-    scrollTrigger: {
-      trigger: '.photo-v-1',
-      toggleActions: 'play none none none',
-    },
     ease: 'sine',
     opacity: 0,
     duration: 0.6,
@@ -187,8 +183,13 @@ import MCAVertical from '../img/clients/mca/2.webp';
 
   gsap.from('.photo-v-2', {
     scrollTrigger: {
+      once: true,
+      end: '+=100',
       trigger: '.photo-v-2',
       toggleActions: 'play none none none',
+      onUpdate: ({progress, direction, isActive}) => {
+        console.log(progress, direction, isActive)
+      }
     },
     ease: 'sine',
     opacity: 0,
@@ -198,11 +199,10 @@ import MCAVertical from '../img/clients/mca/2.webp';
 
   gsap.from('.photo-v-3', {
     scrollTrigger: {
+      once: true,
+      end: '+=100',
       trigger: '.photo-v-3',
       toggleActions: 'play none none none',
-      onUpdate: self => {
-        console.log('update', self.progress)
-      }
     },
     ease: 'sine',
     opacity: 0,

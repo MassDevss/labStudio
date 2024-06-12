@@ -35,13 +35,9 @@ export const elasticSpawn = (targetId: string, duration: number = 0.8, delay: nu
       opacity: 1,
       scale: 1,
       scrollTrigger: {
+      end: '+=100',
         once: true,
         trigger: targetId,
-        onUpdate: (self) => {
-          console.log(self);
-          
-          console.log(self.end, 'elasticSpawn');
-        },
       },
       delay: delay,
     }
