@@ -1,54 +1,56 @@
-# Astro Starter Kit: Basics
+# Labstudio Media Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al repositorio de la landing page de Labstudio Media, Somos una agencia de marketing digital dedicada a crear Sitios web increíbles y contenido audiovisual como videos y fotografía ubicada en Los Mochis, Sinaloa. Este proyecto está construido utilizando [ASTRO](https://astro.build) para la estructura del sitio y [GSAP](https://greensock.com/gsap/) para las animaciones.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+La landing page de Labstudio Media está diseñada para ofrecer a los visitantes una experiencia interactiva y dinámica. Utiliza animaciones fluidas y contenido optimizado para destacar los servicios y proyectos de la agencia.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías Utilizadas
 
-## 🚀 Project Structure
+- **ASTRO**: Un moderno framework para construir sitios web rápidos y optimizados.
+- **GSAP**: Biblioteca de JavaScript para crear animaciones de alto rendimiento.
+- **HTML5 y CSS3**: Para la estructura y el estilo del sitio web.
+- **JavaScript**: Para funcionalidades interactivas adicionales.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Sigue estos pasos para configurar el proyecto en tu entorno local:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/ManuelsSaNt/labStudio
+    ```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+2. Navega al directorio del proyecto:
+    ```bash
+    cd labStudio
+    ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-## 🧞 Commands
+4. Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
 
-All commands are run from the root of the project, from a terminal:
+5. Abre tu navegador y visita `http://localhost:4321` para ver el sitio en funcionamiento.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Uso
 
-## 👀 Want to learn more?
+Una vez que el proyecto esté instalado y ejecutándose, puedes modificar los archivos en el directorio `src` para personalizar el contenido y las animaciones de la landing page.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contacto
+
+Para cualquier consulta adicional, puedes contactarnos a través de:
+
+- **Email**: labs.studio.creative@gmail.com
+
+Visita nuestro [sitio web](https://labstudiomedia.com) para más información sobre nuestros servicios.
+
+---
+
+¡Gracias por visitar el repositorio de la landing page de Labstudio Media!
