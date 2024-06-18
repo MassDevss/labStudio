@@ -3,7 +3,6 @@
 import IndexLayout from "../layouts/IndexLayout.astro";
 import Nav from "../components/shared/Nav.astro";
 import Footer from "../components/shared/Footer.astro";
-import Image from "astro/components/Image.astro";
 import { Fade } from "../enums/Fade";
 import WhatsApp from "../components/shared/WhatsApp.astro";
 import Card from "../components/index/PricingCard.astro";
@@ -27,6 +26,7 @@ import TonerLogo from "../img/labstudio/brands/brands-toner.webp";
 import TotalLogo from "../img/labstudio/brands/brands-total.webp";
 import SavingLogo from "../img/labstudio/brands/brands-pharmacy.png";
 import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
+import { Image } from "astro:assets";
 
 ---
 
@@ -493,7 +493,11 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
 </IndexLayout>
 
 <script>
-  import { gsap } from "gsap";
+  import gsap from "gsap";
+  import { TextPlugin, ScrollTrigger } from "gsap/all";
+
+  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(TextPlugin)
 
   gsap.from('#welcome-image', {
     opacity: 0,
