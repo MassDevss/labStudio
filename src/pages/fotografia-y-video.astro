@@ -8,13 +8,12 @@ import WhatsApp from "../components/WhatsApp.astro";
 import { Image } from "astro:assets";
 
 // images
-import CMVertical from '../img/clients/cm/1.webp';
-import CMHorizontal from '../img/clients/cm/2.webp';
-import VWVertical from '../img/clients/vw/1.webp';
-import VWHorizontal from '../img/clients/vw/2.webp';
-import MCAHorizontal from '../img/clients/mca/1.webp';
-import MCAVertical from '../img/clients/mca/2.webp';
-
+import CMVertical from "../img/clients/cm/1.webp";
+import CMHorizontal from "../img/clients/cm/2.webp";
+import VWVertical from "../img/clients/vw/1.webp";
+import VWHorizontal from "../img/clients/vw/2.webp";
+import MCAHorizontal from "../img/clients/mca/1.webp";
+import MCAVertical from "../img/clients/mca/2.webp";
 ---
 
 <SubPageLayout
@@ -31,10 +30,7 @@ import MCAVertical from '../img/clients/mca/2.webp';
         class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100"
         style="top: 0;"
       >
-        <aside
-          class="py-4 py-md-6 position-relative"
-          style="top: -100px"
-        >
+        <aside class="py-4 py-md-6 position-relative" style="top: -100px">
           <div class="img-fluid mb-4 text-body">
             <h1>Fotografia</h1>
           </div>
@@ -79,17 +75,16 @@ import MCAVertical from '../img/clients/mca/2.webp';
             />
           </a>
           <a
-          class="d-block mt-7 photo-v-2 photo-v"
-          data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
-          href="#"
-        >
-          <Image
-            data-aos="fade-in"
-            class="img-fluid rounded"
-            src={VWVertical}
-            alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
-          />
-        </a>
+            class="d-block mt-7 photo-v-2 photo-v"
+            data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
+            href="#"
+          >
+            <Image
+              class="img-fluid rounded"
+              src={VWVertical}
+              alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
+            />
+          </a>
           <a
             class="d-block mt-7 photo-v-3 photo-v"
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
@@ -134,7 +129,8 @@ import MCAVertical from '../img/clients/mca/2.webp';
         <div class="col-12 col-md mb-2 text-center">
           <h2 class="mb-0">Conoce Nuestro Portafolio</h2>
           <p class="mb-0 text-gray-700">
-            Explore una selección de nuestro trabajo fotográfico reciente y vea cómo podemos elevar su marca.
+            Explore una selección de nuestro trabajo fotográfico reciente y vea
+            cómo podemos elevar su marca.
           </p>
         </div>
       </div>
@@ -165,47 +161,46 @@ import MCAVertical from '../img/clients/mca/2.webp';
 </SubPageLayout>
 
 <script>
-  import gsap from "gsap"
+  import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from('.photo-v-1', {
-    ease: 'sine',
+  gsap.from(".photo-v-1", {
+    ease: "sine",
     opacity: 0,
     duration: 0.6,
     scale: 0,
-  })
+  });
 
-  gsap.from('.photo-v-2', {
+  gsap.from(".photo-v-2", {
     scrollTrigger: {
       once: true,
-      end: '+=100',
-      trigger: '.photo-v-2',
-      toggleActions: 'play none none none',
-      onUpdate: ({progress, direction, isActive}) => {
-        console.log(progress, direction, isActive)
-      }
+      end: "+=100",
+      trigger: ".photo-v-2",
+      toggleActions: "play none none none",
+      onUpdate: ({ progress, direction, isActive }) => {
+        console.log(progress, direction, isActive);
+      },
     },
-    ease: 'sine',
+    ease: "sine",
     opacity: 0,
     duration: 0.6,
     scale: 0,
-  })
+  });
 
-  gsap.from('.photo-v-3', {
+  gsap.from(".photo-v-3", {
     scrollTrigger: {
       once: true,
-      end: '+=100',
-      trigger: '.photo-v-3',
-      toggleActions: 'play none none none',
+      end: "+=100",
+      trigger: ".photo-v-3",
+      toggleActions: "play none none none",
     },
-    ease: 'sine',
+    ease: "sine",
     opacity: 0,
     duration: 0.6,
     scale: 0,
-  })
-
+  });
 </script>
 
 <style>
