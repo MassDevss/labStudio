@@ -1,0 +1,100 @@
+---
+import Footer from "./Footer.astro";
+import Nav from "./Nav.astro";
+import type BlogContent from "../interfaces/BlogContentList";
+import SubPageLayout from "../layouts/SubPageLayout.astro";
+
+interface Props {
+  title: string;
+  ogTitle: string;
+  description: string;
+  ogDescription: string;
+  keywords: string;
+  createdBy: string;
+  jobTitle: string;
+  date: string;
+  content: BlogContent[];
+}
+
+const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle, date, content } = Astro.props;
+
+---
+
+<SubPageLayout
+  title={ 'LABSTUDIO | ' + title }
+  ogTitle={ ogTitle }
+  description={ description }
+  ogDescription={ ogDescription }
+  keywords={ keywords }
+>
+  <Nav />
+
+  <div class="w-100 d-flex flex-column justify-content-center align-items-center pb-11">
+    <div class="blog-container">
+      <h1 class="m-0">{ title }</h1>
+      <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ jobTitle }</span> • <span>{ date }</span></p>
+    
+      <div class="w-100 d-flex align-items-center flex-column pt-6">
+
+        {
+          content.map((piece) => (
+            <div class="w-100 d-flex flex-column">
+              <h2 class="h2 text-start">{ piece.subTitle }</h2>
+              <p>{ piece.text }</p>
+
+              {
+                piece.img && (
+                  <img src={piece.img } alt={ 'imagen sobre: ' + piece.subTitle } class="w-100" />
+                )
+              }
+            </div>
+          ))
+        }
+
+      </div>
+
+    </div>
+  </div>
+
+  <Footer useMap={ false }/>
+</SubPageLayout>
+
+
+<style>
+  .blog-container {
+    padding-top: 4rem;
+    width: 800px;
+  }
+
+  .blog-container h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 862px) {
+    .blog-container {
+      width: 100%;
+      padding: 0 4rem;
+    }
+
+    .blog-container h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .blog-container {
+      padding: 0 2rem;
+    }
+
+    .blog-container h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    .blog-container {
+      padding: 0 1rem;
+    }
+  }
+</style>

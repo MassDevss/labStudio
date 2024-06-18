@@ -1,6 +1,6 @@
 ---
 import {Image} from "astro:assets";
-import LabsLogo from "../img/labstudio/usBrand/logo-purple.png";
+import LabsLogo from "../img/labstudio/usBrand/logo-purple.webp";
 import Show from "./helpers/Show.astro";
 
 interface Props {
@@ -12,7 +12,7 @@ const { useMap } = Astro.props;
 const actualYear = new Date().getFullYear();
 ---
 
-<footer>
+<footer class="w-100">
   <Show show={useMap}>
     <div class="d-flex justify-content-center">
       <div class="col-12 d-flex justify-content-center">
@@ -26,6 +26,8 @@ const actualYear = new Date().getFullYear();
       <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
           <Image
+            width={220}
+            height={73.1}
             src={LabsLogo}
             alt="LabStudio logo"
             class="footer-brand lab-logo aos-init aos-animate"
@@ -119,14 +121,19 @@ const actualYear = new Date().getFullYear();
     </div>
     <div class="container d-flex justify-content-center mt-2 pt-6 pb-2">
       <p class="text-brand">
-        2020-
+        2020 -
         {actualYear} LABSTUDIO &#169;
       </p>
     </div>
   </div>
 </footer>
+<script src="../js/map.js"></script>
 
 <style>
+  #map {
+    width: 100%;
+  }
+
   .footer-brand {
     position: relative;
     left: -1rem;

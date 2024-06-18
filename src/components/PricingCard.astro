@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import {type ImageMetadata} from "astro";
 
 interface Props {
   title: string;
@@ -14,7 +15,7 @@ const { title, description, price, features, image, fade } = Astro.props;
 
 ---
 
-<article class="card-width" data-aos={fade}>
+<article data-aos={fade}>
   <div class="position-relative card card-pricing-new">
     <div class="card-micro-title">
       <p
@@ -37,7 +38,7 @@ const { title, description, price, features, image, fade } = Astro.props;
         <></>
       }
       
-      <div class={'title-card-service ' + (image === null ? 'pt-8' : '')}>
+      <div class={'title-card-service ' + (image === null ? 'padding-control' : '')}>
         <h3 class="mb-1">{ title }</h3>
         <p class="text-muted text-start">
           { description }
@@ -79,9 +80,6 @@ const { title, description, price, features, image, fade } = Astro.props;
 </article>
 
 <style>
-  .card-width {
-    width: 21rem;
-  }
   .card-pricing-new {
     width: 20.5rem;
     position: relative;
@@ -89,7 +87,6 @@ const { title, description, price, features, image, fade } = Astro.props;
     transition-property: box-shadow, bottom;
     transition-duration: 0.5s;
     border-radius: 1rem;
-    /* box-shadow: 2px 4px 9px 0rem #00000023; */
   }
   .card-pricing-title {
     width: 100%;
@@ -97,6 +94,9 @@ const { title, description, price, features, image, fade } = Astro.props;
     justify-content: center;
   }
 
+  .padding-control {
+    padding-top: 3rem !important;
+  }
   .card-pricing-title h5 {
     background-color: #633fb9;
     border-radius: 2rem;
@@ -118,11 +118,12 @@ const { title, description, price, features, image, fade } = Astro.props;
   }
   .list-group-pricing-new {
     list-style: none;
-    position: relative;
-    left: 1.4rem;
   }
   .card-list-item {
     font-size: 1rem;
+    width: fit-content;
+    position: relative;
+    left: 1.4rem;
   }
 
   .check-icon {
@@ -200,5 +201,18 @@ const { title, description, price, features, image, fade } = Astro.props;
     background-color: #f5faff;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+  }
+
+  @media screen and (max-width: 377px) {
+    .card-pricing-new {
+      width: 19rem;
+    }
+    .card-list-item {
+      left: 1rem;
+    }
+    
+  }
+  @media screen and (max-width: 332px) {
+    
   }
 </style>

@@ -31,8 +31,8 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
 ---
 
 <IndexLayout
-  title="LABSTUDIO | Soluciones Digitales"
-  ogTitle="LABSTUDIO | Soluciones Digital"
+  title="LABSTUDIO | Marketing Digital"
+  ogTitle="LABSTUDIO | Marketing Digital"
   description="En Labstudiomedia ofrecemos servicios de fotografía profesional, producción de video, desarrollo web personalizado y videos aéreos con dron. Nuestro enfoque centrado en el cliente y nuestra pasión por la creatividad nos distinguen. Con cada proyecto, nos comprometemos a brindar soluciones creativas que impulsen el éxito de tu marca. "
   ogDescription="En Labstudiomedia ofrecemos servicios de fotografía, producción de video, desarrollo web y videos aéreos con dron en Los Mochis, Sinaloa. Destaca con nuestra experiencia en medios digitales. Contáctanos hoy."
   keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
@@ -44,16 +44,15 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
             <Image
+              id="welcome-image"
               src={IntroImage}
               alt="Ilustracion de introducción en la portada"
-              class="img-introduction img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              class="img-introduction img-fluid mb-6 mb-md-0"
             />
           </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
             <h1 class="display-3 text-center text-md-start">
-              Bienvenido a <span class="lab-font-color">LABSTUDIO</span>. <br />
+              Bienvenido a <span class="lab-font-color">LABSTUDIO</span>
             </h1>
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
               Vemos un futuro donde todos los negocios físicos tienen presencia
@@ -82,14 +81,10 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
           </div>
         </div>
       </div>
-      <div class="py-8 py-md-11 border-bottom">
+      <div class="py-10 py-md-11 border-bottom">
         <div class="container">
           <div class="row">
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="col-12 col-md-4 services-intro">
               <div class="icon-continer mb-3">
                 <Image src={WebDev} alt="Ilustración sobre una pagina web" />
               </div>
@@ -101,7 +96,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
                 nuevos clientes.
               </p>
             </div>
-            <div class="col-12 col-md-4" data-aos="fade-up">
+            <div class="col-12 col-md-4 services-intro">
               <div class="icon-continer brand-resize mb-3">
                 <Image src={Branding} alt="Ilustración sobre diseño" />
               </div>
@@ -110,7 +105,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
                 Diseñamos el futuro de tu negocio con estrategia y creatividad.
               </p>
             </div>
-            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="col-12 col-md-4 services-intro">
               <div class="icon-continer mb-3">
                 <Image src={Rocket} alt="Ilustración de un cohete" />
               </div>
@@ -129,20 +124,16 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
 
     <section class="pt-8 pt-md-11 bg-gray-200">
       <div class="container">
-        <div
-          class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11"
-        >
-          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
-            <!-- Heading -->
+        <div class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11">
+          <div class="col-12 col-md-6 order-md-2">
             <h2>
               Creamos tu pagina web<br />Una web para
               <span
+                id="for-your-text"
                 class="lab-font-color"
-                data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "ti..."]}'
               >
               </span>
             </h2>
-            <!-- Text -->
             <p class="fs-lg text-muted mb-6">
               "En un mundo digitalizado, tu presencia en línea es fundamental.
               Es por eso que en
@@ -152,20 +143,16 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               digital más efectiva lo que se traduce en mas ventas para tu negocio."
             </p>
 
-            <div class="row">
+            <div class="row checks-container">
               <div class="col-12 col-lg-6">
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <div class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color">Creativo</p>
                 </div>
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <div class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color mb-lg-0">Original</p>
@@ -173,17 +160,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
               <div class="col-12 col-lg-6 mb-6 mb-md-0">
                 <div class="d-flex">
-                  <span
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4"
-                  >
+                  <span class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
                     <i class="fe fe-check"></i>
                   </span>
                   <p class="lab-font-color">Funcional</p>
                 </div>
                 <div class="d-flex">
-                  <div
-                    class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4"
-                  >
+                  <div class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4 check-boing">
                     <i class="fe fe-check"></i>
                   </div>
                   <p class="lab-font-color mb-0">Efectivo</p>
@@ -191,10 +174,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
             </div>
           </div>
-          <div
-            class="col-12 col-md-6 col-lg-5 order-md-1"
-            data-aos="fade-right"
-          >
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
             <div class="web-s-control">
               <Image src={WebTable} alt="Imagen de una búsqueda web" />
             </div>
@@ -206,19 +186,19 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section class="pt-8 pt-md-11 bg-gray-200" id="web-design-scroll">
       <div class="container pb-8">
         <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
+          <div class="col-12 col-md-7 col-lg-6">
             <h2>
-              Diseño de <br /><span class="lab-font-color"
-                >Tiendas en linea</span
+              Creamos tu<br /><span class="lab-font-color"
+                >Tienda en linea</span
               >
             </h2>
 
             <p class="fs-lg text-muted mb-6">
-              Creamos tu tienda en linea para que tus productos lleguen a nuevos clientes.
+              Tu negocio puede llegar a clientes en todo el mundo, no solo localmente.
             </p>
 
             <div class="d-flex">
-              <div class="icon icon-labs">
+              <div id="eye-pages" class="icon icon-labs">
                 <span class="fe fe-eye"></span>
               </div>
               <div class="ms-5">
@@ -231,26 +211,20 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               </div>
             </div>
             <div class="d-flex">
-              <div class="icon icon-labs">
+              <div id="clock-pages" class="icon icon-labs">
                 <span class="fe fe-clock"></span>
               </div>
               <div class="ms-5">
                 <h3 class="mb-1 h4">Optimizamos tu pagina</h3>
                 <p class="text-muted mb-6 mb-md-0 justify-text">
-                  Implementamos estrategias de SEO (Search Engine Optimization)
-                  para el posicionamiento, visibilidad y relevancia de tu página
-                  web mostrándose dentro de las primeras posiciones.
+                  Google favorece los sitios web con diseño responsivo, ya que ofrecen una mejor experiencia de usuario. Esto puede traducirse en una clasificación más alta en los resultados de búsqueda, lo que aumenta la visibilidad de tu negocio!
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-5 col-lg-6">
-            <div
-              class="w-md-150 w-lg-130 position-relative"
-              data-aos="fade-left"
-            >
+            <div class="position-relative">
               <div class="img-skewed img-skewed-start">
-                <!-- Image -->
                 <Image
                   src={Store}
                   class="img-store-size screenshot img-fluid img-skewed-item"
@@ -263,13 +237,9 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
       </div>
     </section>
 
-    <section
-      class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200"
-    >
+    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200">
       <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
-      <div
-        class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
-      >
+      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start">
         <Card
           title="Básico"
           description="Lo básico para tu negocio"
@@ -283,7 +253,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             "Maps",
             "Botón WhatsApp",
           ]}
-          fade={Fade.RIGHT}
+          fade={Fade.UP}
         />
 
         <Card
@@ -322,18 +292,14 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             "Animaciones",
             "Integración de video",
           ]}
-          fade={Fade.LEFT}
+          fade={Fade.UP}
         />
       </div>
     </section>
 
-    <section
-      class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200"
-    >
+    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200" >
       <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
-      <div
-        class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
-      >
+      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start">
         <Card
           title="Mi Tienda"
           description="Lo Esencial para tu negocio"
@@ -370,7 +336,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               "Anuncios desde WhatsApp",
               "Implementación",
             ]}
-            fade={Fade.RIGHT}
+            fade={Fade.UP}
           />
 
           <Card
@@ -386,17 +352,17 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
               "Google Analytics",
               "Posicionamiento SEO",
             ]}
-            fade={Fade.LEFT}
+            fade={Fade.UP}
           />
         </div>
       </div>
     </section>
 
     <!-- BRANDS -->
-    <div class="py-5 py-md-6 border-bottom" data-aos="fade-up">
+    <div class="py-5 py-md-6 border-bottom">
       <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0" data-aos="fade-up">
+        <div class="row align-items-center justify-content-center past-clients-container">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -406,11 +372,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -420,11 +382,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -434,11 +392,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -448,11 +402,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="350"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -462,11 +412,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </div>
           </div>
 
-          <div
-            class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0"
-            data-aos="fade-up"
-            data-aos-delay="450"
-          >
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
             <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
               <Image
                 loading="lazy"
@@ -482,15 +428,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section id="video-scroll" class="pt-12 pt-md-13 bg-gray-200">
       <div class="container">
         <div class="row align-items-center">
-          <div
-            class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center"
-            data-aos="fade-left"
-          >
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center">
             <Image
               loading="lazy"
               src={VideoImage}
               alt="Ilustración sobre Videos"
               class="videos-img-resize img-fluid mb-6 mb-md-0"
+              style="aspect-ratio:0.5845/1"
             />
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-1">
@@ -506,11 +450,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             <div class="d-flex">
               <div class="pe-5">
                 <h3 class="mb-0">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="100"
-                    data-aos
-                    data-aos-id="countup:in">0</span>%
+                  <span>100</span>%
                 </h3>
                 <p class="text-gray-700 mb-0">Satisfaction</p>
               </div>
@@ -524,15 +464,13 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
       <div class="container pb-6">
         <div class="row align-items-center">
-          <div
-            class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start"
-            data-aos="fade-right"
-          >
+          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start">
             <Image
               loading="lazy"
               src={BrandingImage}
               alt="Ilustracion sobre Branding Creativo"
               class="mb-6 mb-md-0 w-100 h-auto"
+              style="aspect-ratio: 1.607/1"
             />
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-2">
@@ -543,7 +481,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </h2>
             <p class="fs-lg text-gray-700 mb-6">
               La magia del Branding Creativo, es Descubrir Como Elevamos el
-              potencial de tu marca a traves de la Innovación y el Diseño.
+              potencial de tu marca a través de la Innovación y el Diseño.
             </p>
           </div>
         </div>
@@ -552,17 +490,138 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
   </main>
   <Footer useMap={true} />
   <WhatsApp />
-  <script src="../js/map.js"></script>
 </IndexLayout>
+
+<script>
+  import { fadeUp, fadeUpOnView, elasticSpawn } from "../helpers/animations";
+  import { gsap } from "gsap";
+
+  // welcome image fade
+  // fadeUp("#welcome-image", 0.5);
+
+  gsap.from('#welcome-image', {
+    opacity: 0,
+    duration: 0.6
+  })
+
+  // welcome services
+  if (window.innerWidth <= 767) {
+    gsap.from(".services-intro", {
+      duration: 0.8,
+      y: 100,
+      opacity: 0,
+      ease: "power2.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        end: '+=100',
+        once: true,
+        trigger: '.services-intro',
+      },
+    });
+  }
+  else {
+    gsap.from(".services-intro", {
+      duration: 0.8,
+      y: 100,
+      opacity: 0,
+      ease: "power2.out",
+      stagger: 0.1,
+    });
+  }
+
+  const typeAnimation = () => {
+    gsap.to('#for-your-text', {
+      text: "tu Empresa...",
+      duration: 1,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 2,
+    });
+
+    gsap.to('#for-your-text', {
+      text: "tu Proyecto...",
+      duration: 1,
+      delay: 3,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 5,
+    });
+
+    gsap.to('#for-your-text', {
+      text: "ti...",
+      duration: 1,
+      delay: 7,
+    });
+
+    gsap.to('#for-your-text', {
+      text: {
+        value: "",
+        rtl: true
+      },
+      duration: 1,
+      delay: 9,
+    });
+  }
+
+  typeAnimation();
+
+  // interval for character type effect
+  setInterval(() => {
+    typeAnimation();
+  }, 11000);
+
+  gsap.fromTo(
+    '.check-boing',
+    {
+      scale: 0,
+      opacity: 0,
+    },
+    {
+      ease: "elastic",
+      duration: 0.8,
+      opacity: 1,
+      scale: 1,
+      stagger: 0.3,
+      delay: 0.2,
+      scrollTrigger: {
+        end: '+=100',
+        once: true,
+        trigger: '.checks-container',
+      },
+    }
+  );
+
+  gsap.from('.past-clients', {
+    duration: 1,
+    y: 60,
+    scrollTrigger: {
+      end: '+=100',
+      once: true,
+      trigger: '.past-clients-container',
+    },
+    opacity: 0,
+    ease: "power2.out",
+    stagger: 0.1,
+  })
+
+</script>
 
 <style>
   html,
   body {
     scroll-behavior: smooth;
-  }
-
-  #map {
-    width: 100%;
   }
 
   .card-best-pricing {
@@ -590,15 +649,6 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     padding-right: 1rem;
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
-  }
-
-  .card-pricing-new {
-    width: 20.5rem;
-    position: relative;
-    bottom: 0;
-    transition-property: box-shadow, bottom;
-    transition-duration: 0.5s;
-    border-radius: 1rem;
   }
 
   .card-mini-img {
@@ -631,19 +681,6 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     left: 1.4rem;
   }
 
-  .card-pricing {
-    width: 20.5rem;
-    position: relative;
-    bottom: 0;
-    transition-property: box-shadow, bottom;
-    transition-duration: 0.5s;
-  }
-
-  .card-pricing:hover {
-    bottom: 0.4rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  }
-
   .img-card-fixing {
     position: relative;
     left: 1rem;
@@ -662,10 +699,6 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     list-style: none;
   }
 
-  .card-width {
-    width: 21rem;
-  }
-
   .card-list-item {
     font-size: 1rem;
   }
@@ -675,19 +708,6 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .card-pricing-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-pricing-title h5 {
-    background-color: #633fb9;
-    border-radius: 2rem;
-    color: white;
-    padding: 6px 22px 5px 22px;
   }
 
   .bg-labstudio-soft {

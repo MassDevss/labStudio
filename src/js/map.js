@@ -17,27 +17,34 @@ loader.load().then(async () => {
   const { Map } = await google.maps.importLibrary("maps");
 
   // The map, centered at LabStudio
-  map = new Map(document.getElementById("map"), {
-    zoom: 16.2,
-    center: position,
-    mapId: "ebec91dda5c2b1c2",
-  });
+  try {
+    map = new Map(document.getElementById("map"), {
+      zoom: 16.2,
+      center: position,
+      mapId: "ebec91dda5c2b1c2",
+    });
 
-  // The marker, positioned at LabStudio
-  const marker = new google.maps.Marker({
-    map: map,
-    position: position,
-    title: "LabStudio Office",
-  });
+    // The marker, positioned at LabStudio
+    const marker = new google.maps.Marker({
+      map: map,
+      position: position,
+      title: "LabStudio Office",
+    });
 
-  marker.setIcon({
-    path: google.maps.SymbolPath.CIRCLE,
-    scale: 8,
-    fillColor: "#633fb9",
-    fillOpacity: 0.8,
-    strokeColor: "#5f3cb1",
-    strokeWeight: 2
-  });
+    marker.setIcon({
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 8,
+      fillColor: "#633fb9",
+      fillOpacity: 0.8,
+      strokeColor: "#5f3cb1",
+      strokeWeight: 2
+    });
+  }
+  catch (error) {
+    if (!(error.message ==='Map: Expected mapDiv of type HTMLElement but was passed null.'))
+      console.log(error);
+  }
+
+  
 
 });
-

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.6",
-    "astro": "^4.5.10"
+    "astro": "^4.5.10",
+    "gsap": "^3.12.5"
   }
 }

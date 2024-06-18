@@ -9,21 +9,28 @@ interface Porps {
 
 const { title, location, image } = Astro.props;
 
+const imgSrc = '{"imgSrc": "' + image.src + '"}';
+
 ---
 
-<div class="card mb-6 mb-lg-0 shadow-light-lg">
-  <div class="card-zoom">
+<a href="#" data-bigpicture={ imgSrc } class="size-image pointer mb-6 mb-lg-0 shadow-light-lg">
     <Image
-      class="card-img-top w-100 h-auto"
+      class="card-img-top w-100 h-auto rounded"
       src={ image }
       alt="..."
     />
-  </div>
-  <div class="card-body">
+  <!-- <div class="card-body">
     <div class="shape shape-bottom-100 shape-fluid-x text-white">
       <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
     </div>
     <h6 class="text-uppercase mb-1 text-body-secondary">{ location }</h6>
     <h4 class="mb-0">{ title }</h4>
-  </div>
-</div>
+  </div> -->
+</a>
+
+
+<style>
+  .size-image {
+    width: 240px;
+  }
+</style>
