@@ -1,10 +1,10 @@
 ---
 // components
-import Nav from "../components/Nav.astro";
+import Nav from "../components/shared/Nav.astro";
 import SubPageLayout from "../layouts/SubPageLayout.astro";
-import Footer from "../components/Footer.astro";
-import PhotographyCard from "../components/PhotographyCard.astro";
-import WhatsApp from "../components/WhatsApp.astro";
+import Footer from "../components/shared/Footer.astro";
+import PhotographyCard from "../components/photos/PhotographyCard.astro";
+import WhatsApp from "../components/shared/WhatsApp.astro";
 import { Image } from "astro:assets";
 
 // images
@@ -39,7 +39,7 @@ import MCAVertical from "../img/clients/mca/2.webp";
             capturados con precisión y creatividad para destacar tu marca.
           </p>
           <a
-            href="https://wa.me/526688257868?text=Hola%20LabStudio%2C%20quiero%20cotizar%20un%20paquete%20de%20fotograf%C3%ADa.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20eso%3F%F0%9F%93%B7"
+            href="https://wa.me/526681057964?text=Hola%20LabStudio%2C%20quiero%20cotizar%20un%20paquete%20de%20fotograf%C3%ADa.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20eso%3F%F0%9F%93%B7"
             target="_blank"
             class="btn btn-primary-soft lift lab-back-color text-light w-75"
           >
@@ -174,32 +174,29 @@ import MCAVertical from "../img/clients/mca/2.webp";
   });
 
   gsap.from(".photo-v-2", {
+    ease: "sine",
+    opacity: 0,
+    duration: 0.6,
+    scale: 0,
     scrollTrigger: {
       once: true,
       end: "+=100",
       trigger: ".photo-v-2",
       toggleActions: "play none none none",
-      onUpdate: ({ progress, direction, isActive }) => {
-        console.log(progress, direction, isActive);
-      },
-    },
+    }
+  });
+
+  gsap.from(".photo-v-3", {
     ease: "sine",
     opacity: 0,
     duration: 0.6,
     scale: 0,
-  });
-
-  gsap.from(".photo-v-3", {
     scrollTrigger: {
       once: true,
       end: "+=100",
       trigger: ".photo-v-3",
       toggleActions: "play none none none",
-    },
-    ease: "sine",
-    opacity: 0,
-    duration: 0.6,
-    scale: 0,
+    }
   });
 </script>
 

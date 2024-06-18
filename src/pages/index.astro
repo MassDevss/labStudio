@@ -1,12 +1,12 @@
 ---
 // components
 import IndexLayout from "../layouts/IndexLayout.astro";
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
+import Nav from "../components/shared/Nav.astro";
+import Footer from "../components/shared/Footer.astro";
 import Image from "astro/components/Image.astro";
 import { Fade } from "../enums/Fade";
-import WhatsApp from "../components/WhatsApp.astro";
-import Card from "../components/PricingCard.astro";
+import WhatsApp from "../components/shared/WhatsApp.astro";
+import Card from "../components/index/PricingCard.astro";
 
 // imagenes
 import IntroImage from "../img/labstudio/pageImages/intro-image-2.webp";
@@ -63,7 +63,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
             </p>
             <div class="text-center text-md-start">
               <a
-                href="https://wa.me/526688257868"
+                href="https://wa.me/526681057964"
                 target="_blank"
                 class="btn lab-back-color shadow lift me-1 text-light"
               >
@@ -493,11 +493,7 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
 </IndexLayout>
 
 <script>
-  import { fadeUp, fadeUpOnView, elasticSpawn } from "../helpers/animations";
   import { gsap } from "gsap";
-
-  // welcome image fade
-  // fadeUp("#welcome-image", 0.5);
 
   gsap.from('#welcome-image', {
     opacity: 0,
@@ -599,30 +595,26 @@ import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
         end: '+=100',
         once: true,
         trigger: '.checks-container',
-      },
+      }
     }
   );
 
   gsap.from('.past-clients', {
     duration: 1,
     y: 60,
+    opacity: 0,
+    ease: "power2.out",
+    stagger: 0.1,
     scrollTrigger: {
       end: '+=100',
       once: true,
       trigger: '.past-clients-container',
-    },
-    opacity: 0,
-    ease: "power2.out",
-    stagger: 0.1,
+    }
   })
 
 </script>
 
 <style>
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
 
   .card-best-pricing {
     transform: scale(1.02);

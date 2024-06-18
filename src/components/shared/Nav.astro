@@ -1,7 +1,7 @@
 ---
 
 import { Image } from "astro:assets";
-import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
+import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
 
 ---
 
@@ -64,19 +64,18 @@ import NavLogo from "../img/labstudio/usBrand/logo-purple.webp";
 
   const allLinks = document.querySelectorAll(".nav-link");
 
+  // automatically add the actual-link class to the current page for styling the link in nav
   allLinks.forEach((link) => {
     link.classList.remove("actual-link");
-
     if (link.getAttribute("href") === window.location.pathname) {
       link.classList.add("actual-link");
     }
-    
     if (window.location.toString().includes('blog') && link.getAttribute("href") === '/blog') {
       link.classList.add("actual-link");
     }
-
   });
 
+  // animate the nav links check the screen width for mobile view, this is helpful for perfonce because the desktop animation dont looks good on mobile
   if (window.innerWidth <= 991) {
     gsap.from(".navbar-brand", {
       duration: 0.8,

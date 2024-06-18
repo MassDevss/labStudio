@@ -41,6 +41,10 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/theme.bundle.css" />
     <style is:global>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
       .lab-back-color {
         background-color: #633fb9;
       }
