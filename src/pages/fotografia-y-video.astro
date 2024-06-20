@@ -1,11 +1,13 @@
 ---
+// astro imports
+import { Image } from "astro:assets";
+
 // components
 import Nav from "../components/shared/Nav.astro";
 import SubPageLayout from "../layouts/SubPageLayout.astro";
 import Footer from "../components/shared/Footer.astro";
 import PhotographyCard from "../components/photos/PhotographyCard.astro";
 import WhatsApp from "../components/shared/WhatsApp.astro";
-import { Image } from "astro:assets";
 
 // images
 import CMVertical from "../img/clients/cm/1.webp";
@@ -68,9 +70,9 @@ import MCAVertical from "../img/clients/mca/2.webp";
             data-bigpicture={'{"imgSrc":"' + CMVertical.src + '"}'}
             href="#"
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={CMVertical}
+              src={CMVertical.src}
               alt="Fotografia en formato vertical del fregadero de una cocina"
             />
           </a>
@@ -79,9 +81,9 @@ import MCAVertical from "../img/clients/mca/2.webp";
             data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
             href="#"
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={VWVertical}
+              src={VWVertical.src}
               alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
             />
           </a>
@@ -90,9 +92,9 @@ import MCAVertical from "../img/clients/mca/2.webp";
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
             href="#"
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={MCAVertical}
+              src={MCAVertical.src}
               alt="Fotografia en formato vertical de un suplemento de proteina HYDROTEIN"
             />
           </a>
