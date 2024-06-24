@@ -26,6 +26,9 @@ import TonerLogo from "../img/labstudio/brands/brands-toner.webp";
 import TotalLogo from "../img/labstudio/brands/brands-total.webp";
 import SavingLogo from "../img/labstudio/brands/brands-pharmacy.png";
 import CyberLogo from "../img/labstudio/brands/brands-cyber.webp";
+import ClientCard from "../components/index/ClientCard.astro";
+
+// Astro imports
 import { Image } from "astro:assets";
 
 ---
@@ -43,9 +46,9 @@ import { Image } from "astro:assets";
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
-            <img
+            <Image
               id="welcome-image"
-              src={IntroImage.src}
+              src={IntroImage}
               alt="Ilustracion de introducción en la portada"
               class="img-introduction img-fluid mb-6 mb-md-0"
             />
@@ -57,9 +60,6 @@ import { Image } from "astro:assets";
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
               Vemos un futuro donde todos los negocios físicos tienen presencia
               de manera digital.
-            </p>
-            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Digitaliza tu negocio ahora mismo
             </p>
             <div class="text-center text-md-start">
               <a
@@ -84,7 +84,7 @@ import { Image } from "astro:assets";
       <div class="py-10 py-md-11 border-bottom">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-4 services-intro">
+            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600">
               <div class="icon-continer mb-3">
                 <Image src={WebDev} alt="Ilustración sobre una pagina web" />
               </div>
@@ -96,7 +96,7 @@ import { Image } from "astro:assets";
                 nuevos clientes.
               </p>
             </div>
-            <div class="col-12 col-md-4 services-intro">
+            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
               <div class="icon-continer brand-resize mb-3">
                 <Image src={Branding} alt="Ilustración sobre diseño" />
               </div>
@@ -105,7 +105,7 @@ import { Image } from "astro:assets";
                 Diseñamos el futuro de tu negocio con estrategia y creatividad.
               </p>
             </div>
-            <div class="col-12 col-md-4 services-intro">
+            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
               <div class="icon-continer mb-3">
                 <Image src={Rocket} alt="Ilustración de un cohete" />
               </div>
@@ -131,6 +131,7 @@ import { Image } from "astro:assets";
               <span
                 id="for-your-text"
                 class="lab-font-color"
+                data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "tu Marca...", "ti..."]}'
               >
               </span>
             </h2>
@@ -361,66 +362,15 @@ import { Image } from "astro:assets";
     <!-- BRANDS -->
     <div class="py-5 py-md-6 border-bottom">
       <div class="container">
-        <div class="row align-items-center justify-content-center past-clients-container">
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={AlferLogo.src}
-                alt="Logo de la empresa Alfer"
-              />
-            </div>
-          </div>
+        <div class="row align-items-center justify-content-center">
 
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={ValleyLogo.src}
-                alt="Logo de la empresa Valley Farm"
-              />
-            </div>
-          </div>
+          <ClientCard imageSrc={AlferLogo} delay={0}/>
+          <ClientCard imageSrc={ValleyLogo} delay={50}/>
+          <ClientCard imageSrc={TonerLogo} delay={100}/>
+          <ClientCard imageSrc={TotalLogo} delay={150}/>
+          <ClientCard imageSrc={SavingLogo} delay={200}/>
+          <ClientCard imageSrc={CyberLogo} delay={250}/>
 
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={TonerLogo.src}
-                alt="Logo de la empresa Toner Depot"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={TotalLogo.src}
-                alt="Logo de la empresa Totalplay"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={SavingLogo.src}
-                alt="Logo de la empresa Farmacias del ahorro"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients">
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-              <img
-                loading="lazy"
-                src={CyberLogo.src}
-                alt="Logo de la empresa Cybercafe10m"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -428,7 +378,7 @@ import { Image } from "astro:assets";
     <section id="video-scroll" class="pt-12 pt-md-13 bg-gray-200">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="300">
             <Image
               loading="lazy"
               src={VideoImage}
@@ -437,7 +387,7 @@ import { Image } from "astro:assets";
               style="aspect-ratio:0.5845/1"
             />
           </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
             <h2>
               <span class="lab-font-color">Marketing digital</span>, el mejor
               aliado de tu negocio
@@ -464,7 +414,7 @@ import { Image } from "astro:assets";
     <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
       <div class="container pb-6">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start">
+          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
             <Image
               loading="lazy"
               src={BrandingImage}
@@ -473,7 +423,7 @@ import { Image } from "astro:assets";
               style="aspect-ratio: 1.607/1"
             />
           </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-2">
+          <div class="col-12 col-md-7 col-lg-6 order-md-2" data-aos="fade-up" data-aos-duration="300">
             <h2>
               Branding <span class="lab-font-color">Creativo</span>, Resultados <span
                 class="lab-font-color">Sorprendentes</span
@@ -493,128 +443,52 @@ import { Image } from "astro:assets";
 </IndexLayout>
 
 <script>
-  import gsap from "gsap";
-  import { TextPlugin, ScrollTrigger } from "gsap/all";
+  // import gsap from "gsap";
+  // import { TextPlugin, ScrollTrigger } from "gsap/all";
 
-  gsap.registerPlugin(ScrollTrigger)
-  gsap.registerPlugin(TextPlugin)
+  // gsap.registerPlugin(ScrollTrigger)
+  // gsap.registerPlugin(TextPlugin)
 
-  gsap.from('#welcome-image', {
-    opacity: 0,
-    duration: 0.6
-  })
+  // gsap.from('#welcome-image', {
+  //   opacity: 0,
+  //   duration: 0.6
+  // })
 
-  // welcome services
-  if (window.innerWidth <= 767) {
-    gsap.from(".services-intro", {
-      duration: 0.8,
-      y: 100,
-      opacity: 0,
-      ease: "power2.out",
-      stagger: 0.1,
-      scrollTrigger: {
-        end: '+=100',
-        once: true,
-        trigger: '.services-intro',
-      },
-    });
-  }
-  else {
-    gsap.from(".services-intro", {
-      duration: 0.8,
-      y: 100,
-      opacity: 0,
-      ease: "power2.out",
-      stagger: 0.1,
-    });
-  }
+  // const typeAnimation = () => {
+  //   gsap.to('#for-your-text', {
+  //     text: "tu Empresa...",
+  //     duration: 1,
+  //   });
 
-  const typeAnimation = () => {
-    gsap.to('#for-your-text', {
-      text: "tu Empresa...",
-      duration: 1,
-    });
+  
 
-    gsap.to('#for-your-text', {
-      text: {
-        value: "",
-        rtl: true
-      },
-      duration: 1,
-      delay: 2,
-    });
+  // typeAnimation();
 
-    gsap.to('#for-your-text', {
-      text: "tu Proyecto...",
-      duration: 1,
-      delay: 3,
-    });
+  // // interval for character type effect
+  // setInterval(() => {
+  //   typeAnimation();
+  // }, 11000);
 
-    gsap.to('#for-your-text', {
-      text: {
-        value: "",
-        rtl: true
-      },
-      duration: 1,
-      delay: 5,
-    });
-
-    gsap.to('#for-your-text', {
-      text: "ti...",
-      duration: 1,
-      delay: 7,
-    });
-
-    gsap.to('#for-your-text', {
-      text: {
-        value: "",
-        rtl: true
-      },
-      duration: 1,
-      delay: 9,
-    });
-  }
-
-  typeAnimation();
-
-  // interval for character type effect
-  setInterval(() => {
-    typeAnimation();
-  }, 11000);
-
-  gsap.fromTo(
-    '.check-boing',
-    {
-      scale: 0,
-      opacity: 0,
-    },
-    {
-      ease: "elastic",
-      duration: 0.8,
-      opacity: 1,
-      scale: 1,
-      stagger: 0.3,
-      delay: 0.2,
-      scrollTrigger: {
-        end: '+=100',
-        once: true,
-        trigger: '.checks-container',
-      }
-    }
-  );
-
-  gsap.from('.past-clients', {
-    duration: 1,
-    y: 60,
-    opacity: 0,
-    ease: "power2.out",
-    stagger: 0.1,
-    scrollTrigger: {
-      end: '+=100',
-      once: true,
-      trigger: '.past-clients-container',
-    }
-  })
+  // gsap.fromTo(
+  //   '.check-boing',
+  //   {
+  //     scale: 0,
+  //     opacity: 0,
+  //   },
+  //   {
+  //     ease: "elastic",
+  //     duration: 0.8,
+  //     opacity: 1,
+  //     scale: 1,
+  //     stagger: 0.3,
+  //     delay: 0.2,
+  //     scrollTrigger: {
+  //       end: '+=100',
+  //       once: true,
+  //       trigger: '.checks-container',
+  //     }
+  //   }
+  // );
 
 </script>
 
@@ -653,7 +527,7 @@ import { Image } from "astro:assets";
   }
 
   .title-card-service {
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0 2rem 0 2rem;
   }
 
   .title-card-service h2 {
@@ -668,7 +542,7 @@ import { Image } from "astro:assets";
   }
 
   .padding-card-rl {
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0 2rem 0 2rem;
   }
 
   .list-group-pricing-new {
@@ -738,8 +612,8 @@ import { Image } from "astro:assets";
 
   .pricing-ribbon {
     position: absolute;
-    top: 0rem;
-    left: 0rem;
+    top: 0;
+    left: 0;
     z-index: 1;
     text-align: right;
     overflow: hidden;
@@ -810,10 +684,6 @@ import { Image } from "astro:assets";
     width: 60%;
   }
 
-  .lab-brand-filter img {
-    filter: hue-rotate(90deg) grayscale(100%);
-  }
-
   .justify-text {
     text-align: justify;
   }
@@ -832,6 +702,7 @@ import { Image } from "astro:assets";
   .button-knowus:active {
     background-color: rgba(51, 94, 234, 0.1) !important;
   }
+
   @media (max-width: 992px) {
     .videos-img-resize {
       width: 72%;

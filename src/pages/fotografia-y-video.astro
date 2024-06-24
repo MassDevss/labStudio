@@ -34,7 +34,7 @@ import MCAVertical from "../img/clients/mca/2.webp";
       >
         <aside class="py-4 py-md-6 position-relative" style="top: -100px">
           <div class="img-fluid mb-4 text-body">
-            <h1>Fotografia</h1>
+            <h1>Fotografiá</h1>
           </div>
           <p class="fs-lg mb-7 text-body-secondary">
             Descubre la excelencia en fotografía con Labstudio. Momentos
@@ -68,33 +68,39 @@ import MCAVertical from "../img/clients/mca/2.webp";
           <a
             class="d-block photo-v-1 photo-v"
             data-bigpicture={'{"imgSrc":"' + CMVertical.src + '"}'}
+            data-aos="zoom-in"
+            data-aos-duration="800"
             href="#"
           >
-            <img
+            <Image
               class="img-fluid rounded"
-              src={CMVertical.src}
+              src={CMVertical}
               alt="Fotografia en formato vertical del fregadero de una cocina"
             />
           </a>
           <a
             class="d-block mt-7 photo-v-2 photo-v"
             data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
+            data-aos="zoom-in"
+            data-aos-duration="800"
             href="#"
           >
-            <img
+            <Image
               class="img-fluid rounded"
-              src={VWVertical.src}
+              src={VWVertical}
               alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
             />
           </a>
           <a
             class="d-block mt-7 photo-v-3 photo-v"
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
+            data-aos="zoom-in"
+            data-aos-duration="800"
             href="#"
           >
-            <img
+            <Image
               class="img-fluid rounded"
-              src={MCAVertical.src}
+              src={MCAVertical}
               alt="Fotografia en formato vertical de un suplemento de proteina HYDROTEIN"
             />
           </a>
@@ -161,46 +167,6 @@ import MCAVertical from "../img/clients/mca/2.webp";
   <Footer useMap={false} />
   <WhatsApp />
 </SubPageLayout>
-
-<script>
-  import gsap from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from(".photo-v-1", {
-    ease: "sine",
-    opacity: 0,
-    duration: 0.6,
-    scale: 0,
-  });
-
-  gsap.from(".photo-v-2", {
-    ease: "sine",
-    opacity: 0,
-    duration: 0.6,
-    scale: 0,
-    scrollTrigger: {
-      once: true,
-      end: "+=100",
-      trigger: ".photo-v-2",
-      toggleActions: "play none none none",
-    }
-  });
-
-  gsap.from(".photo-v-3", {
-    ease: "sine",
-    opacity: 0,
-    duration: 0.6,
-    scale: 0,
-    scrollTrigger: {
-      once: true,
-      end: "+=100",
-      trigger: ".photo-v-3",
-      toggleActions: "play none none none",
-    }
-  });
-</script>
 
 <style>
   .photo-v {

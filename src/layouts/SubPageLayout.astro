@@ -39,10 +39,13 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/theme.bundle.css" />
+    <link rel="stylesheet" href="/styles/libs.bundle.css" />
   </head>
   <body>
     <slot />
   </body>
+  <script is:inline src="/js/theme.bundle.js"></script>
+  <script is:inline src="/js/vendor.bundle.js"></script>
 </html>
 
 <style is:global>

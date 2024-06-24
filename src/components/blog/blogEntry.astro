@@ -3,6 +3,7 @@ import Footer from "../shared/Footer.astro";
 import Nav from "../shared/Nav.astro";
 import type BlogContent from "../../interfaces/BlogContentList";
 import SubPageLayout from "../../layouts/SubPageLayout.astro";
+import { Image } from "astro:assets";
 
 interface Props {
   title: string;
@@ -44,7 +45,7 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
 
               {
                 piece.img && (
-                  <img src={piece.img } alt={ 'imagen sobre: ' + piece.subTitle } class="w-100" />
+                  <Image src={piece.img} alt={ 'imagen sobre: ' + piece.subTitle } class="w-100" />
                 )
               }
             </div>

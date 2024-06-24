@@ -9,7 +9,7 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <Image src={NavLogo} alt="labstudio logo" class="lab-logo mb-2 nav-animate" />
+        <Image src={NavLogo} alt="labstudio logo" class="lab-logo mb-2" data-aos="fade-down" data-aos-duration="400" />
       </a>
       <button
         class="navbar-toggler"
@@ -48,9 +48,9 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
               </svg>
             </button>
           </div>
-          <a class="nav-link nav-animate" href="/">Inicio</a>
-          <a class="nav-link nav-animate" href="/fotografia-y-video">Fotografia y Video</a>
-          <!-- <a class="nav-link nav-animate" href="/blog">Blog</a> -->
+          <a class="nav-link" href="/" data-aos="fade-down" data-aos-duration="400" data-aos-delay="50">Inicio</a>
+          <a class="nav-link" href="/fotografia-y-video" data-aos="fade-down" data-aos-duration="400" data-aos-delay="100">Fotografia y Video</a>
+          <!-- <a class="nav-link" href="/blog">Blog</a> -->
           <!-- <a class="nav-link" href="#">Desarrollo Web</a> -->
           <!-- <a class="nav-link" href="#">Diseño</a> -->
         </div>
@@ -60,8 +60,6 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
 </header>
 
 <script>
-  import gsap from "gsap";
-
   const allLinks = document.querySelectorAll(".nav-link");
 
   // automatically add the actual-link class to the current page for styling the link in nav
@@ -74,25 +72,6 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
       link.classList.add("actual-link");
     }
   });
-
-  // animate the nav links check the screen width for mobile view, this is helpful for perfonce because the desktop animation dont looks good on mobile
-  if (window.innerWidth <= 991) {
-    gsap.from(".navbar-brand", {
-      duration: 0.8,
-      y: -100,
-      opacity: 0,
-      ease: "power2.out",
-    });
-  }else {
-    gsap.from(".nav-animate", {
-      duration: 0.8,
-      y: -100,
-      opacity: 0,
-      ease: "power2.out",
-      stagger: 0.1,
-    });
-  }
-
 </script>
 
 <style>

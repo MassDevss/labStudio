@@ -1,13 +1,14 @@
 ---
 
 // test image only for dev
+import { Image } from 'astro:assets';
 import testImage from '../../img/test/Diseño sin título.png';
 
 interface Props {
   title: string;
   description: string;
   link: string;
-  image: string;
+  image: ImageMetadata;
 }
 
 const { title, description, link, image } = Astro.props;
@@ -32,7 +33,7 @@ if (beCuted) {
 
 <div class="col">
   <a class="card minimal-shadow pointer fadeIn" href={ '/blog/' + link }>
-    <img src={ testImage.src } class="card-img-top" alt={ 'Imagen alusion de: ' + title }>
+    <Image src={ testImage } class="card-img-top" alt={ 'Imagen alusion de: ' + title } />
     <div class="card-body pt-4">
       <h2 class="card-title m-0 mb-1">{ procesedTitle }</h2>
       <p class="card-text">{ description }</p>
@@ -62,12 +63,12 @@ if (beCuted) {
   }
 
   .minimal-shadow {
-    box-shadow: 0px 4px 5px 0px rgba(51, 51, 51, 0.103);
+    box-shadow: 0 4px 5px 0 rgba(51, 51, 51, 0.103);
     transition-property: box-shadow;
     transition-duration: 0.3s;
   }
 
   .minimal-shadow:hover {
-    box-shadow: 0px 4px 5px 0px rgba(51, 51, 51, 0.203);
+    box-shadow: 0 4px 5px 0 rgba(51, 51, 51, 0.203);
   }
 </style>
