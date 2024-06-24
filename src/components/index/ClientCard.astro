@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+
+
+interface Props {
+  imageSrc: ImageMetadata,
+  delay: number
+}
+
+const { imageSrc, delay } = Astro.props;
+
+---
+
+<div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients" data-aos="fade-up" data-aos-delay={delay}>
+  <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
+    <Image
+      loading="lazy"
+      src={imageSrc}
+      alt="Logo de la empresa Alfer"
+    />
+  </div>
+</div>
+
+<style>
+  .lab-brand-filter img {
+    filter: hue-rotate(90deg) grayscale(100%);
+  }
+</style>
