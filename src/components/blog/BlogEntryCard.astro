@@ -8,9 +8,10 @@ interface Props {
   description: string;
   link: string;
   image: ImageMetadata;
+  delay: number;
 }
 
-const { title, description, link, image } = Astro.props;
+const { title, description, link, image, delay } = Astro.props;
 
 let procesedTitle = title;
 let beCuted = false;
@@ -30,7 +31,7 @@ if (beCuted) {
 
 ---
 
-<div class="card-body-size">
+<div class="card-body-size" data-aos="fade-in" data-aos-delay={ delay }>
   <a class="card minimal-shadow pointer" href={ '/blog/' + link }>
     <Image src={ image } class="card-img-top w-100 h-100" alt={ 'Imagen alusion de: ' + title } />
     <div class="card-body pt-4">
