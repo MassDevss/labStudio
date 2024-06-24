@@ -2,7 +2,6 @@
 
 // test image only for dev
 import { Image } from 'astro:assets';
-import testImage from '../../img/test/Diseño sin título.png';
 
 interface Props {
   title: string;
@@ -31,9 +30,9 @@ if (beCuted) {
 
 ---
 
-<div class="col">
-  <a class="card minimal-shadow pointer fadeIn" href={ '/blog/' + link }>
-    <Image src={ testImage } class="card-img-top" alt={ 'Imagen alusion de: ' + title } />
+<div class="card-body-size">
+  <a class="card minimal-shadow pointer" href={ '/blog/' + link }>
+    <Image src={ image } class="card-img-top w-100 h-100" alt={ 'Imagen alusion de: ' + title } />
     <div class="card-body pt-4">
       <h2 class="card-title m-0 mb-1">{ procesedTitle }</h2>
       <p class="card-text">{ description }</p>
@@ -43,23 +42,13 @@ if (beCuted) {
 
 <style>
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .card-body-size {
+    width: 380px;
   }
 
   .card-body h2 {
     font-size: 1.4rem;
     font-weight: 600;
-  }
-
-  .fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1s;
   }
 
   .minimal-shadow {

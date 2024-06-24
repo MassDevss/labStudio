@@ -4,40 +4,43 @@ import Footer from "../components/shared/Footer.astro";
 import Nav from "../components/shared/Nav.astro";
 import SubPageLayout from "../layouts/SubPageLayout.astro";
 
+import Blog1Image from "../img/blog/10-motivos-por-los-cuales-una-pagina-web-es-importante-para-un-negocio.webp";
 
 ---
 
 <SubPageLayout
-  title=""
-  ogTitle=""
-  description=""
-  ogDescription=""
-  keywords=""
+title="LABSTUDIO | Blog"
+ogTitle="LABSTUDIO | Blog"
+description="Bienvenido al blog de Labstudiomedia, donde compartimos noticias, consejos y tendencias sobre fotografía profesional, producción de video, desarrollo web y videos aéreos con dron. Nuestro enfoque centrado en el cliente y nuestra pasión por la creatividad nos distinguen. Descubre cómo puedes potenciar tu marca con nuestras soluciones creativas."
+ogDescription="Bienvenido al blog de Labstudiomedia, donde compartimos noticias, consejos y tendencias sobre fotografía profesional, producción de video, desarrollo web y videos aéreos con dron. Descubre cómo puedes potenciar tu marca con nuestras soluciones creativas en Los Mochis, Sinaloa."
+keywords="Blog de fotografía, Blog de video, Consejos de desarrollo web, Tendencias en marketing digital, Fotografía profesional, Producción de video, Desarrollo web, Videos aéreos, Fotografía en Los Mochis, Producción audiovisual en Sinaloa"
 >
   <Nav />
 
-  <div class="w-100 d-flex flex-column justify-content-center align-items-center pb-12">
+  <div class="w-100 d-flex flex-column align-items-center pb-12">
     <div class="blog-container">
       <h1>Post's Recientes</h1>
 
-
-      <div class="row row-cols-1 row-cols-md-2 gy-5 gx-6 pt-6">
+      <div class="d-flex flex-wrap pt-6 gap-control">
         <BlogEntryCard
           title="10 Motivos por los Cuales una Página Web es Importante para un Negocio"
           description="Descubre por qué tener una página web es esencial para tu negocio. Aquí te presentamos 10 razones clave para mejorar tu presencia en línea y aumentar tus ventas."
-          image="/images/blog/1.jpg"
+          image={Blog1Image}
           link="10-motivos-por-los-cuales-una-pagina-web-es-importante-para-un-negocio"
         />
         <BlogEntryCard
           title="La Importancia del Diseño Responsivo en la Era Móvil"
           description="Descubre por qué el diseño responsivo es esencial en la era móvil. Aprende cómo un sitio web adaptable puede mejorar la experiencia del usuario y aumentar la conversión."
-          image="/images/blog/1.jpg"
+          image={Blog1Image}
           link="la-importancia-del-diseno-responsivo-en-la-era-movil"
         />
       </div>
 
     </div>
+    
   </div>
+
+  
 
   <Footer
     useMap={false}
@@ -55,5 +58,9 @@ import SubPageLayout from "../layouts/SubPageLayout.astro";
     margin: 0;
     font-size: 3rem;
     font-weight: 600;
+  }
+  
+  .gap-control {
+    gap: 20px;
   }
 </style>
