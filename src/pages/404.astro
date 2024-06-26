@@ -23,7 +23,7 @@ import bot404 from '../img/labstudio/404/404.png';
     <img src={bot404.src} alt="Ilustracion de un robot 404" />
   </div>
   <div class="side-control">
-    <p class="text-start">No pudimos encontrar lo que<br>estabas buscando!</p>
+    <p>No pudimos encontrar lo que<br>estabas buscando!</p>
     <div class="d-flex gap-3">
       <a>Regresar</a>
       <a>Contacto</a>
@@ -53,6 +53,7 @@ p {
   left: 8px;
   font-size: 28px;
   font-family: Helvetica, sans-serif;
+  text-align: left
 }
 
 a {
@@ -113,4 +114,42 @@ a:last-child:hover {
 .custom-shape-divider-bottom-1719384001 .shape-fill {
   fill: #6B5DF8;
 }
+
+
+@media only screen and (max-width: 1199px) {
+  .side-control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-height: 860px) {
+  p {
+    color: #FFF;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  img {
+    width: 280px;
+  }
+}
+
 </style>
