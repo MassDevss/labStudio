@@ -36,7 +36,7 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
   <div class="w-100 d-flex flex-column justify-content-center align-items-center pb-11">
     <div class="blog-container">
       <h1 class="m-0">{ title }</h1>
-      <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ jobTitle }</span> • <span>{ date }</span></p>
+      <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ jobTitle }</span> en <span class="lab-font-color">LABSTUDIO</span> • <span>{ date }</span></p>
 
       <Image src={blogImage} alt="linea" class="w-100 h-auto shadow rounded mt-4 mb-6" />
     
@@ -67,6 +67,11 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
 
 
 <style>
+
+  .lab-font-color {
+    color: #633fb9;
+  }
+
   .blog-container {
     padding-top: 4rem;
     width: 800px;

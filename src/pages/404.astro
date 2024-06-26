@@ -1,0 +1,116 @@
+---
+import Nav from "../components/shared/Nav.astro";
+import SubPageLayout from "../layouts/SubPageLayout.astro";
+
+// image of bot
+import bot404 from '../img/labstudio/404/404.png';
+
+---
+
+
+<SubPageLayout
+  title=""
+  ogTitle=""
+  description=""
+  ogDescription=""
+  keywords=""
+>
+
+<Nav />
+
+<main class="w-100 d-flex flex-wrap justify-content-center align-items-center">
+  <div class="side-control d-flex justify-content-center align-items-center">
+    <img src={bot404.src} alt="Ilustracion de un robot 404" />
+  </div>
+  <div class="side-control">
+    <p class="text-start">No pudimos encontrar lo que<br>estabas buscando!</p>
+    <div class="d-flex gap-3">
+      <a>Regresar</a>
+      <a>Contacto</a>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1719384001">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</main>
+
+</SubPageLayout>
+
+<style>
+
+main {
+  height: calc(100vh - 125.9px);
+}
+
+img {
+  width: 58%;
+}
+
+p {
+  position: relative;
+  left: 8px;
+  font-size: 28px;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.2rem 2rem;
+  border-radius: 40px;
+  width: 180px;
+  text-align: center;
+}
+
+a:first-child {
+  border: 2px solid #5d50e6;
+  background-color: #5d50e6;
+  color: #FFF;
+}
+
+a:first-child:hover {
+
+}
+
+a:last-child {
+  color: #5d50e6;
+  border: 2px solid #5d50e6;
+  background-color: #FFF;
+}
+
+a:last-child:hover {
+
+}
+
+.side-control {
+  top: -40px;
+  position: relative;
+  width: 600px;
+  z-index: 2;
+}
+
+.custom-shape-divider-bottom-1719384001 {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1719384001 svg {
+  position: relative;
+  display: block;
+  width: calc(197% + 1.3px);
+  height: 430px;
+}
+
+.custom-shape-divider-bottom-1719384001 .shape-fill {
+  fill: #6B5DF8;
+}
+</style>
