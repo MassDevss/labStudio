@@ -24,9 +24,9 @@ import bot404 from '../img/labstudio/404/404.png';
   </div>
   <div class="side-control">
     <p>No pudimos encontrar lo que<br>estabas buscando!</p>
-    <div class="d-flex gap-3">
-      <a>Regresar</a>
-      <a>Contacto</a>
+    <div class="buttons-flex d-flex gap-3">
+      <a href="/">Regresar</a>
+      <a href="https://wa.me/526681057964" target="_blank">Contacto</a>
     </div>
   </div>
   <div class="custom-shape-divider-bottom-1719384001">
@@ -65,6 +65,7 @@ a {
   border-radius: 40px;
   width: 180px;
   text-align: center;
+  transition: background-color 0.1s, border 0.1s;
 }
 
 a:first-child {
@@ -74,17 +75,21 @@ a:first-child {
 }
 
 a:first-child:hover {
-
+  border: 2px solid #5141ff;
+  background-color: #5141ff;
+  color: #FFF;
 }
 
 a:last-child {
   color: #5d50e6;
   border: 2px solid #5d50e6;
-  background-color: #FFF;
+  background-color: #eeeeee;
 }
 
 a:last-child:hover {
-
+  color: #5d50e6;
+  border: 2px solid #5d50e6;
+  background-color: #fff;
 }
 
 .side-control {
@@ -127,6 +132,7 @@ a:last-child:hover {
 
   p {
     text-align: center;
+    left: 0;
   }
 
   img {
@@ -134,9 +140,9 @@ a:last-child:hover {
   }
 }
 
-@media only screen and (max-height: 860px) {
-  p {
-    color: #FFF;
+@media only screen and (max-height: 733px) {
+  img {
+    width: 200px !important;
   }
 }
 
@@ -146,8 +152,38 @@ a:last-child:hover {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .buttons-flex {
+    flex-direction: column;
+  }
+  a {
+    width: 400px;
+  }
+}
+
 @media only screen and (max-width: 460px) {
   img {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  img {
+    width: 240px;
+  }
+  a {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  a {
     width: 280px;
   }
 }
