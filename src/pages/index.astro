@@ -30,6 +30,7 @@ import ClientCard from "../components/index/ClientCard.astro";
 
 // Astro imports
 import { Image } from "astro:assets";
+import { slide } from "astro:transitions";
 
 ---
 
@@ -41,7 +42,7 @@ import { Image } from "astro:assets";
   keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
 >
   <Nav />
-  <main>
+  <main transition:animate={slide({duration: '0.3s'})}>
     <section class="pt-4 pt-md-11">
       <div class="container">
         <div class="row align-items-center">
@@ -244,15 +245,18 @@ import { Image } from "astro:assets";
         <Card
           title="Básico"
           description="Lo básico para tu negocio"
+          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
           price="8,499"
           image={null}
           features={[
-            "Dominio Personalizado",
+            "Dominio Gratis por 1 año",
             "Hosting Gratis por 1 año",
             "Diseño Personalizado",
             "Certificado SSL",
             "Maps",
             "Botón WhatsApp",
+            "Optimización Web & Móvil",
+            "Soporte Básico"
           ]}
           fade={Fade.UP}
         />
@@ -260,16 +264,20 @@ import { Image } from "astro:assets";
         <Card
           title="Landing"
           description="Lo Esencial para tu negocio"
+          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
           price="12,999"
           image={null}
           features={[
-            "Dominio Personalizado",
+            "Dominio Gratis por 1 año",
             "Hosting Gratis por 1 año",
             "Diseño Personalizado",
             "Certificado SSL",
             "Maps",
             "Botón WhatsApp",
             "Optimización Web & Móvil",
+            "Soporte Avanzado",
+            "Links a tus Redes Sociales",
+            "10 Cuentas de Correo",
             "Optimización SEO",
           ]}
           fade={Fade.UP}
@@ -278,17 +286,22 @@ import { Image } from "astro:assets";
         <Card
           title="Vip"
           description="Lo que tu negocio se Merece"
+          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete VIP para mi página web!!"
           price="15,999"
           image={null}
           features={[
-            "Dominio Personalizado",
+            "Dominio Gratis por 1 año",
             "Hosting Gratis por 1 año",
             "Diseño Personalizado",
             "Certificado SSL",
             "Maps",
             "Botón WhatsApp",
             "Optimización Web & Móvil",
+            "Soporte Premium",
+            "Links a tus Redes Sociales",
+            "20 Cuentas de Correo",
             "Optimización SEO",
+            "Blog",
             "Google Analytics",
             "Animaciones",
             "Integración de video",
@@ -304,6 +317,7 @@ import { Image } from "astro:assets";
         <Card
           title="Mi Tienda"
           description="Lo Esencial para tu negocio"
+          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
           price="19,999"
           image={null}
           features={[
@@ -327,6 +341,7 @@ import { Image } from "astro:assets";
           <Card
             title="WhatsApp Business"
             description="Convierte cada conversación en una oportunidad de ventas."
+            whatsAppMessage="Hola LabStudio, estoy interesado en el servicio de WhatsApp Business!!"
             price="5,999"
             image={WhatsappBuisness}
             features={[
@@ -343,6 +358,7 @@ import { Image } from "astro:assets";
           <Card
             title="Google My Business"
             description="No dejes que tu negocio se pierda en las búsquedas locales."
+            whatsAppMessage="Hola LabStudio, estoy interesado en el servicio de Google My Business!!"
             price="4,999"
             image={GoogleBusiness}
             features={[

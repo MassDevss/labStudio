@@ -5,13 +5,17 @@ import {type ImageMetadata} from "astro";
 interface Props {
   title: string;
   description: string;
+  whatsAppMessage: string;
   price: string;
   features: string[];
   image: ImageMetadata;
   fade: string;
 }
 
-const { title, description, price, features, image, fade } = Astro.props;
+const { title, description, whatsAppMessage, price, features, image, fade } = Astro.props;
+
+// TODO: url enconde whatsappmessage
+const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
 
 ---
 
@@ -53,7 +57,7 @@ const { title, description, price, features, image, fade } = Astro.props;
 
       <div class="bottom-card d-flex justify-content-center padding-card-rl">
         <a
-          href="https://wa.me/+526681057964?text=Hola%20LabStudio%20Me%20Interesa%20vender%20por%20Whatsapp"
+          href={ "https://wa.me/+526681057964?text=" + urlEncodedMessage }
           target="_blank"
           class="btn w-100 py-2 lab-back-color text-light rounded-3 mb-4"
           >¡Lo Quiero!</a
