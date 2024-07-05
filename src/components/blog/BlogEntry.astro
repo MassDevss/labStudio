@@ -21,6 +21,7 @@ interface Props {
 
 const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle, date, blogImage, content } = Astro.props;
 
+import { slide } from "astro:transitions";
 
 ---
 
@@ -33,7 +34,7 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
 >
   <Nav />
 
-  <div class="w-100 d-flex flex-column justify-content-center align-items-center pb-11">
+  <main class="w-100 d-flex flex-column justify-content-center align-items-center pb-11" transition:animate={slide({duration: '0.3s'})}>
     <div class="blog-container">
       <h1 class="m-0">{ title }</h1>
       <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ jobTitle }</span> en <span class="lab-font-color">LABSTUDIO</span> • <span>{ date }</span></p>
@@ -60,7 +61,7 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
       </div>
 
     </div>
-  </div>
+  </main>
 
   <Footer useMap={ false }/>
 </SubPageLayout>
