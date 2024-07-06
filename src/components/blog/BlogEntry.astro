@@ -47,11 +47,11 @@ import { slide } from "astro:transitions";
           content.map((piece) => (
             <div class="w-100 d-flex flex-column">
               <h2 class="h2 text-start">{ piece.subTitle }</h2>
-              <p>{ piece.text }</p>
+              <p set:html={piece.text}></p>
 
               {
                 piece.img && (
-                  <Image src={piece.img} alt={ 'imagen sobre: ' + piece.subTitle } class="w-100" />
+                  <Image src={piece.img} alt={ 'imagen sobre: ' + piece.subTitle } class="w-100 h-auto" />
                 )
               }
             </div>
