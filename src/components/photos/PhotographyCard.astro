@@ -1,26 +1,25 @@
 ---
-import { Image } from "astro:assets";
-
 interface Porps {
-  title: string;
-  location: string;
   image: string;
+  alt: string;
 }
 
-const { image } = Astro.props;
+const { image, alt } = Astro.props;
 
 const imgSrc = '{"imgSrc": "' + image.src + '"}';
-
 ---
 
-<a data-bigpicture={ imgSrc } class="size-image pointer mb-6 mb-lg-0 shadow-light-lg pointer">
-    <Image
-      class="card-img-top w-100 h-auto rounded"
-      src={ image }
-      alt="..."
-    />
+<a
+  data-bigpicture={imgSrc}
+  class="size-image pointer mb-6 mb-lg-0 shadow-light-lg pointer"
+>
+  <img
+    loading="lazy"
+    class="card-img-top w-100 h-auto rounded"
+    src={ image.src }
+    alt={ alt }
+  />
 </a>
-
 
 <style>
   .size-image {
