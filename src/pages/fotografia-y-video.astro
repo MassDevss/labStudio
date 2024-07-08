@@ -71,11 +71,10 @@ import { slide } from "astro:transitions";
             data-bigpicture={'{"imgSrc":"' + CMVertical.src + '"}'}
             data-aos="zoom-in"
             data-aos-duration="800"
-            
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={CMVertical}
+              src={CMVertical.src}
               alt="Fotografia en formato vertical del fregadero de una cocina"
             />
           </a>
@@ -84,11 +83,10 @@ import { slide } from "astro:transitions";
             data-bigpicture={'{"imgSrc":"' + VWVertical.src + '"}'}
             data-aos="zoom-in"
             data-aos-duration="800"
-            
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={VWVertical}
+              src={VWVertical.src}
               alt="Fotografia en formato vertical de una Camioneta TAOS VolksWagen"
             />
           </a>
@@ -97,25 +95,13 @@ import { slide } from "astro:transitions";
             data-bigpicture={'{"imgSrc":"' + MCAVertical.src + '"}'}
             data-aos="zoom-in"
             data-aos-duration="800"
-            
           >
-            <Image
+            <img
               class="img-fluid rounded"
-              src={MCAVertical}
+              src={MCAVertical.src}
               alt="Fotografia en formato vertical de un suplemento de proteina HYDROTEIN"
             />
           </a>
-          <!-- <a
-            class="d-block mt-7"
-            data-bigpicture={'{"imgSrc":"' + Cofee4.src + '"}'}
-            href="#"
-          >
-            <Image
-              class="img-fluid rounded"
-              src={Cofee4.src}
-              alt="..."
-            />
-          </a> -->
         </section>
       </div>
     </div>

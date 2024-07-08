@@ -7,7 +7,7 @@ interface Porps {
   image: string;
 }
 
-const { title, location, image } = Astro.props;
+const { image } = Astro.props;
 
 const imgSrc = '{"imgSrc": "' + image.src + '"}';
 
@@ -19,13 +19,6 @@ const imgSrc = '{"imgSrc": "' + image.src + '"}';
       src={ image }
       alt="..."
     />
-  <!-- <div class="card-body">
-    <div class="shape shape-bottom-100 shape-fluid-x text-white">
-      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-    </div>
-    <h6 class="text-uppercase mb-1 text-body-secondary">{ location }</h6>
-    <h4 class="mb-0">{ title }</h4>
-  </div> -->
 </a>
 
 
