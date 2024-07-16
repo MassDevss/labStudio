@@ -31,37 +31,25 @@ keywords="Blog de fotografía, Blog de video, Consejos de desarrollo web, Tenden
           title="10 Motivos por los Cuales una Página Web es Importante para un Negocio"
           description="Descubre por qué tener una página web es esencial para tu negocio. Aquí te presentamos 10 razones clave para mejorar tu presencia en línea y aumentar tus ventas."
           image={Blog1Image}
-          link="10-motivos-por-los-cuales-una-pagina-web-es-importante-para-un-negocio"
-          delay={0}
         />
         <BlogEntryCard
           title="La Importancia del Diseño Responsivo en la Era Móvil"
           description="Descubre por qué el diseño responsivo es esencial en la era móvil. Aprende cómo un sitio web adaptable puede mejorar la experiencia del usuario y aumentar la conversión."
           image={Blog2Image}
-          link="la-importancia-del-diseno-responsivo-en-la-era-movil"
-          delay={100}
         />
         <BlogEntryCard
           title="La Importancia de la Fotografía Profesional para tu Negocio"
           description="Descubre cómo la fotografía profesional puede mejorar la imagen de tu negocio, atraer más clientes y aumentar tus ventas. Aprende sobre los beneficios y la importancia de invertir en fotos de alta calidad."
           image={Blog3Image}
-          link="la-importancia-de-la-fotografia-profesional-para-tu-negocio"
-          delay={200}
         />
         <BlogEntryCard
           title="Elige el Dron Perfecto para tus Proyectos"
           description="Descubre cómo elegir el dron perfecto para tus proyectos de grabación. Exploramos modelos como el DJI Mini 4, Air 3 y Mavic 3, con sus precios, funciones y características técnicas."
           image={Blog4Image}
-          link="elige-el-dron-perfecto-para-tus-proyectos"
-          delay={300}
         />
       </div>
-
     </div>
-    
   </main>
-
-  
 
   <Footer
     useMap={false}
@@ -70,27 +58,28 @@ keywords="Blog de fotografía, Blog de video, Consejos de desarrollo web, Tenden
 
 <script>
 
-  const titlesList = document.querySelectorAll('h2');
+  const titlesList: NodeListOf<HTMLHeadingElement> = document.querySelectorAll('h2');
 
+  // this function reconfigures the title of each card cutting the string for no text overlap in cards, cut in front-end for no lose SEO
   const fixCardsTitle = (onCutLength: number) => {
     titlesList.forEach(title => {
-      let procesedTitle = title.textContent;
-      let beCuted = false;
+      let processedTitle: string = title.textContent;
+      let beCut: boolean = false;
 
-      if (procesedTitle.length > (onCutLength)) {
-        beCuted = true;
-        procesedTitle = procesedTitle.substring(0, onCutLength - 3);
+      if (processedTitle.length > (onCutLength)) {
+        beCut = true;
+        processedTitle = processedTitle.substring(0, onCutLength - 3);
       }
 
-      if (procesedTitle.endsWith(' ')) {
-        procesedTitle = procesedTitle.substring(0, procesedTitle.length - 1);
+      if (processedTitle.endsWith(' ')) {
+        processedTitle = processedTitle.substring(0, processedTitle.length - 1);
       }
 
-      if (beCuted) {
-        procesedTitle += '...';
+      if (beCut) {
+        processedTitle += '...';
       }
 
-      title.textContent = procesedTitle;
+      title.textContent = processedTitle;
     });
   }
 
@@ -126,7 +115,6 @@ keywords="Blog de fotografía, Blog de video, Consejos de desarrollo web, Tenden
     fixCardsTitle(22);
   }
 
-
 </script>
 
 <style>
@@ -142,7 +130,7 @@ keywords="Blog de fotografía, Blog de video, Consejos de desarrollo web, Tenden
   }
   
   .gap-control {
-    gap: 20px;
+    gap: 28px;
   }
 
   @media only screen and (max-width: 857px) {

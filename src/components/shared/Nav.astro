@@ -48,11 +48,11 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
               </svg>
             </button>
           </div>
-          <a class="nav-link" href="/" data-aos="fade-down" data-aos-duration="400" data-aos-delay="50">Inicio</a>
-          <a class="nav-link" href="/fotografia-y-video" data-aos="fade-down" data-aos-duration="400" data-aos-delay="100">Fotografia y Video</a>
-          <a class="nav-link" href="/blog" data-aos="fade-down" data-aos-duration="400" data-aos-delay="150">Blog</a>
-          <!-- <a class="nav-link" href="#">Desarrollo Web</a> -->
-          <!-- <a class="nav-link" href="#">Diseño</a> -->
+          <a class="nav-link" href="/" data-astro-reload data-aos="fade-down" data-aos-duration="400" data-aos-delay="50">Inicio</a>
+          <a class="nav-link" href="/fotografia-y-video" data-astro-reload data-aos="fade-down" data-aos-duration="400" data-aos-delay="100">Fotografia y Video</a>
+          <a class="nav-link" href="/blog" data-astro-reload data-aos="fade-down" data-aos-duration="400" data-aos-delay="150">Blog</a>
+          <!-- <a class="nav-link" href="/desarollo-web">Desarrollo Web</a> -->
+          <!-- <a class="nav-link" href="/design">Diseño</a> -->
         </div>
       </div>
     </div>
@@ -60,10 +60,10 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
 </header>
 
 <script>
-  const allLinks = document.querySelectorAll(".nav-link");
+  const allLinks: NodeListOf<Element> = document.querySelectorAll(".nav-link");
 
   // automatically add the actual-link class to the current page for styling the link in nav
-  allLinks.forEach((link) => {
+  allLinks.forEach((link: Element) => {
     link.classList.remove("actual-link");
     if (link.getAttribute("href") === window.location.pathname) {
       link.classList.add("actual-link");

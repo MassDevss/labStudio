@@ -9,7 +9,6 @@ interface Props {
 
 const { useMap } = Astro.props;
 
-const actualYear = new Date().getFullYear();
 ---
 
 <footer class="w-100">
@@ -40,6 +39,7 @@ const actualYear = new Date().getFullYear();
                 href="https://www.instagram.com/labstudi0/"
                 target="_blank"
                 class="text-decoration-none"
+                aria-label="Instagram Link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +60,7 @@ const actualYear = new Date().getFullYear();
                 href="https://m.facebook.com/profile.php/?id=100063680193194"
                 target="_blank"
                 class="text-decoration-none"
+                aria-label="Facebook Link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +81,7 @@ const actualYear = new Date().getFullYear();
                 href="https://www.tiktok.com/@labstudio.media"
                 target="_blank"
                 class="text-decoration-none"
+                aria-label="TikTok Link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +102,7 @@ const actualYear = new Date().getFullYear();
                 href="https://wa.me/526681057964"
                 target="_blank"
                 class="text-decoration-none"
+                aria-label="Whatsapp Link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,9 +123,8 @@ const actualYear = new Date().getFullYear();
       </div>
     </div>
     <div class="container d-flex justify-content-center mt-2 pt-6 pb-2">
-      <p class="text-brand">
-        2020 -
-        {actualYear} LABSTUDIO &#169;
+      <p class="text-brand" id="footer-year">
+
       </p>
     </div>
   </div>
@@ -131,20 +133,25 @@ const actualYear = new Date().getFullYear();
 <script>
   import { Loader } from "@googlemaps/js-api-loader"
 
-const loader = new Loader({
-  apiKey: "AIzaSyAjLuO9HRAUgr7ryKTKYZspmnvK8mRtwdM",
-  version: "weekly",
-});
+  const actualYear: number = new Date().getFullYear();
 
-// Initialize and add the map
-let map;
+  const footerYear = document.querySelector('#footer-year')
+  footerYear.innerHTML = `2020 - ${ actualYear } LABSTUDIO &#169;`
 
-// the errors in google object, are fake, Vscode not detect its because spawns in runtime
-loader.load().then(async () => {
+  const loader = new Loader({
+    apiKey: "AIzaSyAjLuO9HRAUgr7ryKTKYZspmnvK8mRtwdM",
+    version: "weekly",
+  });
 
-  const position = { lat: 25.8055853, lng: -108.9964254 };
+  // Initialize and add the map
+  let map;
 
-  const { Map } = await google.maps.importLibrary("maps");
+  // the errors in google object, are fake, Vscode not detect its because spawns in runtime
+  loader.load().then(async () => {
+
+    const position = { lat: 25.8055853, lng: -108.9964254 };
+
+    const { Map } = await google.maps.importLibrary("maps");
 
     // The map, centered at LabStudio
     try {

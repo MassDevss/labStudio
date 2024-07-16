@@ -8,15 +8,38 @@ interface Props {
   description: string;
   link: string;
   image: ImageMetadata;
-  delay: number;
 }
 
-const { title, description, link, image, delay } = Astro.props;
+const { title, description, link, image } = Astro.props;
+
+const normalizeLinks = (dirtyTitle: string) => {
+  return dirtyTitle
+      .toLowerCase()
+      .replace(/á/g, 'a')
+      .replace(/ś/g, 's')
+      .replace(/é/g, 'e')
+      .replace(/ŕ/g, 'r')
+      .replace(/ý/g, 'y')
+      .replace(/ú/g, 'u')
+      .replace(/í/g, 'i')
+      .replace(/ó/g, 'o')
+      .replace(/ṕ/g, 'p')
+      .replace(/ĺ/g, 'l')
+      .replace(/ḱ/g, 'k')
+      .replace(/j́/g, 'j')
+      .replace(/ǵ/g, 'g')
+      .replace(/ź/g, 'z')
+      .replace(/ć/g, 'c')
+      .replace(/ń/g, 'n')
+      .replace(/ḿ/g, 'm')
+      .replace(/ñ/g, 'n')
+      .replace(/ /g, '-');
+}
 
 ---
 
-<div class="card-body-size" data-aos="fade-in" data-aos-delay={ delay }>
-  <a class="card minimal-shadow pointer" href={ '/blog/' + link }>
+<div class="card-body-size" data-aos="fade-in">
+  <a class="card minimal-shadow pointer" href={ '/blog/' + normalizeLinks(title) }>
     <Image src={ image } class="card-img-top w-100 h-100" alt={ 'Imagen alusion de: ' + title } />
     <div class="card-body-pf card-body pt-4">
       <h2 class="m-0 mb-1">{ title }</h2>
@@ -26,7 +49,6 @@ const { title, description, link, image, delay } = Astro.props;
 </div>
 
 <style>
-
   h2 {
     font-size: 1.2rem;
     font-weight: 800 !important;
@@ -50,6 +72,4 @@ const { title, description, link, image, delay } = Astro.props;
   .minimal-shadow:hover {
     box-shadow: 0 4px 5px 0 rgba(51, 51, 51, 0.203);
   }
-
-
 </style>
