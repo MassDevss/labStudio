@@ -6,11 +6,10 @@ import { Image } from 'astro:assets';
 interface Props {
   title: string;
   description: string;
-  link: string;
   image: ImageMetadata;
 }
 
-const { title, description, link, image } = Astro.props;
+const { title, description, image } = Astro.props;
 
 const normalizeLinks = (dirtyTitle: string) => {
   return dirtyTitle

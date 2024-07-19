@@ -151,6 +151,7 @@ const { useMap } = Astro.props;
 
     const position = { lat: 25.8055853, lng: -108.9964254 };
 
+    //@ts-ignore
     const { Map } = await google.maps.importLibrary("maps");
 
     // The map, centered at LabStudio
@@ -162,6 +163,7 @@ const { useMap } = Astro.props;
       });
 
       // The marker, positioned at LabStudio
+      //@ts-ignore
       const marker = new google.maps.Marker({
         map: map,
         position: position,
@@ -169,6 +171,7 @@ const { useMap } = Astro.props;
       });
 
       marker.setIcon({
+      //@ts-ignore
         path: google.maps.SymbolPath.CIRCLE,
         scale: 8,
         fillColor: "#633fb9",
