@@ -1,6 +1,6 @@
 # Labstudio Media Landing Page
 
-Bienvenido al repositorio de la landing page de Labstudio Media, Somos una agencia de marketing digital dedicada a crear Sitios web increíbles y contenido audiovisual como videos y fotografía ubicada en Los Mochis, Sinaloa. Este proyecto está construido utilizando [ASTRO](https://astro.build) para la estructura del sitio y [GSAP](https://greensock.com/gsap/) para las animaciones.
+Bienvenido al repositorio de la landing page de Labstudio Media, Somos una agencia de marketing digital dedicada a crear Sitios web increíbles y contenido audiovisual como videos y fotografía ubicada en Los Mochis, Sinaloa. Este proyecto está construido utilizando [ASTRO](https://astro.build) como framework y [AOS](https://michalsnik.github.io/aos/) para las animaciones.
 
 ## Descripción
 
@@ -9,7 +9,6 @@ La landing page de Labstudio Media está diseñada para ofrecer a los visitantes
 ## Tecnologías Utilizadas
 
 - **ASTRO**: Un moderno framework para construir sitios web rápidos y optimizados.
-- **GSAP**: Biblioteca de JavaScript para crear animaciones de alto rendimiento.
 - **HTML5 y CSS3**: Para la estructura y el estilo del sitio web.
 - **JavaScript**: Para funcionalidades interactivas adicionales.
 

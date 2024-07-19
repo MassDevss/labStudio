@@ -1,7 +1,4 @@
 ---
-// astro imports
-import { Image } from "astro:assets";
-
 // components
 import Nav from "../components/shared/Nav.astro";
 import SubPageLayout from "../layouts/SubPageLayout.astro";
@@ -16,7 +13,6 @@ import VWVertical from "../img/clients/vw/1.webp";
 import VWHorizontal from "../img/clients/vw/2.webp";
 import MCAHorizontal from "../img/clients/mca/1.webp";
 import MCAVertical from "../img/clients/mca/2.webp";
-import { slide } from "astro:transitions";
 ---
 
 <SubPageLayout
@@ -27,7 +23,7 @@ import { slide } from "astro:transitions";
   keywords="Fotografía profesional, Fotografía en Los Mochis, Fotografía en Sinaloa, Fotógrafo profesional, Estudio fotográfico, Fotografía de retratos, Fotografía comercial, Sesiones fotográficas, Fotografía creativa, Fotografía artística, Fotografía de eventos, Fotografía de productos, Fotografía México"
 >
   <Nav />
-  <main class="container mt-12 mt-sm-12 mt-md-0" transition:animate={slide({ duration: '0.3s' })}>
+  <main class="container mt-12 mt-sm-12 mt-md-0">
     <div class="row justify-content-between">
       <div
         class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100"
