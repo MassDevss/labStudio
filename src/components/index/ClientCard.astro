@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 
 
 interface Props {
@@ -11,18 +10,18 @@ const { imageSrc, delay } = Astro.props;
 
 ---
 
-<div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients" data-aos="fade-up" data-aos-delay={delay}>
-  <div class="img-fluid text-gray-600 mb-2 mb-md-0 lab-brand-filter">
-    <Image
+<div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients" data-aos="fade-in" data-aos-delay={delay}>
+  <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+    <img
       loading="lazy"
-      src={imageSrc}
+      src={imageSrc.src}
       alt="Logo de la empresa Alfer"
     />
   </div>
 </div>
 
 <style>
-  .lab-brand-filter img {
+  img {
     filter: hue-rotate(90deg) grayscale(100%);
   }
 </style>
