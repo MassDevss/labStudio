@@ -3,7 +3,6 @@
 import IndexLayout from "../layouts/IndexLayout.astro";
 import Nav from "../components/shared/Nav.astro";
 import Footer from "../components/shared/Footer.astro";
-import { Fade } from "../enums/Fade";
 import WhatsApp from "../components/shared/WhatsApp.astro";
 import Card from "../components/index/PricingCard.astro";
 
@@ -46,9 +45,9 @@ import { Image } from "astro:assets";
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
-            <Image
+            <img
               id="welcome-image"
-              src={IntroImage}
+              src={IntroImage.src}
               alt="Ilustracion de introducción en la portada"
               class="img-introduction img-fluid mb-6 mb-md-0"
             />
@@ -65,7 +64,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://wa.me/526681057964"
                 target="_blank"
-                class="btn lab-back-color shadow lift me-1 text-light"
+                class="btn lab-back-color shadow me-1 text-light"
               >
                 Mas Información <i
                   class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
@@ -73,7 +72,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://www.tiktok.com/@labstudio.media"
                 target="_blank"
-                class="btn btn-primary-soft lift lab-font-color-btn button-knowus"
+                class="btn btn-primary-soft lab-font-color-btn button-knowus"
               >
                 Conócenos
               </a>
@@ -86,7 +85,7 @@ import { Image } from "astro:assets";
           <div class="row">
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600">
               <div class="icon-continer mb-3">
-                <Image src={WebDev} alt="Ilustración sobre una pagina web" />
+                <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
               </div>
               <a href="#web-design-scroll" class="link-scroller">
                 Desarrollo Web
@@ -98,7 +97,7 @@ import { Image } from "astro:assets";
             </div>
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
               <div class="icon-continer brand-resize mb-3">
-                <Image src={Branding} alt="Ilustración sobre diseño" />
+                <img src={Branding.src} alt="Ilustración sobre diseño" />
               </div>
               <a href="#branding-scroll" class="link-scroller"> Branding </a>
               <p class="text-muted mb-6 mb-md-0">
@@ -107,7 +106,7 @@ import { Image } from "astro:assets";
             </div>
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
               <div class="icon-continer mb-3">
-                <Image src={Rocket} alt="Ilustración de un cohete" />
+                <img src={Rocket.src} alt="Ilustración de un cohete" />
               </div>
               <a href="#video-scroll" class="link-scroller">
                 Producción Audiovisual
@@ -177,7 +176,7 @@ import { Image } from "astro:assets";
           </div>
           <div class="col-12 col-md-6 col-lg-5 order-md-1">
             <div class="web-s-control">
-              <Image src={WebTable} alt="Imagen de una búsqueda web" />
+              <img src={WebTable.src} alt="Imagen de una búsqueda web" />
             </div>
           </div>
         </div>
@@ -226,8 +225,9 @@ import { Image } from "astro:assets";
           <div class="col-12 col-md-5 col-lg-6">
             <div class="position-relative">
               <div class="img-skewed img-skewed-start">
-                <Image
-                  src={Store}
+                <img
+                  loading="lazy"
+                  src={Store.src}
                   class="img-store-size screenshot img-fluid img-skewed-item"
                   alt="Ilustración tienda en linea"
                 />
@@ -240,7 +240,7 @@ import { Image } from "astro:assets";
 
     <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200">
       <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
-      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start">
+      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
         <Card
           title="Básico"
           description="Lo básico para tu negocio"
@@ -257,7 +257,6 @@ import { Image } from "astro:assets";
             "Optimización Web & Móvil",
             "Soporte Básico"
           ]}
-          fade={Fade.UP}
         />
 
         <Card
@@ -279,7 +278,6 @@ import { Image } from "astro:assets";
             "10 Cuentas de Correo",
             "Optimización SEO",
           ]}
-          fade={Fade.UP}
         />
 
         <Card
@@ -305,14 +303,13 @@ import { Image } from "astro:assets";
             "Animaciones",
             "Integración de video",
           ]}
-          fade={Fade.UP}
         />
       </div>
     </section>
 
     <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200" >
       <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
-      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start">
+      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
         <Card
           title="Mi Tienda"
           description="Lo Esencial para tu negocio"
@@ -328,7 +325,6 @@ import { Image } from "astro:assets";
             "Optimización SEO",
             "Avisos a Clientes por Email",
           ]}
-          fade={Fade.UP}
         />
       </div>
     </section>
@@ -336,7 +332,7 @@ import { Image } from "astro:assets";
     <section class="pt-8 pt-md-11 pb-12 bg-gray-200">
       <div class="container">
         <h2 class="display-4 text-center fw-bold">Mas Soluciones Digitales</h2>
-        <div class="col-12 pt-6 d-flex justify-content-center gap-4 flex-wrap">
+        <div class="col-12 pt-6 d-flex justify-content-center gap-4 flex-wrap" data-aos="fade-up">
           <Card
             title="WhatsApp Business"
             description="Convierte cada conversación en una oportunidad de ventas."
@@ -351,7 +347,6 @@ import { Image } from "astro:assets";
               "Anuncios desde WhatsApp",
               "Implementación",
             ]}
-            fade={Fade.UP}
           />
 
           <Card
@@ -368,7 +363,6 @@ import { Image } from "astro:assets";
               "Google Analytics",
               "Posicionamiento SEO",
             ]}
-            fade={Fade.UP}
           />
         </div>
       </div>
@@ -394,9 +388,9 @@ import { Image } from "astro:assets";
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="300">
-            <Image
+            <img
               loading="lazy"
-              src={VideoImage}
+              src={VideoImage.src}
               alt="Ilustración sobre Videos"
               class="videos-img-resize img-fluid mb-6 mb-md-0"
               style="aspect-ratio:0.5845/1"
@@ -415,7 +409,7 @@ import { Image } from "astro:assets";
             <div class="d-flex">
               <div class="pe-5">
                 <h3 class="mb-0">
-                  <span>100</span>%
+                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100">100</span>%
                 </h3>
                 <p class="text-gray-700 mb-0">Satisfaction</p>
               </div>
@@ -430,9 +424,9 @@ import { Image } from "astro:assets";
       <div class="container pb-6">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
-            <Image
+            <img
               loading="lazy"
-              src={BrandingImage}
+              src={BrandingImage.src}
               alt="Ilustracion sobre Branding Creativo"
               class="mb-6 mb-md-0 w-100 h-auto"
               style="aspect-ratio: 1.607/1"
