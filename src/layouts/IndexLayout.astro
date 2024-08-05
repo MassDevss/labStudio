@@ -1,6 +1,6 @@
 ---
+import Gtm from '../components/shared/Gtm.astro';
 
-import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -16,7 +16,7 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <ViewTransitions />
+    <Gtm />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index" />
