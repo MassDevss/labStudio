@@ -4,6 +4,7 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 Allow: /fotografia
+Allow: /blog
 Disallow: /desarrollo-web
 Disallow: /produccion-de-video
 
