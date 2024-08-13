@@ -15,13 +15,11 @@ interface Props {
   createdBy: string;
   jobTitle: string;
   date: string;
-  blogImage: ImageMetadata;
+  blogImage?: ImageMetadata;
   content: BlogContent[];
 }
 
 const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle, date, blogImage, content } = Astro.props;
-
-import { slide } from "astro:transitions";
 
 ---
 
