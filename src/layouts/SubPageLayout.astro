@@ -38,7 +38,11 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
       content="/pageView.webp"
     />
     <meta property="og:url" content="https://labstudiomedia.com/" />
-    <link rel="shortcut icon" type="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="icon" href="/favicon/favicon.ico" />
+    <link rel="icon" href="/favicon/32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/48x48.png" sizes="48x48">
+    <link rel="icon" href="/favicon/96x96.png" sizes="96x96">
+    <link rel="icon" href="/favicon/144x144.png" sizes="144x144">
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/theme.bundle.css" />
