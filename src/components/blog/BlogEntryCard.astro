@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 interface Props {
   title: string;
   description: string;
-  image: ImageMetadata;
+  image?: ImageMetadata;
 }
 
 const { title, description, image } = Astro.props;
@@ -32,7 +32,8 @@ const normalizeLinks = (dirtyTitle: string) => {
       .replace(/ń/g, 'n')
       .replace(/ḿ/g, 'm')
       .replace(/ñ/g, 'n')
-      .replace(/ /g, '-');
+      .replace(/ /g, '-')
+      .replace(/:/g, '');
 }
 
 ---
