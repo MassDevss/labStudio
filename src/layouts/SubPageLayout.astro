@@ -1,5 +1,6 @@
 ---
 import Gtm from '../components/shared/Gtm.astro';
+import Maps from '../components/shared/Maps.astro';
 
 interface Props {
   title: string;
@@ -16,6 +17,7 @@ const { title, ogTitle, description, ogDescription, keywords } = Astro.props;
 <html lang="en">
   <head>
     <Gtm  />
+    <Maps />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index" />
