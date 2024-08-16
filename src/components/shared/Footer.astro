@@ -11,6 +11,7 @@ const { useMap } = Astro.props;
 ---
 
 <footer class="w-100">
+  <div class="d-none" id="data-use-map">{ useMap.toString() }</div>
   <Show show={ useMap }>
     <div class="d-flex justify-content-center">
       <div class="col-12 d-flex justify-content-center">
@@ -148,12 +149,14 @@ const { useMap } = Astro.props;
   </div>
 </footer>
 
-<script define:vars={{ useMap }}>
+<script>
   const position = { lat: 25.8055853, lng: -108.9964254 };
-  const actualYear = new Date().getFullYear();
+  const actualYear: number = new Date().getFullYear();
 
   const footerYear = document.querySelector("#footer-year");
   footerYear.innerHTML = `2020 - ${actualYear} LABSTUDIO &#169;`;
+
+  const useMap: boolean = document.querySelector("#data-use-map").textContent === "true" ? true : false;
 
   let map;
 
