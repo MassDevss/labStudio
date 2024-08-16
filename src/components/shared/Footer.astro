@@ -11,7 +11,7 @@ const { useMap } = Astro.props;
 ---
 
 <footer class="w-100">
-  <Show show={useMap}>
+  <Show show={ useMap }>
     <div class="d-flex justify-content-center">
       <div class="col-12 d-flex justify-content-center">
         <div id="map" class="map-cyber"></div>
@@ -148,9 +148,9 @@ const { useMap } = Astro.props;
   </div>
 </footer>
 
-<script>
+<script define:vars={{ useMap }}>
   const position = { lat: 25.8055853, lng: -108.9964254 };
-  const actualYear: number = new Date().getFullYear();
+  const actualYear = new Date().getFullYear();
 
   const footerYear = document.querySelector("#footer-year");
   footerYear.innerHTML = `2020 - ${actualYear} LABSTUDIO &#169;`;
@@ -183,7 +183,10 @@ const { useMap } = Astro.props;
     });
   }
 
-  initMap();
+  if (useMap) {
+    initMap();
+  }
+
 </script>
 
 <style>
