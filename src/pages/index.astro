@@ -5,12 +5,13 @@ import Nav from "../components/shared/Nav.astro";
 import Footer from "../components/shared/Footer.astro";
 import WhatsApp from "../components/shared/WhatsApp.astro";
 import Card from "../components/index/PricingCard.astro";
+import ClientCard from "../components/index/ClientCard.astro";
 
 // imagenes
-import IntroImage from "../img/labstudio/pageImages/intro-image-2.webp";
+import IntroImage from "../img/labstudio/pageImages/intro-side-icon.webp";
 import WebDev from "../img/labstudio/pageImages/webdev-ico.webp";
 import Branding from "../img/labstudio/pageImages/branding-ico.webp";
-import Rocket from "../img/labstudio/pageImages/rocket-ico.webp";
+import VideoCamera from "../img/labstudio/pageImages/video-camera-3d.webp";
 import WebTable from "../img/labstudio/pageImages/webTable.webp";
 import Store from "../img/labstudio/pageImages/store-1.webp";
 import GoogleBusiness from "../img/labstudio/pageImages/g-shadow.webp";
@@ -23,12 +24,9 @@ import AlferLogo from "../img/brands/brands-alfer.webp";
 import ValleyLogo from "../img/brands/brands-valley-farms.webp";
 import TonerLogo from "../img/brands/brands-toner.webp";
 import TotalLogo from "../img/brands/brands-total.webp";
-import SavingLogo from "../img/brands/brands-pharmacy.png";
+import SavingLogo from "../img/brands/brands-pharmacy.webp";
 import CyberLogo from "../img/brands/brands-cyber.webp";
-import ClientCard from "../components/index/ClientCard.astro";
-
-// Astro imports
-import { Image } from "astro:assets";
+import CuciiLogo from "../img/brands/brands-cucii.png";
 
 ---
 
@@ -44,7 +42,7 @@ import { Image } from "astro:assets";
     <section class="pt-4 pt-md-11">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+          <div class="intro-image-container col-12 col-md-5 col-lg-5 order-md-2">
             <img
               id="welcome-image"
               src={IntroImage.src}
@@ -52,13 +50,12 @@ import { Image } from "astro:assets";
               class="img-introduction img-fluid mb-6 mb-md-0"
             />
           </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
-            <h1 class="display-3 text-center text-md-start">
-              Bienvenido a <span class="lab-font-color">LABSTUDIO</span>
+          <div class="col-12 col-md-7 col-lg-7 order-md-1">
+            <h1 class="text-center text-md-start">
+              Potenciamos tu presencia <br>digital transformando ideas <br>en contenidos digitales con <span class="lab-font-color">desarrollo web</span>, <span class="lab-font-color">video</span> y <span class="lab-font-color">branding</span>
             </h1>
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Vemos un futuro donde todos los negocios físicos tienen presencia
-              de manera digital.
+              Quitate el miedo de aumentar tus ventas, por que es lo peor que puede pasar!
             </p>
             <div class="text-center text-md-start">
               <a
@@ -80,48 +77,54 @@ import { Image } from "astro:assets";
           </div>
         </div>
       </div>
-      <div class="py-10 py-md-11 border-bottom">
+      <div class="py-10 py-md-11">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600">
-              <div class="icon-continer mb-3">
-                <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
+              <div class="service-card">
+                <div class="icon-continer mb-3">
+                  <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
+                </div>
+                <a href="#web-design-scroll" class="link-scroller">
+                  Desarrollo Web
+                </a>
+                <p class="text-muted mb-0">
+                  Desarrollamos tu sitio web de tu negocio para que llegues a
+                  nuevos clientes.
+                </p>
               </div>
-              <a href="#web-design-scroll" class="link-scroller">
-                Desarrollo Web
-              </a>
-              <p class="text-muted mb-0">
-                Desarrollamos tu sitio web de tu negocio para que llegues a
-                nuevos clientes.
-              </p>
             </div>
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-              <div class="icon-continer brand-resize mb-3">
-                <img src={Branding.src} alt="Ilustración sobre diseño" />
+              <div class="service-card">
+                <div class="icon-continer mb-3">
+                  <img src={Branding.src} alt="Ilustración sobre diseño" />
+                </div>
+                <a href="#branding-scroll" class="link-scroller"> Branding </a>
+                <p class="text-muted mb-6 mb-md-0">
+                  Diseñamos el futuro de tu negocio con estrategia y creatividad.
+                </p>
               </div>
-              <a href="#branding-scroll" class="link-scroller"> Branding </a>
-              <p class="text-muted mb-6 mb-md-0">
-                Diseñamos el futuro de tu negocio con estrategia y creatividad.
-              </p>
             </div>
             <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-              <div class="icon-continer mb-3">
-                <img src={Rocket.src} alt="Ilustración de un cohete" />
+              <div class="service-card">
+                <div class="icon-continer mb-3">
+                  <img src={VideoCamera.src} alt="Ilustración de un cohete" />
+                </div>
+                <a href="#video-scroll" class="link-scroller">
+                  Producción Audiovisual
+                </a>
+                <p class="text-muted mb-6 mb-md-0">
+                  "Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
+                  Espectaculares.
+                </p>
               </div>
-              <a href="#video-scroll" class="link-scroller">
-                Producción Audiovisual
-              </a>
-              <p class="text-muted mb-6 mb-md-0">
-                "Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
-                Espectaculares.
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pt-8 pt-md-11 bg-gray-200">
+    <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11">
           <div class="col-12 col-md-6 order-md-2">
@@ -183,7 +186,7 @@ import { Image } from "astro:assets";
       </div>
     </section>
 
-    <section class="pt-8 pt-md-11 bg-gray-200" id="web-design-scroll">
+    <section class="pt-8 pt-md-11" id="web-design-scroll">
       <div class="container pb-8">
         <div class="row align-items-center">
           <div class="col-12 col-md-7 col-lg-6">
@@ -238,7 +241,7 @@ import { Image } from "astro:assets";
       </div>
     </section>
 
-    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200">
+    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
       <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
       <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
         <Card
@@ -307,7 +310,7 @@ import { Image } from "astro:assets";
       </div>
     </section>
 
-    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100 bg-gray-200" >
+    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100" >
       <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
       <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
         <Card
@@ -329,15 +332,15 @@ import { Image } from "astro:assets";
       </div>
     </section>
 
-    <section class="pt-8 pt-md-11 pb-12 bg-gray-200">
+    <section class="pb-12 pt-10 d-flex align-items-center flex-column w-100">
       <div class="container">
         <h2 class="display-4 text-center fw-bold">Mas Soluciones Digitales</h2>
-        <div class="col-12 pt-6 d-flex justify-content-center gap-4 flex-wrap" data-aos="fade-up">
+        <div class="col-12 pt-6 d-flex justify-content-center gap-6 flex-wrap" data-aos="fade-up">
           <Card
             title="WhatsApp Business"
             description="Convierte cada conversación en una oportunidad de ventas."
             whatsAppMessage="Hola LabStudio, estoy interesado en el servicio de WhatsApp Business!!"
-            price="5,999"
+            price=""
             image={WhatsappBuisness}
             features={[
               "Configuración de Plataforma",
@@ -353,7 +356,7 @@ import { Image } from "astro:assets";
             title="Google My Business"
             description="No dejes que tu negocio se pierda en las búsquedas locales."
             whatsAppMessage="Hola LabStudio, estoy interesado en el servicio de Google My Business!!"
-            price="4,999"
+            price=""
             image={GoogleBusiness}
             features={[
               "Verificación de tu Negocio",
@@ -369,8 +372,10 @@ import { Image } from "astro:assets";
     </section>
 
     <!-- BRANDS -->
-    <div class="py-5 py-md-6 border-bottom">
-      <div class="container">
+    <div class="py-5 py-md-10">
+      <div class="">
+        <h2 class="brands-h2 text-center mb-2">Nuestros clientes</h2>
+        <p class="text-muted text-center pb-1">Estamos orgullosos de trabajar con algunas de las mejores empresas de la industria</p>
         <div class="row align-items-center justify-content-center">
 
           <ClientCard imageSrc={AlferLogo} delay={0}/>
@@ -379,12 +384,13 @@ import { Image } from "astro:assets";
           <ClientCard imageSrc={TotalLogo} delay={150}/>
           <ClientCard imageSrc={SavingLogo} delay={200}/>
           <ClientCard imageSrc={CyberLogo} delay={250}/>
+          <ClientCard imageSrc={CuciiLogo} delay={300}/>
 
         </div>
       </div>
     </div>
 
-    <section id="video-scroll" class="pt-12 pt-md-13 bg-gray-200">
+    <section id="video-scroll" class="pt-11">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="300">
@@ -402,14 +408,18 @@ import { Image } from "astro:assets";
               aliado de tu negocio
             </h2>
             <p class="fs-lg text-gray-700 mb-6">
-              Soluciones digitales personalizadas para tu negocio. Genera nuevas
-              oportunidades con estrategias de marketing digital para acercarte
-              a tus clientes.
+              Tu negocio necesita identificar los lugares de oportunidad para explotar su potencial en el mundo online. Generamos nuevas oportunidades con estrategias de marketing digital para acercarte a con mas clientes.
             </p>
             <div class="d-flex">
               <div class="pe-5">
                 <h3 class="mb-0">
-                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100">100</span>%
+                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100"></span>%
+                </h3>
+                <p class="text-gray-700 mb-0">Compromiso</p>
+              </div>
+              <div class="pe-5">
+                <h3 class="mb-0">
+                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100"></span>%
                 </h3>
                 <p class="text-gray-700 mb-0">Satisfaction</p>
               </div>
@@ -420,7 +430,7 @@ import { Image } from "astro:assets";
       </div>
     </section>
 
-    <section class="pb-10 pt-12 pt-md-13 bg-gray-200" id="branding-scroll">
+    <section class="pb-10 pt-11" id="branding-scroll">
       <div class="container pb-6">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
@@ -434,13 +444,11 @@ import { Image } from "astro:assets";
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-2" data-aos="fade-up" data-aos-duration="300">
             <h2>
-              Branding <span class="lab-font-color">Creativo</span>, Resultados <span
-                class="lab-font-color">Sorprendentes</span
-              >
+              Video <span class="lab-font-color">Creativo</span>
             </h2>
             <p class="fs-lg text-gray-700 mb-6">
-              La magia del Branding Creativo, es Descubrir Como Elevamos el
-              potencial de tu marca a través de la Innovación y el Diseño.
+              Sabias que un tercio de toda la actividad en linea de los usuarios se enfoca en ver videos?
+              lo que significa que si no te estas comunicando en video, no te estan viendo!
             </p>
           </div>
         </div>
@@ -452,6 +460,40 @@ import { Image } from "astro:assets";
 </IndexLayout>
 
 <style>
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 991px) {
+    h1 br {
+      display: none;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-wrap: balance;
+    }
+  }
+
+  .brands-h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+
+  .service-card {
+    /* padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 3%); */
+  }
+
+  .service-card p {
+    font-size: 1rem; 
+  }
+
+  .services-intro {
+
+  }
 
   .card-best-pricing {
     transform: scale(1.02);
@@ -629,10 +671,6 @@ import { Image } from "astro:assets";
     height: 100px;
   }
 
-  .brand-resize img {
-    height: 122% !important;
-  }
-
   .icon-continer img {
     height: 100%;
     width: auto;
@@ -672,9 +710,37 @@ import { Image } from "astro:assets";
     .videos-img-resize {
       width: 52%;
     }
-
     .web-s-control img {
       width: 70%;
     }
+    .intro-image-container {
+      display: flex;
+      justify-content: center;
+    }
+    .img-introduction {
+      width: 300px;
+    }
+    h1 {
+      text-wrap: pretty;
+    }
   }
+
+  @media (max-width: 538px) {
+    h1 {
+      font-size: 2rem;
+      text-wrap: balance;
+    }
+    .img-introduction {
+      width: 250px;
+    }
+    .
+  }
+
+  @media (max-width: 393px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+  }
+
 </style>
