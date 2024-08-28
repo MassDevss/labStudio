@@ -3,187 +3,193 @@ import Nav from "../components/shared/Nav.astro";
 import SubPageLayout from "../layouts/SubPageLayout.astro";
 
 // image of bot
-import bot404 from '../img/labstudio/404/404.webp';
+import bot404 from "../img/labstudio/404/404.webp";
 ---
 
-
 <SubPageLayout
-        title="La pagina que buscas no existe :("
-        ogTitle="La pagina que buscas no existe :("
-        description="Esta pagina no existe, tal vez haya sido removida o te hayas equivocado al copiar el link :("
-        ogDescription="Esta pagina no existe, tal vez haya sido removida o te hayas equivocado al copiar el link :("
-        keywords=""
+  title="La pagina que buscas no existe :("
+  ogTitle="La pagina que buscas no existe :("
+  description="Esta pagina no existe, tal vez haya sido removida o te hayas equivocado al copiar el link :("
+  ogDescription="Esta pagina no existe, tal vez haya sido removida o te hayas equivocado al copiar el link :("
+  keywords=""
 >
+  <Nav />
 
-    <Nav/>
-
-    <main class="w-100 d-flex flex-wrap justify-content-center align-items-center">
-        <div class="side-control d-flex justify-content-center align-items-center">
-            <img src={bot404.src} alt="Ilustracion de un robot 404"/>
-        </div>
-        <div class="side-control">
-            <p>No pudimos encontrar lo que<br>estabas buscando!</p>
-            <div class="buttons-flex d-flex gap-3">
-                <a data-astro-reload href="/">Regresar</a>
-                <a data-astro-reload href="https://wa.me/526681057964" target="_blank">Contacto</a>
-            </div>
-        </div>
-        <div class="custom-shape-divider-bottom-1719384001">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                 preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                      class="shape-fill"></path>
-            </svg>
-        </div>
-    </main>
-
+  <main
+    class="w-100 d-flex flex-wrap justify-content-center align-items-center"
+  >
+    <div class="side-control d-flex justify-content-center align-items-center">
+      <img src={bot404.src} alt="Ilustracion de un robot 404" />
+    </div>
+    <div class="side-control">
+      <p>No pudimos encontrar lo que<br />estabas buscando!</p>
+      <div class="buttons-flex d-flex gap-3">
+        <a data-astro-reload href="/">Regresar</a>
+        <a data-astro-reload href="https://wa.me/526681057964" target="_blank"
+          >Contacto</a
+        >
+      </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1719384001">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </main>
 </SubPageLayout>
 
 <style>
+  main {
+    height: calc(100vh - 126px);
+  }
 
-    main {
-        height: calc(100vh - 126px);
-    }
+  img {
+    width: 58%;
+  }
 
-    img {
-        width: 58%;
+  p {
+    position: relative;
+    left: 8px;
+    font-size: 28px;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: black;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.2rem 2rem;
+    border-radius: 40px;
+    width: 180px;
+    text-align: center;
+    transition:
+      background-color 0.1s,
+      border 0.1s;
+  }
+
+  a:first-child {
+    border: 2px solid #5d50e6;
+    background-color: #5d50e6;
+    color: #fff;
+  }
+
+  a:first-child:hover {
+    border: 2px solid #5141ff;
+    background-color: #5141ff;
+    color: #fff;
+  }
+
+  a:last-child {
+    color: #5d50e6;
+    border: 2px solid #5d50e6;
+    background-color: #eeeeee;
+  }
+
+  a:last-child:hover {
+    color: #5d50e6;
+    border: 2px solid #5d50e6;
+    background-color: #fff;
+  }
+
+  .side-control {
+    top: -40px;
+    position: relative;
+    width: 600px;
+    z-index: 2;
+  }
+
+  .custom-shape-divider-bottom-1719384001 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1719384001 svg {
+    position: relative;
+    display: block;
+    width: calc(197% + 2px);
+    height: 555px;
+  }
+
+  .custom-shape-divider-bottom-1719384001 .shape-fill {
+    fill: #633fb9;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    .side-control {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     p {
-        position: relative;
-        left: 8px;
-        font-size: 28px;
-        font-family: Helvetica, sans-serif;
-        text-align: left;
-        color: black;
+      text-align: center;
+      left: 0;
     }
 
+    img {
+      width: 300px;
+    }
+  }
+
+  @media only screen and (max-height: 733px) {
+    img {
+      width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .buttons-flex {
+      flex-direction: column;
+    }
     a {
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-        padding: 0.2rem 2rem;
-        border-radius: 40px;
-        width: 180px;
-        text-align: center;
-        transition: background-color 0.1s, border 0.1s;
+      width: 400px;
     }
-
-    a:first-child {
-        border: 2px solid #5d50e6;
-        background-color: #5d50e6;
-        color: #FFF;
+    img {
+      margin-top: 30px;
     }
+  }
 
-    a:first-child:hover {
-        border: 2px solid #5141ff;
-        background-color: #5141ff;
-        color: #FFF;
+  @media only screen and (max-width: 428px) {
+    a {
+      width: 320px;
     }
+  }
 
-    a:last-child {
-        color: #5d50e6;
-        border: 2px solid #5d50e6;
-        background-color: #eeeeee;
+  @media only screen and (max-width: 384px) {
+    p {
+      font-size: 24px;
     }
+  }
 
-    a:last-child:hover {
-        color: #5d50e6;
-        border: 2px solid #5d50e6;
-        background-color: #fff;
+  @media only screen and (max-width: 340px) {
+    a {
+      width: 280px;
     }
+  }
 
-    .side-control {
-        top: -40px;
-        position: relative;
-        width: 600px;
-        z-index: 2;
+  @media only screen and (max-width: 300px) {
+    p {
+      font-size: 20px;
     }
-
-    .custom-shape-divider-bottom-1719384001 {
-        z-index: 1;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
+    a {
+      width: 260px;
     }
-
-    .custom-shape-divider-bottom-1719384001 svg {
-        position: relative;
-        display: block;
-        width: calc(197% + 2px);
-        height: 555px;
-    }
-
-    .custom-shape-divider-bottom-1719384001 .shape-fill {
-        fill: #633fb9;
-    }
-
-
-    @media only screen and (max-width: 1199px) {
-        .side-control {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        p {
-            text-align: center;
-            left: 0;
-        }
-
-        img {
-            width: 300px;
-        }
-    }
-
-    @media only screen and (max-height: 733px) {
-        img {
-            width: 200px;
-        }
-    }
-
-    @media only screen and (max-width: 540px) {
-        .buttons-flex {
-            flex-direction: column;
-        }
-        a {
-            width: 400px;
-        }
-        img {
-		        margin-top: 30px;
-        }
-    }
-
-    @media only screen and (max-width: 428px) {
-        a {
-            width: 320px;
-        }
-    }
-
-    @media only screen and (max-width: 384px) {
-        p {
-            font-size: 24px;
-        }
-    }
-
-    @media only screen and (max-width: 340px) {
-        a {
-            width: 280px;
-        }
-    }
-
-    @media only screen and (max-width: 300px) {
-        p {
-		        font-size: 20px;
-        }
-		    a {
-            width: 260px;
-        }
-    }
+  }
 </style>
