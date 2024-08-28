@@ -49,9 +49,12 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
     </div>
 
     <div class="content-secondary-card pt-4 rounded-bottom-4">
-      <div class="title-card-service">
-        <p>${ price }</p>
-      </div>
+      {
+        price === "" ? <div></div> :
+        <div class="title-card-service">
+          <p>${ price }</p>
+        </div>
+      }
 
       <div class="bottom-card d-flex justify-content-center padding-card-rl">
         <a
@@ -86,6 +89,7 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
     width: 20.5rem;
     position: relative;
     bottom: 0;
+    box-shadow: 0rem 0.2rem 0.8rem #00000008;
     transition-property: box-shadow, bottom;
     transition-duration: 0.5s;
     border-radius: 1rem;

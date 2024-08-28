@@ -1,5 +1,5 @@
 ---
-
+import {type ImageMetadata} from "astro";
 
 interface Props {
   imageSrc: ImageMetadata,
@@ -10,7 +10,7 @@ const { imageSrc, delay } = Astro.props;
 
 ---
 
-<div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0 past-clients" data-aos="fade-in" data-aos-delay={delay}>
+<div class="width mb-4 mb-md-0 past-clients" data-aos="fade-in" data-aos-delay={delay}>
   <div class="img-fluid text-gray-600 mb-2 mb-md-0">
     <img
       src={imageSrc.src}
@@ -20,6 +20,9 @@ const { imageSrc, delay } = Astro.props;
 </div>
 
 <style>
+  .width {
+    width: 170px;
+  }
   img {
     filter: hue-rotate(90deg) grayscale(100%);
   }

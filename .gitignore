@@ -1,7 +1,19 @@
+# Node.js and npm
+node_modules/
+npm-debug.log*
+yarn-error.log*
 
-node_modules
-.code
-.astro
-.idea
-.vscode
-dist
+# IDE-specific files
+.DS_Store
+.idea/
+.vscode/
+
+# Build output and cache
+dist/
+.astro/
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.log

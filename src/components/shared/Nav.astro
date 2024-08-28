@@ -1,15 +1,15 @@
 ---
 
 import { Image } from "astro:assets";
-import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
+import NavLogo from "../../img/labstudio/brand/purple-logo.png";
 
 ---
 
 <header>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg pt-6">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <Image src={NavLogo} alt="labstudio logo" class="lab-logo mb-2" data-aos="fade-down" data-aos-duration="400" />
+        <Image src={NavLogo} alt="labstudio logo" class="lab-logo" data-aos="fade-down" data-aos-duration="400" />
       </a>
       <button
         class="navbar-toggler"
@@ -75,15 +75,16 @@ import NavLogo from "../../img/labstudio/usBrand/logo-purple.webp";
 </script>
 
 <style>
-  .actual-link {
-    color: #633fb9;
-  }
 
   .lab-logo {
-    width: 220px;
+    width: 200px;
     height: auto;
   }
 
+  .actual-link {
+    color: #633fb9;
+  }
+  
   .nav-link:hover {
     color: #633fb9;
   }
