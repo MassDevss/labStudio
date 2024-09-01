@@ -1,5 +1,6 @@
 ---
 import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
 import BlogImage from "../../img/blog/2.webp";
 ---
 
@@ -10,7 +11,7 @@ import BlogImage from "../../img/blog/2.webp";
   ogDescription="En la era móvil, el diseño responsivo es clave para ofrecer una experiencia de usuario óptima. Descubre su importancia y cómo puede beneficiar a tu negocio."
   keywords="diseño responsivo, era móvil, experiencia de usuario, diseño web adaptable, optimización móvil, conversión web, accesibilidad web, SEO, desarrollo web, tendencias digitales"
   createdBy="Manuel Samaniego"
-  jobTitle="Desarrollador web"
+  skill={ JobSkills.WebDeveloper }
   date="mayo 29, 2024"
   blogImage={BlogImage}
   content={[

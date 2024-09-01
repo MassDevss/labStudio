@@ -1,5 +1,6 @@
 ---
 import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
 import BlogImage from "../../img/blog/5-1.webp";
 import BlogImage3d from "../../img/blog/5-2.webp";
 
@@ -12,7 +13,7 @@ import BlogImage3d from "../../img/blog/5-2.webp";
   ogDescription="Descubre las tendencias más relevantes en diseño web para 2024, desde la integración de 3D hasta la optimización para dispositivos móviles. Mantente a la vanguardia con estas innovaciones."
   keywords="diseño web 2024, tendencias web, integración de 3D, accesibilidad web, diseño UX/UI, diseño minimalista, optimización móvil"
   createdBy="Manuel Samaniego"
-  jobTitle="Desarrollador web"
+  skill={ JobSkills.WebDeveloper }
   date="agosto 13, 2024"
   blogImage={BlogImage}
   content={[

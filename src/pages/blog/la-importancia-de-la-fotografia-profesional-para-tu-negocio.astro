@@ -1,5 +1,6 @@
 ---
 import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
 import BlogImage from '../../img/blog/3.webp';
 
 ---
@@ -12,7 +13,7 @@ import BlogImage from '../../img/blog/3.webp';
   ogDescription="La fotografía profesional es clave para destacar tu negocio en el mercado. Conoce los beneficios de contar con imágenes de alta calidad y cómo pueden influir en la percepción de tu marca."
   keywords="fotografía profesional, negocios, marketing visual, branding, imágenes de alta calidad, atracción de clientes, aumento de ventas, presentación de productos, contenido visual, identidad de marca"
   createdBy="Guy Miranda"
-  jobTitle="Fotógrafo"
+  skill={ JobSkills.Photographer }
   date="Junio 24, 2024"
   blogImage={BlogImage}
   content={[

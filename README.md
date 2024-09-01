@@ -1,10 +1,10 @@
-# Labstudio Media Landing Page
+# Labstudiomedia Landing Page
 
 Bienvenido al repositorio de la landing page de Labstudio Media, Somos una agencia de marketing digital dedicada a crear Sitios web increíbles y contenido audiovisual como videos y fotografía ubicada en Los Mochis, Sinaloa. Este proyecto está construido utilizando [ASTRO](https://astro.build) como framework y [AOS](https://michalsnik.github.io/aos/) para las animaciones.
 
 ## Descripción
 
-La landing page de Labstudio Media está diseñada para ofrecer a los visitantes una experiencia interactiva y dinámica. Utiliza animaciones fluidas y contenido optimizado para destacar los servicios y proyectos de la agencia.
+La landing page de Labstudiomedia está diseñada para ofrecer a los visitantes una experiencia interactiva y dinámica. Utiliza animaciones fluidas y contenido optimizado para destacar los servicios y proyectos de la agencia, realizamos un esfuerzo notable por herramientas para revision de SEO y rendimiento como Lighthouse.
 
 ## Tecnologías Utilizadas
 
@@ -17,21 +17,25 @@ La landing page de Labstudio Media está diseñada para ofrecer a los visitantes
 Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 1. Clona el repositorio:
+
     ```bash
     git clone https://github.com/ManuelsSaNt/labStudio
     ```
 
 2. Navega al directorio del proyecto:
+
     ```bash
     cd labStudio
     ```
 
 3. Instala las dependencias:
+
     ```bash
     npm install
     ```
 
 4. Inicia el servidor de desarrollo:
+
     ```bash
     npm run dev
     ```
@@ -46,7 +50,7 @@ Una vez que el proyecto esté instalado y ejecutándose, puedes modificar los ar
 
 Para cualquier consulta adicional, puedes contactarnos a través de:
 
-- **Email**: labs.studio.creative@gmail.com
+- **Email**: [contacto@labstudiomedia.com](mailto:contacto@labstudiomedia.com)
 
 Visita nuestro [sitio web](https://labstudiomedia.com) para más información sobre nuestros servicios.
 
