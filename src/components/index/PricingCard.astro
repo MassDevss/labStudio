@@ -30,12 +30,13 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
 
     <div class="top-card-content">
 
-      { image !== null ? 
-        <img
-          src={image.src}
-          alt="WhatsApp business logo"
-          class="card-mini-img"
-        />
+      { 
+        image !== null ? 
+          <img
+            src={image.src}
+            alt="WhatsApp business logo"
+            class="card-mini-img"
+          />
         :
         <></>
       }

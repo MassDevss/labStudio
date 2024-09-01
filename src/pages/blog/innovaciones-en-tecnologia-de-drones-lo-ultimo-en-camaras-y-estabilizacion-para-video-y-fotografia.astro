@@ -1,16 +1,19 @@
 ---
-// import BlogEntry from "../../components/blog/BlogEntry.astro";
+import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
+import BlogImage from "../../img/blog/9.webp"
 ---
 
-<!-- <BlogEntry 
+<BlogEntry 
   title="Innovaciones en Tecnología de Drones: Lo Último en Cámaras y Estabilización para Video y Fotografía"
   ogTitle="Innovaciones en Tecnología de Drones: Lo Último en Cámaras y Estabilización para Video y Fotografía"
   description="Explora las últimas innovaciones en tecnología de drones, centrándote en las mejoras de cámaras y sistemas de estabilización que están transformando la calidad del contenido en video y fotografía."
   ogDescription="Explora las últimas innovaciones en tecnología de drones, centrándote en las mejoras de cámaras y sistemas de estabilización que están transformando la calidad del contenido en video y fotografía."
   keywords="drones, tecnología de drones, cámaras de drones, estabilización de drones, video con drones, fotografía con drones, innovaciones tecnológicas, calidad de imagen"
-  createdBy="Manuel Samaniego"
-  jobTitle="Desarrollador web"
-  date="agosto 11, 2024"
+  createdBy="Ivan Franco"
+  skill={ JobSkills.Droner }
+  date="agosto 31, 2024"
+  blogImage={BlogImage}
   content={[
     {
       subTitle: "Introducción",
@@ -41,4 +44,4 @@
       text: "<p>Las innovaciones en tecnología de drones han abierto nuevas posibilidades para fotógrafos y videógrafos, permitiendo capturar contenido de alta calidad con facilidad. Las mejoras en las cámaras, la estabilización y las capacidades de vuelo automatizadas están llevando la fotografía y videografía aérea a nuevas alturas. Para aquellos que buscan mejorar su contenido visual, invertir en un dron con estas innovaciones tecnológicas puede ser una decisión acertada.</p>"
     }
   ]}
-/> -->
+/>

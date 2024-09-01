@@ -1,5 +1,6 @@
 ---
 import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
 import BlogImage from "../../img/blog/6.webp";
 
 ---
@@ -11,7 +12,7 @@ import BlogImage from "../../img/blog/6.webp";
   ogDescription="Descubre los 10 errores más comunes en diseño web y aprende cómo evitarlos para mejorar la experiencia de usuario y el rendimiento de tu sitio."
   keywords="errores diseño web, errores comunes, diseño UX/UI, mejora de sitio web, optimización web, experiencia de usuario"
   createdBy="Manuel Samaniego"
-  jobTitle="Desarrollador web"
+  skill={ JobSkills.WebDeveloper }
   date="agosto 11, 2024"
   blogImage={ BlogImage }
   content={[

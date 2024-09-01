@@ -1,5 +1,6 @@
 ---
 import BlogEntry from "../../components/blog/BlogEntry.astro";
+import { JobSkills } from "../../enums/JobSkill";
 import BlogImage from "../../img/blog/1.webp";
 
 ---
@@ -11,7 +12,7 @@ import BlogImage from "../../img/blog/1.webp";
   ogDescription="Descubre las 10 razones principales por las cuales una página web es crucial para el éxito de tu negocio. Aprende cómo una buena presencia en línea puede incrementar tus oportunidades de crecimiento."
   keywords="importancia de una página web, beneficios de una página web, presencia en línea, negocio digital, marketing digital, ecommerce, SEO, branding, crecimiento empresarial, ventas en línea"
   createdBy="Manuel Samaniego"
-  jobTitle="Desarrollador Web"
+  skill={ JobSkills.WebDeveloper }
   date="Mayo 29, 2024"
   blogImage={BlogImage}
   content={[

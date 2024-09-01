@@ -13,13 +13,13 @@ interface Props {
   ogDescription: string;
   keywords: string;
   createdBy: string;
-  jobTitle: string;
+  skill: string;
   date: string;
   blogImage?: ImageMetadata;
   content: BlogContent[];
 }
 
-const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle, date, blogImage, content } = Astro.props;
+const { title, ogTitle, description, ogDescription, keywords,createdBy, skill, date, blogImage, content } = Astro.props;
 
 ---
 
@@ -35,7 +35,7 @@ const { title, ogTitle, description, ogDescription, keywords,createdBy, jobTitle
   <main class="w-100 d-flex flex-column justify-content-center align-items-center pb-11">
     <div class="blog-container">
       <h1 class="m-0">{ title }</h1>
-      <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ jobTitle }</span> en <span class="lab-font-color">LABSTUDIO</span> • <span>{ date }</span></p>
+      <p class="text-gray-700 ms-1">Por <span>{ createdBy }</span> - <span>{ skill }</span> en <span class="lab-font-color">LABSTUDIO</span> • <span>{ date }</span></p>
 
       <Image src={blogImage} alt="linea" class="w-100 h-auto shadow rounded mt-4 mb-6" />
     
