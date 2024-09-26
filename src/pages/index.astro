@@ -7,7 +7,7 @@ import WhatsApp from "../components/shared/WhatsApp.astro";
 import Card from "../components/index/PricingCard.astro";
 import ClientCard from "../components/index/ClientCard.astro";
 
-// imagenes
+// images
 import IntroImage from "../img/labstudio/pageImages/intro-side-icon.webp";
 import WebDev from "../img/labstudio/pageImages/webdev-ico.webp";
 import Branding from "../img/labstudio/pageImages/branding-ico.webp";
@@ -47,7 +47,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
               id="welcome-image"
               src={IntroImage.src}
               alt="Ilustracion de introducción en la portada"
-              class="img-introduction img-fluid mb-6 mb-md-0"
+              class="img-introduction img-fluid mb-2 mb-md-0"
             />
           </div>
           <div class="col-12 col-md-7 col-lg-7 order-md-1">
@@ -57,11 +57,11 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
               Quitate el miedo de aumentar tus ventas, por que es lo peor que puede pasar!
             </p>
-            <div class="text-center text-md-start">
+            <div class="d-flex intro-btn-container">
               <a
                 href="https://wa.me/526681057964"
                 target="_blank"
-                class="btn lab-back-color shadow me-1 text-light"
+                class="btn lab-back-color shadow text-light"
               >
                 Mas Información <i
                   class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
@@ -85,9 +85,9 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
                 <div class="icon-continer mb-3">
                   <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
                 </div>
-                <a href="#web-design-scroll" class="link-scroller">
+                <p class="card-intro-title">
                   Desarrollo Web
-                </a>
+                </p>
                 <p class="text-muted mb-0">
                   Desarrollamos tu sitio web de tu negocio para que llegues a
                   nuevos clientes.
@@ -99,7 +99,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
                 <div class="icon-continer mb-3">
                   <img src={Branding.src} alt="Ilustración sobre diseño" />
                 </div>
-                <a href="#branding-scroll" class="link-scroller"> Branding </a>
+                <p class="card-intro-title"> Branding </p>
                 <p class="text-muted mb-6 mb-md-0">
                   Diseñamos el futuro de tu negocio con estrategia y creatividad.
                 </p>
@@ -110,9 +110,9 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
                 <div class="icon-continer mb-3">
                   <img src={VideoCamera.src} alt="Ilustración de un cohete" />
                 </div>
-                <a href="#video-scroll" class="link-scroller">
+                <p class="card-intro-title">
                   Producción Audiovisual
-                </a>
+                </p>
                 <p class="text-muted mb-6 mb-md-0">
                   "Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
                   Espectaculares.
@@ -390,70 +390,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
       </div>
     </div>
 
-    <section id="video-scroll" class="pt-11">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="300">
-            <img
-              loading="lazy"
-              src={VideoImage.src}
-              alt="Ilustración sobre Videos"
-              class="videos-img-resize img-fluid mb-6 mb-md-0"
-              style="aspect-ratio:0.5845/1"
-            />
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
-            <h2>
-              <span class="lab-font-color">Marketing digital</span>, el mejor
-              aliado de tu negocio
-            </h2>
-            <p class="fs-lg text-gray-700 mb-6">
-              Tu negocio necesita identificar los lugares de oportunidad para explotar su potencial en el mundo online. Generamos nuevas oportunidades con estrategias de marketing digital para acercarte a con mas clientes.
-            </p>
-            <div class="d-flex">
-              <div class="pe-5">
-                <h3 class="mb-0">
-                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100"></span>%
-                </h3>
-                <p class="text-gray-700 mb-0">Compromiso</p>
-              </div>
-              <div class="pe-5">
-                <h3 class="mb-0">
-                  <span data-countup="{&quot;startVal&quot;: 0}" data-to="100"></span>%
-                </h3>
-                <p class="text-gray-700 mb-0">Satisfaction</p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="pb-10 pt-11" id="branding-scroll">
-      <div class="container pb-6">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-1 d-flex justify-content-start" data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
-            <img
-              loading="lazy"
-              src={BrandingImage.src}
-              alt="Ilustracion sobre Branding Creativo"
-              class="mb-6 mb-md-0 w-100 h-auto"
-              style="aspect-ratio: 1.607/1"
-            />
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-2" data-aos="fade-up" data-aos-duration="300">
-            <h2>
-              Video <span class="lab-font-color">Creativo</span>
-            </h2>
-            <p class="fs-lg text-gray-700 mb-6">
-              Sabias que un tercio de toda la actividad en linea de los usuarios se enfoca en ver videos?
-              lo que significa que si no te estas comunicando en video, no te estan viendo!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <Footer useMap={true} />
   <WhatsApp />
@@ -480,7 +417,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
     font-size: 2.7rem;
   }
 
-  .service-card p {
+  .service-card p:last-child {
     font-size: 1rem; 
   }
 
@@ -675,19 +612,24 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
     text-align: justify;
   }
 
-  .link-scroller {
+  .card-intro-title {
+    margin: 0;
     font-weight: 600;
     font-size: 1.2rem;
     color: #633fb9;
   }
 
-  .link-scroller:hover {
+  .card-intro-title:hover {
     color: #633fb9;
     text-decoration: none;
   }
 
   .button-knowus:active {
     background-color: rgba(51, 94, 234, 0.1) !important;
+  }
+
+  .intro-btn-container {
+    gap: 0.6rem;
   }
 
   @media (max-width: 992px) {
@@ -713,6 +655,10 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
     h1 {
       text-wrap: pretty;
     }
+    .intro-btn-container {
+      gap: 0.6rem;
+      justify-content: center;
+    }
   }
 
   @media (max-width: 538px) {
@@ -723,14 +669,27 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
     .img-introduction {
       width: 250px;
     }
-    .
   }
 
-  @media (max-width: 393px) {
+  @media only screen and (max-width: 493px) {
     h1 {
       font-size: 1.8rem;
     }
-    
+  }
+
+  @media only screen and (max-width: 448px) {
+    .intro-btn-container {
+      flex-wrap: wrap;
+    }
+    .intro-btn-container a {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 387px) {
+    h1 {
+      font-size: 1.7rem;
+    }
   }
 
 </style>
