@@ -15,9 +15,7 @@ import VideoCamera from "../img/labstudio/pageImages/video-camera-3d.webp";
 import WeMadeYourWeb from "../img/labstudio/pageImages/weMadeYourWeb.webp";
 import Store from "../img/labstudio/pageImages/store-1.webp";
 import GoogleBusiness from "../img/labstudio/pageImages/g-shadow.webp";
-import VideoImage from "../img/labstudio/pageImages/videos-1.webp";
-import BrandingImage from "../img/labstudio/pageImages/creative-branding.webp";
-import WhatsappBuisness from "../img/labstudio/pageImages/w-shadow.webp";
+import WhatsappBusiness from "../img/labstudio/pageImages/w-shadow.webp";
 
 // clients logos 
 import AlferLogo from "../img/brands/brands-alfer.webp";
@@ -27,669 +25,917 @@ import TotalLogo from "../img/brands/brands-total.webp";
 import SavingLogo from "../img/brands/brands-pharmacy.webp";
 import CyberLogo from "../img/brands/brands-cyber.webp";
 import CuciiLogo from "../img/brands/brands-cucii.webp";
-
 ---
 
 <IndexLayout
-  title="LABSTUDIO | Marketing Digital | Fotografía | Video | Desarrollo Web"
-  ogTitle="LABSTUDIO | Marketing Digital | Fotografía | Video | Desarrollo Web"
-  description="En Labstudiomedia, brindamos fotografía, video, desarrollo web y drones. Creatividad y enfoque en el cliente para el éxito de tu marca."
-  ogDescription="En Labstudiomedia ofrecemos servicios de fotografía, producción de video, desarrollo web y videos aéreos con dron en Los Mochis, Sinaloa. Destaca con nuestra experiencia en medios digitales. Contáctanos hoy."
-  keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
+	title="LABSTUDIO | Marketing Digital | Fotografía | Video | Desarrollo Web"
+	ogTitle="LABSTUDIO | Marketing Digital | Fotografía | Video | Desarrollo Web"
+	description="En Labstudiomedia, brindamos fotografía, video, desarrollo web y drones. Creatividad y enfoque en el cliente para el éxito de tu marca."
+	ogDescription="En Labstudiomedia ofrecemos servicios de fotografía, producción de video, desarrollo web y videos aéreos con dron en Los Mochis, Sinaloa. Destaca con nuestra experiencia en medios digitales. Contáctanos hoy."
+	keywords="Fotografía profesional, Servicios fotográficos en Los Mochis, Fotógrafo en Sinaloa, Sesiones fotográficas creativas, Fotografía de productos, Producción de video en Los Mochis, Videos corporativos, Edición de video profesional, Producción audiovisual en Sinaloa, Videos promocionales creativos, Diseño web personalizado, Desarrollo de sitios web en Los Mochis, Agencia de diseño web en Sinaloa, Desarrollo web responsive, Creación de tiendas en línea, Videos aéreos en Los Mochis, Filmación con dron en Sinaloa, Servicios de dron para eventos, Fotografía aérea profesional, Videos panorámicos con dron, Desarrollo de apps web en Los Mochis, Creación de aplicaciones web personalizadas, Desarrollo de software a medida, Aplicaciones web para negocios, Desarrollo de aplicaciones móviles web"
 >
-  <Nav />
-  <main>
-    <section class="pt-4 pt-md-11">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="intro-image-container col-12 col-md-5 col-lg-5 order-md-2">
-            <img
-              id="welcome-image"
-              src={IntroImage.src}
-              alt="Ilustracion de introducción en la portada"
-              class="img-introduction img-fluid mb-2 mb-md-0"
-            />
-          </div>
-          <div class="col-12 col-md-7 col-lg-7 order-md-1">
-            <h1 class="text-center text-md-start">
-              Potenciamos tu presencia <br>digital transformando ideas <br>en contenidos digitales con <span class="lab-font-color">desarrollo web</span>, <span class="lab-font-color">video</span> y <span class="lab-font-color">branding</span>
-            </h1>
-            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Quitate el miedo de aumentar tus ventas, por que es lo peor que puede pasar!
-            </p>
-            <div class="d-flex intro-btn-container">
-              <a
-                href="https://wa.me/526681057964"
-                target="_blank"
-                class="btn lab-back-color shadow text-light"
-              >
-                Mas Información <i
-                  class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@labstudio.media"
-                target="_blank"
-                class="btn btn-primary-soft lab-font-color-btn button-knowus"
-              >
-                Conócenos
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-10 py-md-11">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600">
-              <div class="service-card">
-                <div class="icon-continer mb-3">
-                  <img src={WebDev.src} alt="Ilustración sobre una pagina web" />
-                </div>
-                <p class="card-intro-title">
-                  Desarrollo Web
-                </p>
-                <p class="text-muted mb-0">
-                  Desarrollamos tu sitio web de tu negocio para que llegues a
-                  nuevos clientes.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-              <div class="service-card">
-                <div class="icon-continer mb-3">
-                  <img src={Branding.src} alt="Ilustración sobre diseño" />
-                </div>
-                <p class="card-intro-title"> Branding </p>
-                <p class="text-muted mb-6 mb-md-0">
-                  Diseñamos el futuro de tu negocio con estrategia y creatividad.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-              <div class="service-card">
-                <div class="icon-continer mb-3">
-                  <img src={VideoCamera.src} alt="Ilustración de un cohete" />
-                </div>
-                <p class="card-intro-title">
-                  Producción Audiovisual
-                </p>
-                <p class="text-muted mb-6 mb-md-0">
-                  "Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
-                  Espectaculares.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<Nav/>
+	<main>
+		<section class="pt-4 pt-md-11">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="intro-image-container col-12 col-md-5 col-lg-5 order-md-2">
+						<img
+							id="welcome-image"
+							src={IntroImage.src}
+							alt="Ilustracion de introducción en la portada"
+							class="img-introduction img-fluid mb-2 mb-md-0"
+						/>
+					</div>
+					<div class="col-12 col-md-7 col-lg-7 order-md-1">
+						<h1 class="text-center text-md-start">
+							Potenciamos tu presencia <br>digital transformando ideas <br>en contenidos digitales con <span
+							class="lab-font-color">desarrollo web</span>, <span class="lab-font-color">video</span> y <span
+							class="lab-font-color">branding</span>
+						</h1>
+						<p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+							Quitate el miedo de aumentar tus ventas, por que es lo peor que puede pasar!
+						</p>
+						<div class="d-flex intro-btn-container">
+							<a
+								href="https://wa.me/526681057964"
+								target="_blank"
+								class="btn lab-back-color shadow text-light"
+							>
+								Mas Información <i
+								class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+							</a>
+							<a
+								href="https://www.tiktok.com/@labstudiomedia"
+								target="_blank"
+								class="btn btn-primary-soft lab-font-color-btn button-know-us"
+							>
+								Conócenos
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-10 py-md-11">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600">
+							<div class="service-card">
+								<div class="icon-container mb-3">
+									<img src={WebDev.src} alt="Ilustración sobre una pagina web"/>
+								</div>
+								<p class="card-intro-title">
+									Desarrollo Web
+								</p>
+								<p class="text-muted mb-0">
+									Desarrollamos tu sitio web de tu negocio para que llegues a
+									nuevos clientes.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
+							<div class="service-card">
+								<div class="icon-container mb-3">
+									<img src={Branding.src} alt="Ilustración sobre diseño"/>
+								</div>
+								<p class="card-intro-title"> Branding </p>
+								<p class="text-muted mb-6 mb-md-0">
+									Diseñamos el futuro de tu negocio con estrategia y creatividad.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+							<div class="service-card">
+								<div class="icon-container mb-3">
+									<img src={VideoCamera.src} alt="Ilustración de un cohete"/>
+								</div>
+								<p class="card-intro-title">
+									Producción Audiovisual
+								</p>
+								<p class="text-muted mb-6 mb-md-0">
+									"Luces, Cámara, Acción": Potenciamos tu Mensaje con Videos
+									Espectaculares.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="pt-8 pt-md-11">
-      <div class="container">
-        <div class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11">
-          <div class="col-12 col-md-6 order-md-2">
-            <h2>
-              Creamos tu pagina web<br />Una web para
-              <span
-                id="for-your-text"
-                class="lab-font-color"
-                data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "tu Marca...", "ti..."]}'
-              >
+		<section class="pt-8 pt-md-11">
+			<div class="container">
+				<div
+					class="row align-items-center justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row pb-8 pb-md-11">
+					<div class="col-12 col-md-6 order-md-2">
+						<h2>
+							Creamos tu pagina web<br/>Una web para
+							<span
+								id="for-your-text"
+								class="lab-font-color"
+								data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "tu Marca...", "ti..."]}'
+							>
               </span>
-            </h2>
-            <p class="fs-lg text-muted mb-6">
-              En un mundo digitalizado, tu presencia en línea es fundamental.
-              Es por eso que en <span class="lab-font-color">LabStudio</span> Creamos 
-              sitios web impactantes y a tu medida que no solo destacan en Internet, 
-              sino que también ayudan a conectarte de manera efectiva con tus clientes,
-              Creando una presencia digital más efectiva lo que se traduce en mas ventas 
-              para tu negocio.
-            </p>
+						</h2>
+						<p class="fs-lg text-muted mb-6">
+							En un mundo digitalizado, tu presencia en línea es fundamental.
+							Es por eso que en <span class="lab-font-color">LabStudio</span> Creamos
+							sitios web impactantes y a tu medida que no solo destacan en Internet,
+							sino que también ayudan a conectarte de manera efectiva con tus clientes,
+							Creando una presencia digital más efectiva lo que se traduce en mas ventas
+							para tu negocio.
+						</p>
 
-            <div class="row checks-container">
-              <div class="col-12 col-lg-6">
-                <div class="d-flex">
-                  <div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  <p class="lab-font-color">Creativo</p>
-                </div>
-                <div class="d-flex">
-                  <div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="50" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  <p class="lab-font-color mb-lg-0">Original</p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 mb-6 mb-md-0">
-                <div class="d-flex">
-                  <span data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="100" class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
+						<div class="row checks-container">
+							<div class="col-12 col-lg-6">
+								<div class="d-flex">
+									<div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out"
+											 class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
+										<i class="fe fe-check"></i>
+									</div>
+									<p class="lab-font-color">Creativo</p>
+								</div>
+								<div class="d-flex">
+									<div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="50"
+											 class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
+										<i class="fe fe-check"></i>
+									</div>
+									<p class="lab-font-color mb-lg-0">Original</p>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 mb-6 mb-md-0">
+								<div class="d-flex">
+                  <span data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="100"
+												class="badge soft-lab-back-color lab-font-color badge-rounded-circle mt-1 me-4 check-boing">
                     <i class="fe fe-check"></i>
                   </span>
-                  <p class="lab-font-color">Funcional</p>
-                </div>
-                <div class="d-flex">
-                  <div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="150" class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4 check-boing">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  <p class="lab-font-color mb-0">Efectivo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-1">
-            <div class="web-s-control">
-              <img src={WeMadeYourWeb.src} alt="Imagen de una búsqueda web" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+									<p class="lab-font-color">Funcional</p>
+								</div>
+								<div class="d-flex">
+									<div data-aos="zoom-in" data-aos-duration="100" data-aos-easing="ease-in-out" data-aos-delay="150"
+											 class="badge soft-lab-back-color lab-font-color badge-rounded-circle me-1 me-4 check-boing">
+										<i class="fe fe-check"></i>
+									</div>
+									<p class="lab-font-color mb-0">Efectivo</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-5 order-md-1">
+						<div class="web-s-control">
+							<img src={WeMadeYourWeb.src} alt="Imagen de una búsqueda web"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="pt-8 pt-md-11" id="web-design-scroll">
-      <div class="container pb-8">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6">
-            <h2>
-              Creamos tu<br /><span class="lab-font-color"
-                >Tienda en linea</span
-              >
-            </h2>
+		<section class="pt-8 pt-md-11" id="web-design-scroll">
+			<div class="container pb-8">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-7 col-lg-6">
+						<h2>
+							Creamos tu<br/><span class="lab-font-color"
+						>Tienda en linea</span
+						>
+						</h2>
 
-            <p class="fs-lg text-muted mb-6">
-              Tu negocio puede llegar a clientes en todo el mundo, no solo localmente.
-            </p>
+						<p class="fs-lg text-muted mb-6">
+							Tu negocio puede llegar a clientes en todo el mundo, no solo localmente.
+						</p>
 
-            <div class="d-flex">
-              <div id="eye-pages" class="icon icon-labs">
-                <span class="fe fe-eye"></span>
-              </div>
-              <div class="ms-5">
-                <h3 class="mb-1 h4">La primera impresión importa</h3>
-                <p class="text-muted mb-6">
-                  Entendemos como funciona el mundo digital, es por eso que
-                  sabemos mejorar la experiencia de usuario con sitios web
-                  atractivos y responsivos.
-                </p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <div id="clock-pages" class="icon icon-labs">
-                <span class="fe fe-clock"></span>
-              </div>
-              <div class="ms-5">
-                <h3 class="mb-1 h4">Optimizamos tu pagina</h3>
-                <p class="text-muted mb-6 mb-md-0 justify-text">
-                  Google favorece los sitios web con diseño responsivo, ya que ofrecen una mejor experiencia de usuario. Esto puede traducirse en una clasificación más alta en los resultados de búsqueda, lo que aumenta la visibilidad de tu negocio!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-5 col-lg-6">
-            <div class="position-relative">
-              <div class="img-skewed img-skewed-start">
-                <img
-                  loading="lazy"
-                  src={Store.src}
-                  class="img-store-size screenshot img-fluid img-skewed-item"
-                  alt="Ilustración tienda en linea"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+						<div class="d-flex">
+							<div id="eye-pages" class="icon icon-labs">
+								<span class="fe fe-eye"></span>
+							</div>
+							<div class="ms-5">
+								<h3 class="mb-1 h4">La primera impresión importa</h3>
+								<p class="text-muted mb-6">
+									Entendemos como funciona el mundo digital, es por eso que
+									sabemos mejorar la experiencia de usuario con sitios web
+									atractivos y responsivos.
+								</p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div id="clock-pages" class="icon icon-labs">
+								<span class="fe fe-clock"></span>
+							</div>
+							<div class="ms-5">
+								<h3 class="mb-1 h4">Optimizamos tu pagina</h3>
+								<p class="text-muted mb-6 mb-md-0 justify-text">
+									Google favorece los sitios web con diseño responsivo, ya que ofrecen una mejor experiencia de usuario.
+									Esto puede traducirse en una clasificación más alta en los resultados de búsqueda, lo que aumenta la
+									visibilidad de tu negocio!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5 col-lg-6">
+						<div class="position-relative">
+							<div class="img-skewed img-skewed-start">
+								<img
+									loading="lazy"
+									src={Store.src}
+									class="img-store-size screenshot img-fluid img-skewed-item"
+									alt="Ilustración tienda en linea"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
-      <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
-      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
-        <Card
-          title="Básico"
-          description="Tengo un negocio y quiero contar con presencia en línea, para generar más confianza con mis clientes y aumentar mis ventas!"
-          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
-          price="8,499"
-          image={null}
-          features={[
-            "Dominio Gratis por 1 año",
-            "Hosting Gratis por 1 año",
-            "Diseño Personalizado",
-            "Certificado SSL",
-            "Maps",
-            "Botón WhatsApp",
-            "Optimización Web & Móvil",
-            "Soporte Básico"
-          ]}
-        />
+		<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+			<h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
+			<div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
+				<Card
+					title="Básico"
+					description="Tengo un negocio y quiero contar con presencia en línea, para generar más confianza con mis clientes y aumentar mis ventas!"
+					whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
+					price="8,499"
+					image={null}
+					features={[
+						"Dominio Gratis por 1 año",
+						"Hosting Gratis por 1 año",
+						"Diseño Personalizado",
+						"Certificado SSL",
+						"Maps",
+						"Botón WhatsApp",
+						"Optimización Web & Móvil",
+						"Soporte Básico"
+					]}
+				/>
 
-        <Card
-          title="Landing"
-          description="Lo que todo negocio necesita, un escaparate para ayudar a tus clientes a conocerte un poco mas antes de realizar una compra"
-          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
-          price="12,999"
-          image={null}
-          features={[
-            "Dominio Gratis por 1 año",
-            "Hosting Gratis por 1 año",
-            "Diseño Personalizado",
-            "Certificado SSL",
-            "Maps",
-            "Botón WhatsApp",
-            "Optimización Web & Móvil",
-            "Soporte Avanzado",
-            "Links a tus Redes Sociales",
-            "10 Cuentas de Correo",
-            "Optimización SEO",
-          ]}
-        />
+				<Card
+					title="Landing"
+					description="Lo que todo negocio necesita, un escaparate para ayudar a tus clientes a conocerte un poco mas antes de realizar una compra"
+					whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
+					price="12,999"
+					image={null}
+					features={[
+						"Dominio Gratis por 1 año",
+						"Hosting Gratis por 1 año",
+						"Diseño Personalizado",
+						"Certificado SSL",
+						"Maps",
+						"Botón WhatsApp",
+						"Optimización Web & Móvil",
+						"Soporte Avanzado",
+						"Links a tus Redes Sociales",
+						"10 Cuentas de Correo",
+						"Optimización SEO",
+					]}
+				/>
 
-        <Card
-          title="Deluxe"
-          description="La pagina que tu Empresa se merece, de lujo, con la mejor experiencia de usuario para sorprender a tus clientes!"
-          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete VIP para mi página web!!"
-          price="15,999"
-          image={null}
-          features={[
-            "Dominio Gratis por 1 año",
-            "Hosting Gratis por 1 año",
-            "Diseño Personalizado",
-            "Certificado SSL",
-            "Maps",
-            "Botón WhatsApp",
-            "Optimización Web & Móvil",
-            "Soporte Premium",
-            "Links a tus Redes Sociales",
-            "20 Cuentas de Correo",
-            "Optimización SEO",
-            "Blog",
-            "Google Analytics",
-            "Animaciones",
-            "Integración de video",
-          ]}
-        />
-      </div>
-    </section>
+				<Card
+					title="Deluxe"
+					description="La pagina que tu Empresa se merece, de lujo, con la mejor experiencia de usuario para sorprender a tus clientes!"
+					whatsAppMessage="Hola LabStudio, estoy interesado en el paquete VIP para mi página web!!"
+					price="15,999"
+					image={null}
+					features={[
+						"Dominio Gratis por 1 año",
+						"Hosting Gratis por 1 año",
+						"Diseño Personalizado",
+						"Certificado SSL",
+						"Maps",
+						"Botón WhatsApp",
+						"Optimización Web & Móvil",
+						"Soporte Premium",
+						"Links a tus Redes Sociales",
+						"20 Cuentas de Correo",
+						"Optimización SEO",
+						"Blog",
+						"Google Analytics",
+						"Animaciones",
+						"Integración de video",
+					]}
+				/>
+			</div>
+		</section>
 
-    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100" >
-      <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
-      <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
-        <Card
-          title="Mi Tienda en Linea"
-          description="para los que quieren vender sus productos en todo el mundo!"
-          whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
-          price="19,999"
-          image={null}
-          features={[
-            "Dominio Personalizado",
-            "Hosting Gratis por 1 año",
-            "Diseño Personalizado",
-            "Certificado SSL",
-            "Optimización Web & Móvil",
-            "Optimización SEO",
-            "Avisos a Clientes por Email",
-          ]}
-        />
-      </div>
-    </section>
+		<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+			<h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
+			<div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
+				<Card
+					title="Mi Tienda en Linea"
+					description="para los que quieren vender sus productos en todo el mundo!"
+					whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
+					price="19,999"
+					image={null}
+					features={[
+						"Dominio Personalizado",
+						"Hosting Gratis por 1 año",
+						"Diseño Personalizado",
+						"Certificado SSL",
+						"Optimización Web & Móvil",
+						"Optimización SEO",
+						"Avisos a Clientes por Email",
+					]}
+				/>
+			</div>
+		</section>
 
-    <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
-      <div class="container">
-        <h2 class="display-4 text-center fw-bold">Mas Soluciones Digitales</h2>
-        <div class="col-12 pt-6 d-flex justify-content-center gap-6 flex-wrap" data-aos="fade-up">
-          <Card
-            title="WhatsApp Business"
-            description="Convierte cada conversación en una oportunidad de ventas."
-            whatsAppMessage="Hola Labstudio, estoy interesado en el servicio de WhatsApp Business!!"
-            price=""
-            image={WhatsappBuisness}
-            features={[
-              "Configuración de Plataforma",
-              "Diseño de Catalogo",
-              "Hasta 50 Respuestas Rápidas",
-              "Etiquetas",
-              "Anuncios desde WhatsApp",
-              "Implementación",
-            ]}
-          />
+		<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+			<div class="container">
+				<h2 class="display-4 text-center fw-bold">Mas Soluciones Digitales</h2>
+				<div class="col-12 pt-6 d-flex justify-content-center gap-6 flex-wrap" data-aos="fade-up">
+					<Card
+						title="WhatsApp Business"
+						description="Convierte cada conversación en una oportunidad de ventas."
+						whatsAppMessage="Hola Labstudio, estoy interesado en el servicio de WhatsApp Business!!"
+						price=""
+						image={WhatsappBusiness}
+						features={[
+							"Configuración de Plataforma",
+							"Diseño de Catalogo",
+							"Hasta 50 Respuestas Rápidas",
+							"Etiquetas",
+							"Anuncios desde WhatsApp",
+							"Implementación",
+						]}
+					/>
 
-          <Card
-            title="Google My Business"
-            description="Quiero que mis clientes puedan encontrar facilmente mi Negocio."
-            whatsAppMessage="Hola Labstudio, estoy interesado en el servicio de Google My Business!!"
-            price=""
-            image={GoogleBusiness}
-            features={[
-              "Verificación de tu Negocio",
-              "Configuración del Perfil",
-              "Configuración de Tienda",
-              "Anuncios en Google",
-              "Google Analytics",
-              "Posicionamiento SEO",
-            ]}
-          />
-        </div>
-      </div>
-    </section>
+					<Card
+						title="Google My Business"
+						description="Quiero que mis clientes puedan encontrar facilmente mi Negocio."
+						whatsAppMessage="Hola Labstudio, estoy interesado en el servicio de Google My Business!!"
+						price=""
+						image={GoogleBusiness}
+						features={[
+							"Verificación de tu Negocio",
+							"Configuración del Perfil",
+							"Configuración de Tienda",
+							"Anuncios en Google",
+							"Google Analytics",
+							"Posicionamiento SEO",
+						]}
+					/>
+				</div>
+			</div>
+		</section>
 
-    <!-- BRANDS -->
-    <div class="py-5 py-md-10">
-      <div class="">
-        <h2 class="brands-h2 fw-bold text-center mb-2">Nuestros clientes</h2>
-        <p class="text-muted text-center pb-1">Estamos orgullosos de trabajar con algunas de las mejores empresas de la industria</p>
-        <div class="row align-items-center justify-content-center">
+		<!-- BRANDS -->
+		<div class="py-5 py-md-10 w-100">
+			<div class="container">
+				<h2 class="brands-h2 fw-bold text-center mb-2">Nuestros clientes</h2>
+				<p class="text-muted text-center pb-1">Estamos orgullosos de trabajar con algunas de las mejores empresas de la
+					industria</p>
+				<div class="d-flex flex-wrap gap-2 align-items-center justify-content-center">
 
-          <ClientCard imageSrc={AlferLogo} delay={0}/>
-          <ClientCard imageSrc={ValleyLogo} delay={50}/>
-          <ClientCard imageSrc={TonerLogo} delay={100}/>
-          <ClientCard imageSrc={TotalLogo} delay={150}/>
-          <ClientCard imageSrc={SavingLogo} delay={200}/>
-          <ClientCard imageSrc={CyberLogo} delay={250}/>
-          <ClientCard imageSrc={CuciiLogo} delay={300}/>
+					<ClientCard imageSrc={AlferLogo} delay={0} width={ 1347 } height={ 403 }/>
+					<ClientCard imageSrc={ValleyLogo} delay={50} width={ 500 } height={ 500 }/>
+					<ClientCard imageSrc={TonerLogo} delay={100} width={ 1080 } height={ 1080 }/>
+					<ClientCard imageSrc={TotalLogo} delay={150} width={ 1630 } height={ 419 }/>
+					<ClientCard imageSrc={SavingLogo} delay={200} width={ 300 } height={ 157 }/>
+					<ClientCard imageSrc={CyberLogo} delay={250} width={ 1500 } height={ 1500 }/>
+					<ClientCard imageSrc={CuciiLogo} delay={300} width={ 500 } height={ 500 }/>
 
-        </div>
-      </div>
-    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-5 py-md-10">
+			<div class="container">
+				<h2 class="brands-h2 fw-bold text-center mb-2">Contacto</h2>
+				<p class="text-muted text-center pb-1">Contáctanos y hablemos de cómo podemos llevar tu proyecto al siguiente nivel.</p>
+			</div>
+			<div class="container d-flex column-change pt-md-4">
+
+				<div class="d-flex flex-column contact-content-cards">
+					<h3 class="h1 mb-0">¿Nos quieres contactar?</h3>
+					<p>Envianos un <a href="https://wa.me/526681057964" class="lab-font-color">WhatsApp</a> o un <a href="mailto:contacto@labstudiomedia.com" class="lab-font-color">Mail</a></p>
+					<div class="d-flex flex-column gap-2">
 
 
-  </main>
-  <Footer useMap={true} />
-  <WhatsApp />
+						<a href="https://wa.me/526681057964" class="d-flex align-items-center gap-1 wm-link">
+							<div
+								class="d-flex align-items-center"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="#8c8b8b"
+									class="bi bi-whatsapp"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+									></path>
+								</svg>
+							</div>
+							<p
+								class="m-0"
+							>(668) 105 79 64</p>
+						</a>
+
+						<a href="mailto:contacto@labstudiomedia.com" class="d-flex align-items-center gap-1 wm-link">
+							<div
+								class="d-flex align-items-center"
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#8c8b8b" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+									<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+								</svg>
+							</div>
+							<p
+								class="m-0"
+							>contacto@labstudiomedia.com</p>
+						</a>
+
+
+					</div>
+				</div>
+
+				<div class="d-flex flex-column contact-content-cards">
+					<h3 class="h1 mb-0">¿Todavía no te convences?</h3>
+					<p class="lab-font-color">Conoce mas de nuestro trabajo</p>
+					<div class="d-flex gap-2">
+
+
+						<a
+							href="https://www.tiktok.com/@labstudiomedia"
+							target="_blank"
+							class="text-decoration-none contact-icon"
+							aria-label="TikTok Link"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-tiktok"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+								></path>
+							</svg>
+						</a>
+
+						<a
+							href="https://www.instagram.com/labstudiomedia/"
+							target="_blank"
+							class="text-decoration-none contact-icon"
+							aria-label="Instagram Link"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-instagram"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+								></path>
+							</svg>
+						</a>
+
+						<a
+							href="https://www.facebook.com/profile.php?id=61565652414967"
+							target="_blank"
+							class="text-decoration-none contact-icon"
+							aria-label="Facebook Link"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-facebook"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+								></path>
+							</svg>
+						</a>
+
+						<a
+							href="https://www.youtube.com/@LabStudioMedia"
+							target="_blank"
+							class="text-decoration-none contact-icon"
+							aria-label="Youtube Link"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-youtube"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+								></path>
+							</svg>
+						</a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</main>
+	<div class="pt-md-10 pt-5">
+		<Footer useMap={true}/>
+	</div>
+	<WhatsApp/>
 </IndexLayout>
 
 <style>
 
-  h1 {
-    font-size: 2.5rem;
-    text-align: left;
-  }
+	.contact-content-cards {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 
-  @media only screen and (max-width: 991px) {
-    h1 br {
-      display: none;
-    }
-    h1 {
-      font-size: 2.2rem;
-      text-wrap: balance;
-    }
-  }
+	.wm-link {
+		padding: 0.6rem 0.8rem;
+		border-radius: 0.4rem;
+		box-shadow: 0 .125rem .25rem transparent;
+		transition: 200ms box-shadow;
+	}
 
-  .brands-h2 {
-    font-size: 2.7rem;
-  }
+	.wm-link:hover {
+		box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.13);
+	}
 
-  .service-card p:last-child {
-    font-size: 1rem; 
-  }
+	.wm-link:hover p {
+		color: #633fb9;
+	}
 
-  .card-best-pricing {
-    transform: scale(1.02);
-    width: 20.5rem;
-    position: relative;
-    bottom: 0.6rem;
-    transition-property: box-shadow, bottom;
-    transition-duration: 0.5s;
-  }
+	.wm-link:hover svg {
+		fill: #633fb9;
+	}
 
-  .card-best-pricing:hover {
-    bottom: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  }
+	.wm-link p {
+		transition: 200ms color;
+		font-size: 1.1rem;
+		color: #505050;
+	}
 
-  .card-micro-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+	.wm-link svg {
+		transition: 200ms fill;
+		fill: #8c8b8b;
+		width: 1.4rem;
+		height: 1.4rem;
+	}
 
-  .card-micro-title p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
-  }
+	.column-change {
+		align-items: flex-start;
+		justify-content: space-between;
+	}
 
-  .card-mini-img {
-    width: 120px;
-    height: auto;
-  }
+	@media screen and (max-width: 991px) {
+		.column-change {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		.contact-content-cards {
+			justify-content: center;
+			align-items: center;
+		}
+		.wm-link {
+			justify-content: center;
+		}
+		.contact-content-cards:last-child {
+			margin-top: 2.2rem;
+		}
+	}
 
-  .title-card-service {
-    padding: 0 2rem 0 2rem;
-  }
+	.contact-icon {
+		padding: 0.6rem 0.8rem;
+		border-radius: 0.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 .125rem .25rem transparent;
+		transition: 200ms box-shadow;
+	}
 
-  .title-card-service h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-  }
+	.contact-icon:hover {
+		box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.13);
+	}
 
-  .content-secondary-card {
-    background-color: #f5faff;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-  }
+	.contact-icon:hover svg {
+		fill: #633fb9;
+	}
 
-  .padding-card-rl {
-    padding: 0 2rem 0 2rem;
-  }
+	.contact-icon svg {
+		width: 2rem;
+		height: 2rem;
+		fill: #8c8b8b;
+		transition: 200ms fill;
+	}
 
-  .list-group-pricing-new {
-    list-style: none;
-    position: relative;
-    left: 1.4rem;
-  }
+	h1 {
+		font-size: 2.5rem;
+		text-align: left;
+	}
 
-  .img-card-fixing {
-    position: relative;
-    left: 1rem;
-    height: 140px;
-  }
+	@media only screen and (max-width: 991px) {
+		h1 br {
+			display: none;
+		}
 
-  .img-store-size {
-    width: 82%;
-  }
+		h1 {
+			font-size: 2.2rem;
+			text-wrap: balance;
+		}
+	}
 
-  .year-pricing {
-    font-size: 1rem;
-  }
+	.brands-h2 {
+		font-size: 2.7rem;
+	}
 
-  .list-group-pricing {
-    list-style: none;
-  }
+	.service-card p:last-child {
+		font-size: 1rem;
+	}
 
-  .card-list-item {
-    font-size: 1rem;
-  }
+	.card-best-pricing {
+		transform: scale(1.02);
+		width: 20.5rem;
+		position: relative;
+		bottom: 0.6rem;
+		transition-property: box-shadow, bottom;
+		transition-duration: 0.5s;
+	}
 
-  .check-icon {
-    width: 2.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	.card-best-pricing:hover {
+		bottom: 1rem;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+	}
 
-  .bg-labstudio-soft {
-    background-color: rgba(128, 0, 255, 0.096);
-    color: #633fb9;
-  }
+	.card-micro-title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 
-  .before-price {
-    position: relative;
-    color: #7d33ea;
-    top: 1.3rem;
-  }
+	.card-micro-title p {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		border-bottom-left-radius: 0.6rem;
+		border-bottom-right-radius: 0.6rem;
+	}
 
-  .before-price h4 {
-    text-decoration: line-through;
-  }
+	.card-mini-img {
+		width: 120px;
+		height: auto;
+	}
 
-  .check-icon path {
-    stroke: var(--bs-gray-700);
-  }
+	.title-card-service {
+		padding: 0 2rem 0 2rem;
+	}
 
-  .web-s-control {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+	.title-card-service h2 {
+		font-size: 1.4rem;
+		font-weight: 800;
+	}
 
-  .web-s-control img {
-    width: 100%;
-    height: auto;
-  }
+	.content-secondary-card {
+		background-color: #f5faff;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
 
-  .pricing-ribbon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    text-align: right;
-    overflow: hidden;
-    height: 10rem;
-  }
+	.padding-card-rl {
+		padding: 0 2rem 0 2rem;
+	}
 
-  .ribbon-body {
-    width: 12rem;
-    position: relative;
-    top: 1rem;
-    left: -3.1rem;
-    transform: rotate(-45deg);
-    padding: 0.6rem;
-    background: rgb(47, 7, 199);
-    background: linear-gradient(
-      90deg,
-      rgba(47, 7, 199, 1) 0%,
-      rgba(105, 17, 179, 1) 36%,
-      rgba(87, 17, 196, 1) 71%,
-      rgba(170, 22, 187, 1) 100%
-    );
-  }
+	.list-group-pricing-new {
+		list-style: none;
+		position: relative;
+		left: 1.4rem;
+	}
 
-  .img-introduction {
-    width: 92%;
-    aspect-ratio: 1/1;
-  }
+	.img-card-fixing {
+		position: relative;
+		left: 1rem;
+		height: 140px;
+	}
 
-  .lab-font-color, .lab-font-color-btn {
-    color: #633fb9;
-  }
+	.img-store-size {
+		width: 82%;
+	}
 
-  .lab-font-color-btn:hover {
-    color: #6e45cc;
-  }
+	.year-pricing {
+		font-size: 1rem;
+	}
 
-  .lab-font-color-btn:active {
-    color: #6e45cc !important;
-  }
+	.list-group-pricing {
+		list-style: none;
+	}
 
-  .lab-font-color-btn:focus {
-    color: #6e45cc !important;
-  }
+	.card-list-item {
+		font-size: 1rem;
+	}
 
-  .soft-lab-back-color {
-    background-color: #530bff14;
-  }
+	.check-icon {
+		width: 2.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .icon-labs {
-    color: #6039bd;
-    font-size: 1.6rem;
-  }
+	.bg-labstudio-soft {
+		background-color: rgba(128, 0, 255, 0.096);
+		color: #633fb9;
+	}
 
-  .icon-continer {
-    height: 100px;
-  }
+	.before-price {
+		position: relative;
+		color: #7d33ea;
+		top: 1.3rem;
+	}
 
-  .icon-continer img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-  }
+	.before-price h4 {
+		text-decoration: line-through;
+	}
 
-  .videos-img-resize {
-    width: 60%;
-  }
+	.check-icon path {
+		stroke: var(--bs-gray-700);
+	}
 
-  .justify-text {
-    text-align: justify;
-  }
+	.web-s-control {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 
-  .card-intro-title {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #633fb9;
-  }
+	.web-s-control img {
+		width: 100%;
+		height: auto;
+	}
 
-  .card-intro-title:hover {
-    color: #633fb9;
-    text-decoration: none;
-  }
+	.pricing-ribbon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		text-align: right;
+		overflow: hidden;
+		height: 10rem;
+	}
 
-  .button-knowus:active {
-    background-color: rgba(51, 94, 234, 0.1) !important;
-  }
+	.ribbon-body {
+		width: 12rem;
+		position: relative;
+		top: 1rem;
+		left: -3.1rem;
+		transform: rotate(-45deg);
+		padding: 0.6rem;
+		background: rgb(47, 7, 199);
+		background: linear-gradient(
+			90deg,
+			rgba(47, 7, 199, 1) 0%,
+			rgba(105, 17, 179, 1) 36%,
+			rgba(87, 17, 196, 1) 71%,
+			rgba(170, 22, 187, 1) 100%
+		);
+	}
 
-  .intro-btn-container {
-    gap: 0.6rem;
-  }
+	.img-introduction {
+		width: 92%;
+		aspect-ratio: 1/1;
+	}
 
-  @media (max-width: 992px) {
-    .videos-img-resize {
-      width: 72%;
-    }
-  }
+	.lab-font-color, .lab-font-color-btn {
+		color: #633fb9;
+	}
 
-  @media (max-width: 767px) {
-    .videos-img-resize {
-      width: 52%;
-    }
-    .web-s-control img {
-      width: 70%;
-    }
-    .intro-image-container {
-      display: flex;
-      justify-content: center;
-    }
-    .img-introduction {
-      width: 300px;
-    }
-    h1 {
-      text-wrap: pretty;
-    }
-    .intro-btn-container {
-      gap: 0.6rem;
-      justify-content: center;
-    }
-  }
+	.lab-font-color-btn:hover {
+		color: #6e45cc;
+	}
 
-  @media (max-width: 538px) {
-    h1 {
-      font-size: 2rem;
-      text-wrap: balance;
-    }
-    .img-introduction {
-      width: 250px;
-    }
-  }
+	.lab-font-color-btn:active {
+		color: #6e45cc !important;
+	}
 
-  @media only screen and (max-width: 493px) {
-    h1 {
-      font-size: 1.8rem;
-    }
-  }
+	.lab-font-color-btn:focus {
+		color: #6e45cc !important;
+	}
 
-  @media only screen and (max-width: 448px) {
-    .intro-btn-container {
-      flex-wrap: wrap;
-    }
-    .intro-btn-container a {
-      width: 90%;
-    }
-  }
+	.soft-lab-back-color {
+		background-color: #530bff14;
+	}
 
-  @media only screen and (max-width: 387px) {
-    h1 {
-      font-size: 1.7rem;
-    }
-  }
+	.icon-labs {
+		color: #6039bd;
+		font-size: 1.6rem;
+	}
+
+	.icon-container {
+		height: 100px;
+	}
+
+	.icon-container img {
+		height: 100%;
+		width: auto;
+		object-fit: contain;
+	}
+
+	.videos-img-resize {
+		width: 60%;
+	}
+
+	.justify-text {
+		text-align: justify;
+	}
+
+	.card-intro-title {
+		margin: 0;
+		font-weight: 600;
+		font-size: 1.2rem;
+		color: #633fb9;
+	}
+
+	.card-intro-title:hover {
+		color: #633fb9;
+		text-decoration: none;
+	}
+
+	.button-know-us:active {
+		background-color: rgba(51, 94, 234, 0.1) !important;
+	}
+
+	.intro-btn-container {
+		gap: 0.6rem;
+	}
+
+	@media (max-width: 992px) {
+		.videos-img-resize {
+			width: 72%;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.videos-img-resize {
+			width: 52%;
+		}
+
+		.web-s-control img {
+			width: 70%;
+		}
+
+		.intro-image-container {
+			display: flex;
+			justify-content: center;
+		}
+
+		.img-introduction {
+			width: 300px;
+		}
+
+		h1 {
+			text-wrap: pretty;
+		}
+
+		.intro-btn-container {
+			gap: 0.6rem;
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 538px) {
+		h1 {
+			font-size: 2rem;
+			text-wrap: balance;
+		}
+
+		.img-introduction {
+			width: 250px;
+		}
+	}
+
+	@media only screen and (max-width: 493px) {
+		h1 {
+			font-size: 1.8rem;
+		}
+	}
+
+	@media only screen and (max-width: 448px) {
+		.intro-btn-container {
+			flex-wrap: wrap;
+		}
+
+		.intro-btn-container a {
+			width: 90%;
+		}
+	}
+
+	@media only screen and (max-width: 387px) {
+		h1 {
+			font-size: 1.7rem;
+		}
+	}
 
 </style>
