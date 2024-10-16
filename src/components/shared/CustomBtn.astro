@@ -1,0 +1,75 @@
+---
+interface Props {
+  href?: string;
+  blank?: boolean;
+  extraClasses?: string;
+  id?: string;
+  aos?: string;
+  isPrimary: boolean;
+}
+
+const { href, blank, extraClasses, id, isPrimary, aos } = Astro.props;
+
+let baseClass: string = "btn no-shadow btn-transitions " + (extraClasses || "");
+
+baseClass += isPrimary ? " is-primary" : " is-secondary svg-grey-link";
+
+let aosAnimation: string = '';
+
+if (aos) {
+  aosAnimation = aos;
+}
+
+---
+
+{
+  href ? (
+    <a id={ id || '' } class={baseClass} href={ href } target={ blank ? '_blank' : '_self' } data-aos={aosAnimation}>
+      <slot />
+    </a>
+  ) : (
+    <button id={ id || '' } class={baseClass} data-aos={aosAnimation}>
+      <slot />
+    </button>
+  )
+}
+
+<style>
+
+  .btn-transitions {
+    /* transition: background 200ms, color 0.2s; */
+  }
+
+  .no-shadow {
+    box-shadow: none !important;
+  }
+
+  .no-shadow:hover {
+    box-shadow: none !important;
+  }
+
+  .is-primary {
+    transition: background 200ms;
+    background: rgba(153,86,255,1);
+    background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+    color: #fefefe;
+  }
+
+  .is-primary:hover {
+    background: linear-gradient(82deg, rgb(153, 90, 248) 0%, rgb(131, 77, 255) 100%);
+    color: #fff;
+  }
+
+  .is-secondary {
+    background: rgb(245, 245, 245);
+    background: linear-gradient(82deg, rgb(245, 245, 245) 0%, rgb(238, 238, 238) 100%);
+    color: #313131;
+  }
+
+  .is-secondary:hover {
+    background: linear-gradient(82deg, rgb(245, 245, 245) 0%, rgb(245, 245, 245) 100%);
+    color: #242424;
+  }
+
+
+</style>

@@ -1,5 +1,6 @@
 ---
 import {type ImageMetadata} from "astro";
+import CustomBtn from "../shared/CustomBtn.astro";
 
 interface Props {
   title: string;
@@ -58,12 +59,14 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
       }
 
       <div class="bottom-card d-flex justify-content-center padding-card-rl">
-        <a
+        <CustomBtn
           href={ "https://wa.me/+526681057964?text=" + urlEncodedMessage }
-          target="_blank"
-          class="btn w-100 py-2 lab-back-color text-light rounded-3 mb-4"
-          >¡Lo Quiero!</a
+          blank={ true }
+          isPrimary={ true }
+          extraClasses="w-100 py-2 mb-4"
         >
+        ¡Lo Quiero!
+        </CustomBtn>
       </div>
 
       <ul class="list-group-pricing-new w-100 ps-0">

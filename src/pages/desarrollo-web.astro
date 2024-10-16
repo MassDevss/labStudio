@@ -2,6 +2,9 @@
 import SubPageLayout from "../layouts/SubPageLayout.astro";
 import Footer from "../components/shared/Footer.astro";
 import Nav from "../components/shared/Nav.astro";
+import WhatsApp from "../components/shared/WhatsApp.astro";
+import CustomBtn from "../components/shared/CustomBtn.astro";
+import PricingCard from "../components/index/PricingCard.astro";
 ---
 
 
@@ -16,29 +19,38 @@ import Nav from "../components/shared/Nav.astro";
 <Nav />
 
 <!-- WELCOME -->
-<section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between">
+<section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-between">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+      <div class="col-12 text-center" data-aos="fade-up">
 
         <!-- Heading -->
         <h1 class="display-2 fw-bold">
-          Designed secure. <br>
-          Built for anything.
+          Transforma tu Negocio con <br>  
+          un <span class="text-labs-gradient">Sitio Web</span> Profesional
         </h1>
 
         <!-- Text -->
-        <p class="fs-lg text-body-secondary mb-6 mb-md-8">
-          Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+        <p class="fs-lg text-body-secondary mb-6 mb-md-8 text-gray-600">
+          Haz que tu Negocio Destaque y Conecta con tus Clientes en Línea: Desarrollamos Páginas Web que Venden.
         </p>
 
-        <!-- Button -->
-        <a href="#!" class="btn btn-primary me-1 lift">
-          Get started <i class="fe fe-arrow-right ms-3"></i>
-        </a>
-        <a href="#!" class="btn btn-primary-subtle lift">
-          Learn more
-        </a>
+        <CustomBtn
+          isPrimary={ true }
+          extraClasses="me-3 "
+          href="https://wa.me/526681057964"
+          blank={ true }
+        >
+          ¡Desarrollemos la Web que Tu Negocio Merece!
+        </CustomBtn>
+
+        <CustomBtn
+          isPrimary={ false }
+          extraClasses="btn-primary-subtle "
+        >
+          Leer mas
+        </CustomBtn>
+
 
       </div>
     </div> <!-- / .row -->
@@ -58,28 +70,28 @@ import Nav from "../components/shared/Nav.astro";
       <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
 
         <!-- Card -->
-        <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+        <div class="card shadow-light-lg mb-6 mb-md-0 ">
           <div class="card-body">
 
             <!-- Badge -->
-            <span class="badge rounded-pill text-bg-primary-desat badge-float badge-float-outside">
-              $29/mo
+            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
+              
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M23.271,9.419C21.72,6.893,18.192,2.655,12,2.655S2.28,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162C2.28,17.107,5.808,21.345,12,21.345s9.72-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419Zm-1.705,4.115C20.234,15.7,17.219,19.345,12,19.345S3.766,15.7,2.434,13.534a2.918,2.918,0,0,1,0-3.068C3.766,8.3,6.781,4.655,12,4.655s8.234,3.641,9.566,5.811A2.918,2.918,0,0,1,21.566,13.534Z"/><path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"/></svg> -->
+              
+              <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0ZM22,12a9.938,9.938,0,0,1-1.662,5.508l-1.192-1.193A.5.5,0,0,1,19,15.962V15a3,3,0,0,0-3-3H13a1,1,0,0,1-1-1v-.5a.5.5,0,0,1,.5-.5A2.5,2.5,0,0,0,15,7.5v-1a.5.5,0,0,1,.5-.5h1.379a2.516,2.516,0,0,0,1.767-.732l.377-.377A9.969,9.969,0,0,1,22,12Zm-19.951.963,3.158,3.158A2.978,2.978,0,0,0,7.329,17H10a1,1,0,0,1,1,1v3.949A10.016,10.016,0,0,1,2.049,12.963ZM13,21.949V18a3,3,0,0,0-3-3H7.329a1,1,0,0,1-.708-.293L2.163,10.249A9.978,9.978,0,0,1,17.456,3.63l-.224.224A.507.507,0,0,1,16.879,4H15.5A2.5,2.5,0,0,0,13,6.5v1a.5.5,0,0,1-.5.5A2.5,2.5,0,0,0,10,10.5V11a3,3,0,0,0,3,3h3a1,1,0,0,1,1,1v.962a2.516,2.516,0,0,0,.732,1.767l1.337,1.337A9.971,9.971,0,0,1,13,21.949Z"/></svg>
+            
+            
             </span>
 
             <!-- Heading -->
-            <h4 class="fw-bold">
-              Shared instance
-            </h4>
+            <h2 class="fw-bold h4">
+              Presencia en línea
+            </h2>
 
             <!-- Text -->
-            <p class="text-body-secondary">
-              Affordable, scalable and performant. The perfect solution for small apps.
+            <p class="text-body-secondary mb-0">
+              Ten una presencia constante y notable en Internet, llega a clientes potenciales en todo el mundo y establece una imagen profesional y coherente de tu marca
             </p>
-
-            <!-- Link -->
-            <a href="#!" class="fs-sm fw-bold text-decoration-none">
-              Start a 30-day trial <i class="fe fe-arrow-right ms-3"></i>
-            </a>
 
           </div>
         </div>
@@ -88,171 +100,54 @@ import Nav from "../components/shared/Nav.astro";
       <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Card -->
-        <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+        <div class="card shadow-light-lg mb-6 mb-md-0 ">
           <div class="card-body">
 
             <!-- Badge -->
-            <span class="badge rounded-pill text-bg-primary-desat badge-float badge-float-outside">
-              $49/mo
+            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="card-badge-icon"><path d="M23,22H5a3,3,0,0,1-3-3V1A1,1,0,0,0,0,1V19a5.006,5.006,0,0,0,5,5H23a1,1,0,0,0,0-2Z"/><path d="M6,20a1,1,0,0,0,1-1V12a1,1,0,0,0-2,0v7A1,1,0,0,0,6,20Z"/><path d="M10,10v9a1,1,0,0,0,2,0V10a1,1,0,0,0-2,0Z"/><path d="M15,13v6a1,1,0,0,0,2,0V13a1,1,0,0,0-2,0Z"/><path d="M20,9V19a1,1,0,0,0,2,0V9a1,1,0,0,0-2,0Z"/><path d="M6,9a1,1,0,0,0,.707-.293l3.586-3.586a1.025,1.025,0,0,1,1.414,0l2.172,2.172a3,3,0,0,0,4.242,0l5.586-5.586A1,1,0,0,0,22.293.293L16.707,5.878a1,1,0,0,1-1.414,0L13.121,3.707a3,3,0,0,0-4.242,0L5.293,7.293A1,1,0,0,0,6,9Z"/></svg>
             </span>
 
             <!-- Heading -->
-            <h4 class="fw-bold">
-              Shared cluster
-            </h4>
+            <h2 class="fw-bold h4">
+              Incremento de ventas
+            </h2>
 
             <!-- Text -->
-            <p class="text-body-secondary">
-              A mid-sized solution for businesses undergoing rapid user growth.
+            <p class="text-body-secondary mb-0">
+              Convierte visitantes en clientes potenciales, ofreciendo información detallada sobre tus productos o servicios y entablando contacto con interesados
             </p>
-
-            <!-- Link -->
-            <a href="#!" class="fs-sm fw-bold text-decoration-none">
-              Start a 15-day trial <i class="fe fe-arrow-right ms-3"></i>
-            </a>
 
           </div>
         </div>
 
       </div>
       <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
-
         <!-- Card -->
-        <div class="card shadow-light-lg lift lift-lg">
+        <div class="card shadow-light-lg ">
           <div class="card-body">
-
             <!-- Badge -->
-            <span class="badge rounded-pill text-bg-primary-desat badge-float badge-float-outside">
-              $79/mo
+            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
+              
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M9,12A6,6,0,1,0,3,6,6.006,6.006,0,0,0,9,12ZM9,2A4,4,0,1,1,5,6,4,4,0,0,1,9,2Z"/><path d="M9,14a9.011,9.011,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.011,9.011,0,0,0,9,14Z"/><path d="M22,7.875a2.107,2.107,0,0,0-2,2.2,2.107,2.107,0,0,0-2-2.2,2.107,2.107,0,0,0-2,2.2c0,1.73,2.256,3.757,3.38,4.659a.992.992,0,0,0,1.24,0c1.124-.9,3.38-2.929,3.38-4.659A2.107,2.107,0,0,0,22,7.875Z"/></svg> -->
+            
+              <!-- <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="card-badge-icon"><path d="m7.5 13a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5zm7.5 17v-.5a7.5 7.5 0 0 0 -15 0v.5a1 1 0 0 0 2 0v-.5a5.5 5.5 0 0 1 11 0v.5a1 1 0 0 0 2 0zm9-5a7 7 0 0 0 -11.667-5.217 1 1 0 1 0 1.334 1.49 5 5 0 0 1 8.333 3.727 1 1 0 0 0 2 0zm-6.5-9a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5z"/></svg> -->
+
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="card-badge-icon"><path d="M12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,12,10Zm6,13A6,6,0,0,0,6,23a1,1,0,0,0,2,0,4,4,0,0,1,8,0,1,1,0,0,0,2,0ZM18,8a4,4,0,1,1,4-4A4,4,0,0,1,18,8Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,18,2Zm6,13a6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2,4,4,0,0,1,4,4,1,1,0,0,0,2,0ZM6,8a4,4,0,1,1,4-4A4,4,0,0,1,6,8ZM6,2A2,2,0,1,0,8,4,2,2,0,0,0,6,2ZM2,15a4,4,0,0,1,4-4A1,1,0,0,0,6,9a6.006,6.006,0,0,0-6,6,1,1,0,0,0,2,0Z"/></svg>
+
+
             </span>
 
             <!-- Heading -->
-            <h4 class="fw-bold">
-              Dedicated cluster
-            </h4>
+            <h2 class="fw-bold h4">
+              Mejora tu credibilidad
+            </h2>
 
             <!-- Text -->
-            <p class="text-body-secondary">
-              A farm of machines entirely dedicated to your company's storage needs.
+            <p class="text-body-secondary mb-0">
+              Establece tu negocio como una empresa legítima y confiable, demostrando tu experiencia y conocimiento en tu sector y ofreciendo testimonios y reseñas de clientes satisfechos
             </p>
 
-            <!-- Link -->
-            <a href="#!" class="fs-sm fw-bold text-decoration-none">
-              Sign up now <i class="fe fe-arrow-right ms-3"></i>
-            </a>
-
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- CONTROL -->
-<section class="pt-8 pt-md-11">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 text-center">
-
-        <!-- Preheading -->
-        <h6 class="text-uppercase text-primary fw-bold">
-          Complete control
-        </h6>
-
-        <!-- Heading -->
-        <h1 class="fw-bold">
-          Monitor and analyze usage patterns.
-        </h1>
-
-        <!-- Text -->
-        <p class="fs-lg text-body-secondary mb-7">
-          Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world.
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
-    <div class="row">
-      <div class="col-12 order-md-2 d-flex justify-content-center">
-
-        <div style="
-            width: 100%;
-            aspect-ratio: 1/0.6;
-            background-color: red;
-            "></div>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- STATS -->
-<section class="pt-8 pt-md-11">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-
-        <!-- Card -->
-        <div class="card-group card-border card-border-lg border-primary shadow-light-lg">
-          <div class="card">
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="fw-bold text-center mb-0">
-                <span data-countup='{"startVal": 0}' data-to="15" data-aos data-aos-id="countup:in"></span>M+
-              </h2>
-
-              <!-- Text -->
-              <p class="text-center text-body-secondary mb-0">
-                Active users
-              </p>
-
-            </div>
-          </div>
-          <div class="card border-start-md">
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="fw-bold text-center mb-0">
-                0
-              </h2>
-
-              <!-- Text -->
-              <p class="text-center text-body-secondary mb-0">
-                Data breaches
-              </p>
-
-            </div>
-          </div>
-          <div class="card border-start-md">
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="fw-bold text-center mb-0">
-                <span data-countup='{"startVal": "0.00", "decimalPlaces": 2}' data-to="99.99" data-aos data-aos-id="countup:in"></span>%
-              </h2>
-
-              <!-- Text -->
-              <p class="text-center text-body-secondary mb-0">
-                Global uptime
-              </p>
-
-            </div>
-          </div>
-          <div class="card border-start-md">
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="fw-bold text-center mb-0">
-                <span data-countup='{"startVal": 0}' data-to="95" data-aos data-aos-id="countup:in"></span>M+
-              </h2>
-
-              <!-- Text -->
-              <p class="text-center text-body-secondary mb-0">
-                Terabytes
-              </p>
-
-            </div>
           </div>
         </div>
 
@@ -262,7 +157,7 @@ import Nav from "../components/shared/Nav.astro";
 </section>
 
 <!-- INTEGRATION -->
-<section class="py-8 py-md-11">
+<section class="pt-12">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -392,324 +287,153 @@ import Nav from "../components/shared/Nav.astro";
   </div> <!-- / .container -->
 </section>
 
-<!-- SHAPE -->
-<div class="position-relative">
-  <div class="shape shape-bottom shape-fluid-x text-dark">
-    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
+    <PricingCard
+      title="Básico"
+      description="Tengo un negocio y quiero contar con presencia en línea, para generar más confianza con mis clientes y aumentar mis ventas!"
+      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
+      price="8,499"
+      image={null}
+      features={[
+        "Dominio Gratis por 1 año",
+        "Hosting Gratis por 1 año",
+        "Diseño Personalizado",
+        "Certificado SSL",
+        "Maps",
+        "Botón WhatsApp",
+        "Optimización Web & Móvil",
+        "Soporte Básico"
+      ]}
+    />
+
+    <PricingCard
+      title="Landing"
+      description="Lo que todo negocio necesita, un escaparate para ayudar a tus clientes a conocerte un poco mas antes de realizar una compra"
+      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
+      price="12,999"
+      image={null}
+      features={[
+        "Dominio Gratis por 1 año",
+        "Hosting Gratis por 1 año",
+        "Diseño Personalizado",
+        "Certificado SSL",
+        "Maps",
+        "Botón WhatsApp",
+        "Optimización Web & Móvil",
+        "Soporte Avanzado",
+        "Links a tus Redes Sociales",
+        "10 Cuentas de Correo",
+        "Optimización SEO",
+      ]}
+    />
+
+    <PricingCard
+      title="Deluxe"
+      description="La pagina que tu Empresa se merece, de lujo, con la mejor experiencia de usuario para sorprender a tus clientes!"
+      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete VIP para mi página web!!"
+      price="15,999"
+      image={null}
+      features={[
+        "Dominio Gratis por 1 año",
+        "Hosting Gratis por 1 año",
+        "Diseño Personalizado",
+        "Certificado SSL",
+        "Maps",
+        "Botón WhatsApp",
+        "Optimización Web & Móvil",
+        "Soporte Premium",
+        "Links a tus Redes Sociales",
+        "20 Cuentas de Correo",
+        "Optimización SEO",
+        "Blog",
+        "Google Analytics",
+        "Animaciones",
+        "Integración de video",
+      ]}
+    />
+  </div>
+</section>
+
+<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
+    <PricingCard
+      title="Mi Tienda en Linea"
+      description="para los que quieren vender sus productos en todo el mundo!"
+      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
+      price="19,999"
+      image={null}
+      features={[
+        "Dominio Personalizado",
+        "Hosting Gratis por 1 año",
+        "Diseño Personalizado",
+        "Certificado SSL",
+        "Optimización Web & Móvil",
+        "Optimización SEO",
+        "Avisos a Clientes por Email",
+      ]}
+    />
+  </div>
+</section>
+
+<section class="d-flex justify-content-center align-items-center flex-column w-100 position-relative" style="z-index: 10; overflow: hidden; min-height: 90vh;">
+  <h2 data-aos="fade-in" class="display-4 fw-bold pb-2 text-center">Transformemos Tu <span class="lab-font-color">Negocio</span> <br>con una <span class="lab-font-color">Web</span> a Tu Medida</h2>
+  <CustomBtn
+    isPrimary={ true }
+    href="https://wa.me/526681057964"
+    blank={ true }
+    aos="fade-in"
+  >
+    ¡Comencemos hoy con tu proyecto!
+  </CustomBtn>
+
+  <div class="position-absolute" style="left: -10rem; top: 6rem;">
+    <div class="radial-purple" style="width: 22rem; height: 22rem;"></div>
+  </div>
+
+  <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+    <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
+  </div>
+
+  <!-- <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+    <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
+  </div> -->
+
+</section>
+
+
+<WhatsApp />
+
+<div class="position-relative" style="z-index: 11;">
+  <Footer
+    useMap={ false }
+  />
 </div>
 
-<!-- SOLUTION -->
-<section class="py-8 pt-md-11 pb-md-12 bg-dark">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 text-center">
-
-        <!-- Preheading -->
-        <h6 class="text-uppercase text-success fw-bold">
-          All in one solution
-        </h6>
-
-        <!-- Heading -->
-        <h1 class="fw-bold text-white">
-          A one stop shop for storage.
-        </h1>
-
-        <!-- Text -->
-        <p class="fs-lg text-gray-500 mb-7 mb-md-9">
-          We are a complete solution for all your storage needs.
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-
-        <!-- Heading -->
-        <h4 class="fw-bold text-white mb-5">
-          Integrations
-        </h4>
-
-        <!-- List -->
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Basic CRUD API
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            3rd party snippets
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Slack notifications
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300 mb-6 mb-lg-0">
-            Zapier hooks
-          </p>
-
-        </div> <!-- / .row -->
-
-      </div>
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-
-        <!-- Heading -->
-        <h4 class="fw-bold text-white mb-5">
-          Storage
-        </h4>
-
-        <!-- List -->
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            SQL and SQLite
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            File system access
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Infinite storage
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300 mb-6 mb-lg-0">
-            Mongo and NoSQL
-          </p>
-
-        </div> <!-- / .row -->
-
-      </div>
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-
-        <!-- Heading -->
-        <h4 class="fw-bold text-white mb-5">
-          Integrations
-        </h4>
-
-        <!-- List -->
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Basic CRUD API
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            3rd party snippets
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Slack notifications
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300 mb-6 mb-lg-0">
-            Zapier hooks
-          </p>
-
-        </div> <!-- / .row -->
-
-      </div>
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-
-        <!-- Heading -->
-        <h4 class="fw-bold text-white mb-5">
-          Storage
-        </h4>
-
-        <!-- List -->
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            SQL and SQLite
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            File system access
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300">
-            Infinite storage
-          </p>
-
-        </div>
-        <div class="d-flex">
-
-          <!-- Badge -->
-          <div class="badge badge-rounded-circle text-bg-success mt-1 me-4">
-            <i class="fe fe-check"></i>
-          </div>
-
-          <!-- Text -->
-          <p class="text-gray-300 mb-0">
-            Mongo and NoSQL
-          </p>
-
-        </div> <!-- / .row -->
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- CTA -->
-<section class="pt-6 pt-md-8">
-  <div class="container pb-6 pb-md-8 border-bottom">
-    <div class="row align-items-center">
-      <div class="col-12 col-md">
-
-        <!-- Heading -->
-        <h3 class="fw-bold mb-1">
-          Secure your data in minutes.
-        </h3>
-
-        <!-- Text -->
-        <p class="fs-lg text-body-secondary mb-6 mb-md-0">
-          Prevent security breaches and save money.
-        </p>
-
-      </div>
-      <div class="col-12 col-md-auto">
-
-        <!-- Button -->
-        <a href="#!" class="btn btn-primary-subtle me-1 lift">
-          Learn more
-        </a>
-
-        <a href="#!" class="btn btn-primary lift">
-          Get started
-        </a>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-
-<Footer
-    useMap={ false }
-/>
-
 </SubPageLayout>
+
+<style>
+
+  .radial-purple {
+    background: radial-gradient(circle, rgba(92, 33, 240, 0.788) 0%, rgba(93, 32, 235, 0.575) 16%, rgba(99,27,207,0) 67%);
+    
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(18px);
+
+  }
+
+  .lab-font-color {
+    color: #633fb9;
+  }
+  .card-badge-icon {
+    fill: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .badge-container {
+    background-color: #6F46CF;
+  }
+</style>

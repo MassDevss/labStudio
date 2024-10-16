@@ -25,6 +25,7 @@ import TotalLogo from "../img/brands/brands-total.webp";
 import SavingLogo from "../img/brands/brands-pharmacy.webp";
 import CyberLogo from "../img/brands/brands-cyber.webp";
 import CuciiLogo from "../img/brands/brands-cucii.webp";
+import CustomBtn from "../components/shared/CustomBtn.astro";
 ---
 
 <IndexLayout
@@ -50,28 +51,28 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 					<div class="col-12 col-md-7 col-lg-7 order-md-1">
 						<h1 class="text-center text-md-start">
 							Potenciamos tu presencia <br>digital transformando ideas <br>en contenidos digitales con <span
-							class="lab-font-color">desarrollo web</span>, <span class="lab-font-color">video</span> y <span
-							class="lab-font-color">branding</span>
+							class="text-dark-labs-gradient">desarrollo web</span>, <span class="text-dark-labs-gradient">video</span> y <span
+							class="text-dark-labs-gradient">branding</span>
 						</h1>
 						<p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
 							Quitate el miedo de aumentar tus ventas, por que es lo peor que puede pasar!
 						</p>
 						<div class="d-flex intro-btn-container">
-							<a
-								href="https://wa.me/526681057964"
-								target="_blank"
-								class="btn lab-back-color shadow text-light"
+							<CustomBtn
+							href="https://wa.me/526681057964"
+							blank={ true }
+							isPrimary={ true }
 							>
-								Mas Información <i
-								class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-							</a>
-							<a
+								Mas Información 
+								<i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+							</CustomBtn>
+							<CustomBtn
 								href="https://www.tiktok.com/@labstudiomedia"
-								target="_blank"
-								class="btn btn-primary-soft lab-font-color-btn button-know-us"
+								blank={ true }
+								isPrimary={ false }
 							>
 								Conócenos
-							</a>
+							</CustomBtn>
 						</div>
 					</div>
 				</div>
@@ -84,7 +85,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 								<div class="icon-container mb-3">
 									<img src={WebDev.src} alt="Ilustración sobre una pagina web"/>
 								</div>
-								<p class="card-intro-title">
+								<p class="card-intro-title text-dark-labs-gradient">
 									Desarrollo Web
 								</p>
 								<p class="text-muted mb-0">
@@ -94,22 +95,22 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-							<div class="service-card">
+							<di class="service-card">
 								<div class="icon-container mb-3">
 									<img src={Branding.src} alt="Ilustración sobre diseño"/>
 								</div>
-								<p class="card-intro-title"> Branding </p>
+								<p class="card-intro-title text-dark-labs-gradient"> Branding </p>
 								<p class="text-muted mb-6 mb-md-0">
 									Diseñamos el futuro de tu negocio con estrategia y creatividad.
 								</p>
-							</div>
+							</di>
 						</div>
 						<div class="col-12 col-md-4 services-intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
 							<div class="service-card">
 								<div class="icon-container mb-3">
 									<img src={VideoCamera.src} alt="Ilustración de un cohete"/>
 								</div>
-								<p class="card-intro-title">
+								<p class="card-intro-title text-dark-labs-gradient">
 									Producción Audiovisual
 								</p>
 								<p class="text-muted mb-6 mb-md-0">
@@ -132,7 +133,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 							Creamos tu pagina web<br/>Una web para
 							<span
 								id="for-your-text"
-								class="lab-font-color"
+								class="text-dark-labs-gradient"
 								data-typed='{"strings": ["tu Empresa...", "tu Proyecto...", "tu Marca...", "ti..."]}'
 							>
               </span>
@@ -195,7 +196,7 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 				<div class="row align-items-center">
 					<div class="col-12 col-md-7 col-lg-6">
 						<h2>
-							Creamos tu<br/><span class="lab-font-color"
+							Creamos tu<br/><span class="text-dark-labs-gradient"
 						>Tienda en linea</span
 						>
 						</h2>
@@ -407,40 +408,26 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 				<div class="d-flex flex-column justify-content-center align-items-center">
 					<div class="w-100 d-flex justify-content-center align-items-center gap-2 flex-wrap">
 
-						<a href="https://wa.me/526681057964" class="contact-links gap-1 w-link text-decoration-none btn py-2 lab-back-color text-light rounded-3">
-							<div
-								class="d-flex align-items-center"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="#ffffff"
-									class="bi bi-whatsapp"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-									></path>
-								</svg>
-							</div>
+
+						<CustomBtn
+							href="https://wa.me/526681057964"
+							isPrimary={ true }
+							extraClasses="contact-links gap-1 text-decoration-none py-2 d-flex align-items-center"
+						>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" class="bi bi-whatsapp" viewBox="0 0 16 16" > <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" ></path> </svg>
 							<p
 								class="m-0"
 							>(668) 105 79 64</p>
-						</a>
+						</CustomBtn>
 
-						<a href="mailto:contacto@labstudiomedia.com" class="contact-links gap-1 m-link text-decoration-none btn py-2 lab-back-color text-light rounded-3">
-							<div
-								class="d-flex align-items-center"
-							>
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#8c8b8b" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-									<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-								</svg>
-							</div>
-							<p
-								class="m-0"
-							>contacto@labstudiomedia.com</p>
-						</a>
+						<CustomBtn
+							href="mailto:contacto@labstudiomedia.com"
+							isPrimary={ false }
+							extraClasses="contact-links gap-1 text-decoration-none py-2 d-flex align-items-center"
+						>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#8f8f8f" width="20" height="20" class="bi bi-envelope-fill" viewBox="0 0 16 16"> <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/> </svg>
+							<p class="m-0">contacto@labstudiomedia.com</p>
+						</CustomBtn>
 
 					</div>
 				</div>
@@ -571,50 +558,6 @@ import CuciiLogo from "../img/brands/brands-cucii.webp";
 			font-size: 1rem;
 		}
 	}
-
-	.m-link {
-		transition: 200ms color, 200ms background-color;
-		background-color: rgb(245, 245, 245);
-	}
-	.m-link:hover {
-		background-color: #f3f3f3;
-	}
-	.m-link p {
-		color: #313131;
-	}
-	.m-link:hover p {
-		color: #000000;
-	}
-	.m-link svg {
-		transition: 200ms fill;
-		fill: #313131;
-		width: 1.4rem;
-		height: 1.4rem;
-	}
-	.m-link:hover svg {
-		fill: #000000;
-	}
-
-	/* WhastApp link */
-	.w-link {
-		transition: 200ms color, 200ms background-color;
-	}
-	.w-link p {
-		color: #f3f3f3;
-	}
-	.w-link:hover p {
-		color: #ffffff;
-	}
-	.w-link svg {
-		transition: 200ms fill;
-		fill: #f3f3f3;
-		width: 1.4rem;
-		height: 1.4rem;
-	}
-	.w-link:hover svg {
-		fill: #ffffff;
-	}
-
 
 	.column-change {
 		align-items: flex-start;

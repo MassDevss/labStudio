@@ -1,0 +1,41 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+.lab-back-color {
+  background-color: #633fb9;
+}
+
+.lab-back-color:hover {
+  background-color: #6f46cf;
+}
+
+.lab-back-color:active {
+  background-color: #6741c0 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.labs-btn-gradient {
+  background: rgb(153,86,255);
+  background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+  transition: background 200ms;
+}
+
+.labs-btn-gradient:hover {
+  background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+}
+
+.text-labs-gradient {
+  background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-dark-labs-gradient {
+  background: linear-gradient(82deg, rgb(135, 72, 230) 0%, rgb(102, 61, 196) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
