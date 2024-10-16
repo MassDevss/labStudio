@@ -10,7 +10,7 @@ interface Props {
 
 const { href, blank, extraClasses, id, isPrimary, aos } = Astro.props;
 
-let baseClass: string = "btn no-shadow btn-transitions " + (extraClasses || "");
+let baseClass: string = "btn no-shadow border-0 btn-transitions " + (extraClasses || "");
 
 baseClass += isPrimary ? " is-primary" : " is-secondary svg-grey-link";
 
