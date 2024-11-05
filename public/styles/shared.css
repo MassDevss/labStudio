@@ -1,7 +1,18 @@
+
+:root {
+  --purple-gray: #898197; 
+  /* #716d79 */
+}
+
 html,
 body {
   scroll-behavior: smooth;
 }
+
+.lab-o-back-color {
+  background-color: #633fb9;
+}
+
 .lab-back-color {
   background-color: #633fb9;
 }
@@ -38,4 +49,20 @@ body {
   background: linear-gradient(82deg, rgb(135, 72, 230) 0%, rgb(102, 61, 196) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.lab-font-color, .lab-font-color-btn {
+  color: #633fb9;
+}
+
+.lab-font-color-btn:hover {
+  color: #6e45cc;
+}
+
+.lab-font-color-btn:active {
+  color: #6e45cc !important;
+}
+
+.lab-font-color-btn:focus {
+  color: #6e45cc !important;
 }

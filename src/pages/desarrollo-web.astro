@@ -5,395 +5,97 @@ import Nav from "../components/shared/Nav.astro";
 import WhatsApp from "../components/shared/WhatsApp.astro";
 import CustomBtn from "../components/shared/CustomBtn.astro";
 import PricingCard from "../components/index/PricingCard.astro";
+import CheckIcon from "../components/shared/CheckIcon.astro";
 ---
 
-
 <SubPageLayout
-  title="LABSTUDIO - Desarrollo Web"
-  ogTitle="LABSTUDIO - Desarrollo Web"
+  title="LABSTUDIO | Desarrollo Web Profesional | Diseño y Soluciones Web"
+  ogTitle="LABSTUDIO | Desarrollo Web Profesional | Diseño y Soluciones Web"
   description="Desarrollamos soluciones web efectivas para tu negocio. Sitios web estáticos y aplicaciones web dinámicas. ¡Mejora tu presencia en línea!"
   ogDescription="Impulsa tu negocio en línea con nuestro expertise en desarrollo web. Soluciones personalizadas para sitios web y aplicaciones web."
   keywords="Desarrollo web, Agencia web, Creación sitios web, Aplicaciones web, Desarrollo web México, Desarrollo web Los Mochis, Sinaloa, Diseño web, Programación web, Soluciones web, Sitios web personalizados, Aplicaciones web dinámicas, Desarrollo de software, Tecnologías web, Desarrollo de sitios web, Creación de sitios web, Agencia de desarrollo web, Servicios de desarrollo web, Desarrollo web profesional, Soluciones web innovadoras, Angular, Typescript, Astro, Go, Nodejs, Sitios web corporativos, Sitios web para empresas, Desarrollo web empresarial, Soluciones web para pequeñas empresas, Desarrollo web para medianas empresas"
 >
+  <Nav />
 
-<Nav />
+  <section class="bg-between d-flex justify-content-center align-items-center position-relative hero-intro">
+    <!-- Hero Section Content -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center" data-aos="fade-up">
+          <!-- Heading -->
+          <!--<h1 class="display-2 fw-bold">-->
+          <!--    Transforma tu Negocio con <br />-->
+          <!--    un <span class="text-labs-gradient">Sitio Web</span> Profesional-->
+          <!--</h1>-->
+          <h1 class="display-2 fw-bold mb-1">
+            Soluciones Web que <span class="text-labs-gradient">Conectan</span>
+          </h1>
 
-<!-- WELCOME -->
-<section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-between">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center" data-aos="fade-up">
+          <p class="fs-lg text-body-secondary mb-6 text-gray-600">
+            Haz que tu Negocio Destaque y Conecta con tus Clientes en Línea:
+            Desarrollamos Páginas Web que Venden.
+          </p>
 
-        <!-- Heading -->
-        <h1 class="display-2 fw-bold">
-          Transforma tu Negocio con <br>  
-          un <span class="text-labs-gradient">Sitio Web</span> Profesional
-        </h1>
+          <CustomBtn
+            isPrimary={true}
+            extraClasses="me-3 "
+            href="https://wa.me/526681057964"
+            blank={true}
+          >
+            ¡Desarrollemos la Web que Tu Negocio Merece!
+          </CustomBtn>
 
-        <!-- Text -->
-        <p class="fs-lg text-body-secondary mb-6 mb-md-8 text-gray-600">
-          Haz que tu Negocio Destaque y Conecta con tus Clientes en Línea: Desarrollamos Páginas Web que Venden.
-        </p>
+          <!-- Benefits -->
+          <div class="benefits-hero">
+            <div class="benefit-container">
 
-        <CustomBtn
-          isPrimary={ true }
-          extraClasses="me-3 "
-          href="https://wa.me/526681057964"
-          blank={ true }
-        >
-          ¡Desarrollemos la Web que Tu Negocio Merece!
-        </CustomBtn>
+              <div class="d-flex align-items-center justify-content-start">
+                <CheckIcon />
+                <p class="m-0 d-inline">Diseño Unico y Profesional</p>
+              </div>
 
-        <CustomBtn
-          isPrimary={ false }
-          extraClasses="btn-primary-subtle "
-        >
-          Leer mas
-        </CustomBtn>
+              <div class="d-flex align-items-center justify-content-start">
+                <CheckIcon />
+                <p class="m-0 d-inline">Mayor Visibilidad Para tu Negocio</p>
+              </div>
 
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- SHAPE -->
-<div class="position-relative">
-  <div class="shape shape-bottom shape-fluid-x text-white">
-    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
-</div>
-
-<!-- PRICING -->
-<section class="mt-n8">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-
-        <!-- Card -->
-        <div class="card shadow-light-lg mb-6 mb-md-0 ">
-          <div class="card-body">
-
-            <!-- Badge -->
-            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
+            </div>
+            <div class="benefit-container">
               
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M23.271,9.419C21.72,6.893,18.192,2.655,12,2.655S2.28,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162C2.28,17.107,5.808,21.345,12,21.345s9.72-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419Zm-1.705,4.115C20.234,15.7,17.219,19.345,12,19.345S3.766,15.7,2.434,13.534a2.918,2.918,0,0,1,0-3.068C3.766,8.3,6.781,4.655,12,4.655s8.234,3.641,9.566,5.811A2.918,2.918,0,0,1,21.566,13.534Z"/><path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"/></svg> -->
-              
-              <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0ZM22,12a9.938,9.938,0,0,1-1.662,5.508l-1.192-1.193A.5.5,0,0,1,19,15.962V15a3,3,0,0,0-3-3H13a1,1,0,0,1-1-1v-.5a.5.5,0,0,1,.5-.5A2.5,2.5,0,0,0,15,7.5v-1a.5.5,0,0,1,.5-.5h1.379a2.516,2.516,0,0,0,1.767-.732l.377-.377A9.969,9.969,0,0,1,22,12Zm-19.951.963,3.158,3.158A2.978,2.978,0,0,0,7.329,17H10a1,1,0,0,1,1,1v3.949A10.016,10.016,0,0,1,2.049,12.963ZM13,21.949V18a3,3,0,0,0-3-3H7.329a1,1,0,0,1-.708-.293L2.163,10.249A9.978,9.978,0,0,1,17.456,3.63l-.224.224A.507.507,0,0,1,16.879,4H15.5A2.5,2.5,0,0,0,13,6.5v1a.5.5,0,0,1-.5.5A2.5,2.5,0,0,0,10,10.5V11a3,3,0,0,0,3,3h3a1,1,0,0,1,1,1v.962a2.516,2.516,0,0,0,.732,1.767l1.337,1.337A9.971,9.971,0,0,1,13,21.949Z"/></svg>
-            
-            
-            </span>
+              <div class="d-flex align-items-center justify-content-start">
+                <CheckIcon />
+                <p class="m-0 d-inline">Carga Rapida para Mejor Experiencia</p>
+              </div>
 
-            <!-- Heading -->
-            <h2 class="fw-bold h4">
-              Presencia en línea
-            </h2>
+              <div class="d-flex align-items-center justify-content-start">
+                <CheckIcon />
+                <p class="m-0 d-inline">Optimización Para Motores de Busqueda (SEO)</p>
+              </div>
 
-            <!-- Text -->
-            <p class="text-body-secondary mb-0">
-              Ten una presencia constante y notable en Internet, llega a clientes potenciales en todo el mundo y establece una imagen profesional y coherente de tu marca
-            </p>
-
+            </div>
           </div>
+
+
         </div>
-
       </div>
-      <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+    </div>
 
-        <!-- Card -->
-        <div class="card shadow-light-lg mb-6 mb-md-0 ">
-          <div class="card-body">
-
-            <!-- Badge -->
-            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="card-badge-icon"><path d="M23,22H5a3,3,0,0,1-3-3V1A1,1,0,0,0,0,1V19a5.006,5.006,0,0,0,5,5H23a1,1,0,0,0,0-2Z"/><path d="M6,20a1,1,0,0,0,1-1V12a1,1,0,0,0-2,0v7A1,1,0,0,0,6,20Z"/><path d="M10,10v9a1,1,0,0,0,2,0V10a1,1,0,0,0-2,0Z"/><path d="M15,13v6a1,1,0,0,0,2,0V13a1,1,0,0,0-2,0Z"/><path d="M20,9V19a1,1,0,0,0,2,0V9a1,1,0,0,0-2,0Z"/><path d="M6,9a1,1,0,0,0,.707-.293l3.586-3.586a1.025,1.025,0,0,1,1.414,0l2.172,2.172a3,3,0,0,0,4.242,0l5.586-5.586A1,1,0,0,0,22.293.293L16.707,5.878a1,1,0,0,1-1.414,0L13.121,3.707a3,3,0,0,0-4.242,0L5.293,7.293A1,1,0,0,0,6,9Z"/></svg>
-            </span>
-
-            <!-- Heading -->
-            <h2 class="fw-bold h4">
-              Incremento de ventas
-            </h2>
-
-            <!-- Text -->
-            <p class="text-body-secondary mb-0">
-              Convierte visitantes en clientes potenciales, ofreciendo información detallada sobre tus productos o servicios y entablando contacto con interesados
-            </p>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
-        <!-- Card -->
-        <div class="card shadow-light-lg ">
-          <div class="card-body">
-            <!-- Badge -->
-            <span class="px-2 py-2 badge badge-container rounded-circle badge-float badge-float-outside">
-              
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="card-badge-icon"><path d="M9,12A6,6,0,1,0,3,6,6.006,6.006,0,0,0,9,12ZM9,2A4,4,0,1,1,5,6,4,4,0,0,1,9,2Z"/><path d="M9,14a9.011,9.011,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.011,9.011,0,0,0,9,14Z"/><path d="M22,7.875a2.107,2.107,0,0,0-2,2.2,2.107,2.107,0,0,0-2-2.2,2.107,2.107,0,0,0-2,2.2c0,1.73,2.256,3.757,3.38,4.659a.992.992,0,0,0,1.24,0c1.124-.9,3.38-2.929,3.38-4.659A2.107,2.107,0,0,0,22,7.875Z"/></svg> -->
-            
-              <!-- <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="card-badge-icon"><path d="m7.5 13a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5zm7.5 17v-.5a7.5 7.5 0 0 0 -15 0v.5a1 1 0 0 0 2 0v-.5a5.5 5.5 0 0 1 11 0v.5a1 1 0 0 0 2 0zm9-5a7 7 0 0 0 -11.667-5.217 1 1 0 1 0 1.334 1.49 5 5 0 0 1 8.333 3.727 1 1 0 0 0 2 0zm-6.5-9a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5z"/></svg> -->
-
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="card-badge-icon"><path d="M12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,12,10Zm6,13A6,6,0,0,0,6,23a1,1,0,0,0,2,0,4,4,0,0,1,8,0,1,1,0,0,0,2,0ZM18,8a4,4,0,1,1,4-4A4,4,0,0,1,18,8Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,18,2Zm6,13a6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2,4,4,0,0,1,4,4,1,1,0,0,0,2,0ZM6,8a4,4,0,1,1,4-4A4,4,0,0,1,6,8ZM6,2A2,2,0,1,0,8,4,2,2,0,0,0,6,2ZM2,15a4,4,0,0,1,4-4A1,1,0,0,0,6,9a6.006,6.006,0,0,0-6,6,1,1,0,0,0,2,0Z"/></svg>
-
-
-            </span>
-
-            <!-- Heading -->
-            <h2 class="fw-bold h4">
-              Mejora tu credibilidad
-            </h2>
-
-            <!-- Text -->
-            <p class="text-body-secondary mb-0">
-              Establece tu negocio como una empresa legítima y confiable, demostrando tu experiencia y conocimiento en tu sector y ofreciendo testimonios y reseñas de clientes satisfechos
-            </p>
-
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- INTEGRATION -->
-<section class="pt-12">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 text-center">
-
-        <!-- Preheading -->
-        <h6 class="text-uppercase text-gray-500 fw-bold">
-          Seamless integration
-        </h6>
-
-        <!-- Heading -->
-        <h1 class="fw-bold">
-          Data transfer is just a few clicks.
-        </h1>
-
-        <!-- Text -->
-        <p class="fs-lg text-body-secondary mb-7 mb-md-9">
-          If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason.
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
-    <div class="row gx-0 mb-7 mb-md-9">
-      <div class="col-12 col-md-4 text-center">
-
-        <div class="row mb-5">
-          <div class="col">
-
-            <!-- Placeholder -->
-
-          </div>
-          <div class="col-auto">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M12 11a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M3 20.2c.388-4.773 4.262-7.2 8.983-7.2 4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H3.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>                </div>
-
-          </div>
-          <div class="col">
-
-            <!-- Divider -->
-            <hr class="d-none d-md-block">
-
-          </div>
-        </div> <!-- / .row -->
-
-        <!-- Headin -->
-        <h3 class="fw-bold">
-          Create your account
-        </h3>
-
-        <!-- Text -->
-        <p class="text-body-secondary mb-6 mb-md-0">
-          Our sign up is dead simple. We only require your basic company information and what type of data storage you want.
-        </p>
-
-      </div>
-      <div class="col-12 col-md-4 text-center">
-
-        <div class="row mb-5">
-          <div class="col">
-
-            <!-- Divider -->
-            <hr class="d-none d-md-block">
-
-          </div>
-          <div class="col-auto">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.747 13.043A6 6 0 1114.811 6.5h2.439a3.75 3.75 0 010 7.5h-9c-.962 0-1.84-.362-2.503-.957z" fill="#335EEA" opacity=".3"/><path d="M9.032 19.492h1.956V21.5a.5.5 0 00.5.5h1.024a.5.5 0 00.5-.5v-2.008h1.956a.5.5 0 00.382-.823l-2.968-3.505a.5.5 0 00-.764 0L8.65 18.669a.5.5 0 00.382.823z" fill="#335EEA"/></g></svg>                </div>
-
-          </div>
-          <div class="col">
-
-            <!-- Divider -->
-            <hr class="d-none d-md-block">
-
-          </div>
-        </div> <!-- / .row -->
-
-        <!-- Headin -->
-        <h3 class="fw-bold">
-          Upload your data
-        </h3>
-
-        <!-- Text -->
-        <p class="text-body-secondary mb-6 mb-md-0">
-          We support bulk uploading via SQL, integrations with most data storage products, or you can use our API.
-        </p>
-
-      </div>
-      <div class="col-12 col-md-4 text-center">
-
-        <div class="row mb-5">
-          <div class="col">
-
-            <!-- Divider -->
-            <hr class="d-none d-md-block">
-
-          </div>
-          <div class="col-auto">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M8 7a1 1 0 110-2h8a4 4 0 110 8H8a2 2 0 100 4h9a1 1 0 010 2H8a4 4 0 110-8h8a2 2 0 100-4H8z" fill="#335EEA" opacity=".3"/><path d="M9.707 8.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 6l2.293 2.293zM14.293 20.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 1.414L16.586 18l-2.293 2.293z" fill="#335EEA"/></g></svg>                </div>
-
-          </div>
-          <div class="col">
-
-            <!-- Placeholder -->
-
-          </div>
-        </div> <!-- / .row -->
-
-        <!-- Headin -->
-        <h3 class="fw-bold">
-          Choose where to transfer
-        </h3>
-
-        <!-- Text -->
-        <p class="text-body-secondary mb-0">
-          Simply select where you'd like to transfer your data and we'll being the process of migrating it instantly.
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
-  <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
-  <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
-    <PricingCard
-      title="Básico"
-      description="Tengo un negocio y quiero contar con presencia en línea, para generar más confianza con mis clientes y aumentar mis ventas!"
-      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
-      price="8,499"
-      image={null}
-      features={[
-        "Dominio Gratis por 1 año",
-        "Hosting Gratis por 1 año",
-        "Diseño Personalizado",
-        "Certificado SSL",
-        "Maps",
-        "Botón WhatsApp",
-        "Optimización Web & Móvil",
-        "Soporte Básico"
-      ]}
-    />
-
-    <PricingCard
-      title="Landing"
-      description="Lo que todo negocio necesita, un escaparate para ayudar a tus clientes a conocerte un poco mas antes de realizar una compra"
-      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
-      price="12,999"
-      image={null}
-      features={[
-        "Dominio Gratis por 1 año",
-        "Hosting Gratis por 1 año",
-        "Diseño Personalizado",
-        "Certificado SSL",
-        "Maps",
-        "Botón WhatsApp",
-        "Optimización Web & Móvil",
-        "Soporte Avanzado",
-        "Links a tus Redes Sociales",
-        "10 Cuentas de Correo",
-        "Optimización SEO",
-      ]}
-    />
-
-    <PricingCard
-      title="Deluxe"
-      description="La pagina que tu Empresa se merece, de lujo, con la mejor experiencia de usuario para sorprender a tus clientes!"
-      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete VIP para mi página web!!"
-      price="15,999"
-      image={null}
-      features={[
-        "Dominio Gratis por 1 año",
-        "Hosting Gratis por 1 año",
-        "Diseño Personalizado",
-        "Certificado SSL",
-        "Maps",
-        "Botón WhatsApp",
-        "Optimización Web & Móvil",
-        "Soporte Premium",
-        "Links a tus Redes Sociales",
-        "20 Cuentas de Correo",
-        "Optimización SEO",
-        "Blog",
-        "Google Analytics",
-        "Animaciones",
-        "Integración de video",
-      ]}
-    />
-  </div>
-</section>
-
-<section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
-  <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
-  <div class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start" data-aos="fade-up">
-    <PricingCard
-      title="Mi Tienda en Linea"
-      description="para los que quieren vender sus productos en todo el mundo!"
-      whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
-      price="19,999"
-      image={null}
-      features={[
-        "Dominio Personalizado",
-        "Hosting Gratis por 1 año",
-        "Diseño Personalizado",
-        "Certificado SSL",
-        "Optimización Web & Móvil",
-        "Optimización SEO",
-        "Avisos a Clientes por Email",
-      ]}
-    />
-  </div>
-</section>
-
-<section class="d-flex justify-content-center align-items-center flex-column w-100 position-relative" style="z-index: 10; overflow: hidden; min-height: 90vh;">
-  <h2 data-aos="fade-in" class="display-4 fw-bold pb-2 text-center">Transformemos Tu <span class="lab-font-color">Negocio</span> <br>con una <span class="lab-font-color">Web</span> a Tu Medida</h2>
-  <CustomBtn
-    isPrimary={ true }
-    href="https://wa.me/526681057964"
-    blank={ true }
-    aos="fade-in"
+    <!-- Hero Section Gradients -->
+    <div
+    class="position-absolute"
+    style="left: -11rem; top: 1rem;"
+    data-aos="fade-in"
+    data-aos-duration="600"
   >
-    ¡Comencemos hoy con tu proyecto!
-  </CustomBtn>
-
-  <div class="position-absolute" style="left: -10rem; top: 6rem;">
     <div class="radial-purple" style="width: 22rem; height: 22rem;"></div>
   </div>
 
-  <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+  <div
+    class="position-absolute"
+    style="right: -12rem; bottom: 11rem;"
+    data-aos="fade-in"
+    data-aos-duration="600"
+  >
     <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
   </div>
 
@@ -401,39 +103,435 @@ import PricingCard from "../components/index/PricingCard.astro";
     <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
   </div> -->
 
-</section>
+  </section>
 
 
-<WhatsApp />
+  <section class="mt-10">
+    <div class="w-100">
+      <div
+        class="cards-gap"
+        data-aos="fade-up"
+        data-aos-delay="50"
+      >
+        <!-- Card -->
+        <div class="my-card shadow-light-lg rounded">
+          <div class="my-card-body">
+            <span class="my-badge rounded-circle lab-o-back-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Layer_1"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                class="card-badge-icon"
+                ><path
+                  d="M12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,12,10Zm6,13A6,6,0,0,0,6,23a1,1,0,0,0,2,0,4,4,0,0,1,8,0,1,1,0,0,0,2,0ZM18,8a4,4,0,1,1,4-4A4,4,0,0,1,18,8Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,18,2Zm6,13a6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2,4,4,0,0,1,4,4,1,1,0,0,0,2,0ZM6,8a4,4,0,1,1,4-4A4,4,0,0,1,6,8ZM6,2A2,2,0,1,0,8,4,2,2,0,0,0,6,2ZM2,15a4,4,0,0,1,4-4A1,1,0,0,0,6,9a6.006,6.006,0,0,0-6,6,1,1,0,0,0,2,0Z"
+                ></path></svg
+              >
+            </span>
 
-<div class="position-relative" style="z-index: 11;">
-  <Footer
-    useMap={ false }
-  />
-</div>
+            <!-- Heading -->
+            <h2 class="fw-bold h4">Credibilidad y Profesionalismo</h2>
 
-</SubPageLayout>
+            <!-- Text -->
+            <p class="text-body-secondary mb-0">
+              Un sitio web bien diseñado mejora la imagen de tu marca, generando confianza en tus clientes y mostrando que eres un negocio serio y profesional.
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="my-card shadow-light-lg rounded">
+          <div class="my-card-body">
+            <!-- Badge -->
+            <span class="my-badge rounded-circle lab-o-back-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                class="card-badge-icon"
+                ><path
+                  d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0ZM22,12a9.938,9.938,0,0,1-1.662,5.508l-1.192-1.193A.5.5,0,0,1,19,15.962V15a3,3,0,0,0-3-3H13a1,1,0,0,1-1-1v-.5a.5.5,0,0,1,.5-.5A2.5,2.5,0,0,0,15,7.5v-1a.5.5,0,0,1,.5-.5h1.379a2.516,2.516,0,0,0,1.767-.732l.377-.377A9.969,9.969,0,0,1,22,12Zm-19.951.963,3.158,3.158A2.978,2.978,0,0,0,7.329,17H10a1,1,0,0,1,1,1v3.949A10.016,10.016,0,0,1,2.049,12.963ZM13,21.949V18a3,3,0,0,0-3-3H7.329a1,1,0,0,1-.708-.293L2.163,10.249A9.978,9.978,0,0,1,17.456,3.63l-.224.224A.507.507,0,0,1,16.879,4H15.5A2.5,2.5,0,0,0,13,6.5v1a.5.5,0,0,1-.5.5A2.5,2.5,0,0,0,10,10.5V11a3,3,0,0,0,3,3h3a1,1,0,0,1,1,1v.962a2.516,2.516,0,0,0,.732,1.767l1.337,1.337A9.971,9.971,0,0,1,13,21.949Z"
+                ></path></svg
+              >
+            </span>
 
-<style>
+            <!-- Heading -->
+            <h2 class="fw-bold h4">Visibilidad 24/7</h2>
 
-  .radial-purple {
-    background: radial-gradient(circle, rgba(92, 33, 240, 0.788) 0%, rgba(93, 32, 235, 0.575) 16%, rgba(99,27,207,0) 67%);
+            <!-- Text -->
+            <p class="text-body-secondary mb-0">
+              permite que los clientes encuentren tu negocio en cualquier momento y desde cualquier lugar o dispositivo.
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="my-card shadow-light-lg rounded">
+          <div class="my-card-body">
+            <span class="my-badge rounded-circle lab-o-back-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Layer_1"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                class="card-badge-icon"
+                ><path
+                  d="M23,22H5a3,3,0,0,1-3-3V1A1,1,0,0,0,0,1V19a5.006,5.006,0,0,0,5,5H23a1,1,0,0,0,0-2Z"
+                ></path><path
+                  d="M6,20a1,1,0,0,0,1-1V12a1,1,0,0,0-2,0v7A1,1,0,0,0,6,20Z"
+                ></path><path d="M10,10v9a1,1,0,0,0,2,0V10a1,1,0,0,0-2,0Z"
+                ></path><path d="M15,13v6a1,1,0,0,0,2,0V13a1,1,0,0,0-2,0Z"
+                ></path><path d="M20,9V19a1,1,0,0,0,2,0V9a1,1,0,0,0-2,0Z"
+                ></path><path
+                  d="M6,9a1,1,0,0,0,.707-.293l3.586-3.586a1.025,1.025,0,0,1,1.414,0l2.172,2.172a3,3,0,0,0,4.242,0l5.586-5.586A1,1,0,0,0,22.293.293L16.707,5.878a1,1,0,0,1-1.414,0L13.121,3.707a3,3,0,0,0-4.242,0L5.293,7.293A1,1,0,0,0,6,9Z"
+                ></path></svg
+              >
+            </span>
+
+            <!-- Heading -->
+            <h2 class="fw-bold h4">Aumento de Ventas y Alcance</h2>
+
+            <!-- Text -->
+            <p class="text-body-secondary mb-0">
+              llegar a un público mucho más amplio, ofrece tus productos o servicios online y capta nuevos clientes, impulsando tus ventas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-12">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h6 class="text-uppercase text-gray-500 fw-bold">
+            Soluciones Digitales Adaptadas a Tus Necesidades
+          </h6>
+
+          <h2 class="fw-bold">Tu App o Página Web Lista en 3 Pasos Simples</h2>
+
+          <p class="fs-lg text-body-secondary mb-7 mb-md-9">
+            Desarrollamos tu app o página web de manera personalizada, desde la
+            idea hasta el lanzamiento, garantizando rendimiento, optimización y
+            calidad.
+          </p>
+        </div>
+      </div>
+      <div class="row gx-0 mb-7 mb-md-9">
+        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
+        data-aos-delay="50">
+          <div class="row mb-5">
+            <div class="col"></div>
+            <div class="col-auto">
+              <div class="icon text-primary mb-3">
+                <svg width="24" height="24" fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m.043,5.543l2.043-2.043L.043,1.457,1.457.043l2.043,2.043L5.543.043l1.414,1.414-2.043,2.043,2.043,2.043-1.414,1.414-2.043-2.043-2.043,2.043L.043,5.543Zm9.414,5.414l2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414Zm10.086,6.086l-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414,2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414Zm4.447-13.879l-2.584-2.582c-.775-.774-2.037-.774-2.812,0l-2.584,2.582,1.414,1.415,1.576-1.584v9.006c0,.551-.448,1-1,1l-12.992-.004c-1.651,0-2.997,1.344-3,2.993l-.005,2.194c-1.163.413-2.003,1.514-2.003,2.817,0,1.654,1.346,3,3,3s3-1.346,3-3c0-1.301-.837-2.4-1.997-2.815l.005-2.19c0-.551.449-.999,1-.999l12.992.004c1.654,0,3-1.346,3-3V3.004l1.576,1.575,1.414-1.415Z"/></svg>
+              </div>
+            </div>
+            <div class="col">
+              <hr class="d-none d-md-block" />
+            </div>
+          </div>
+
+          <h3 class="fw-bold">Definición del Proyecto</h3>
+
+          <p class="text-body-secondary mb-6 mb-md-0">
+            Exploramos tus requerimientos y establecemos un plan personalizado
+            para el desarrollo.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
+        data-aos-delay="100">
+          <div class="row mb-5">
+            <div class="col">
+              <hr class="d-none d-md-block" />
+            </div>
+            <div class="col-auto">
+              <div class="icon text-primary mb-3">
+                <svg width="24" height="24" fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12.5,9c1.657,0,3,1.343,3,3s-1.343,3-3,3h-5s1-6,5-6Zm4.666,1.246l6.126-6.126c.943-.942.945-2.47.003-3.413-.941-.942-2.467-.943-3.409-.002-.032.032-.063.065-.093.099l-5.859,6.431c1.491.45,2.686,1.564,3.232,3.011Zm-4.666,6.754h-7.361l.388-2.329c.43-2.581,2.121-6.769,5.777-7.536l4.663-5.135H3c-1.654,0-3,1.346-3,3v15h11v2h-4.5v2h11v-2h-4.5v-2h11V6.24l-6.583,6.583c-.396,2.364-2.442,4.177-4.917,4.177Z"/></svg>
+              </div>
+            </div>
+            <div class="col">
+              <hr class="d-none d-md-block" />
+            </div>
+          </div>
+          <h3 class="fw-bold">Diseño y Programación</h3>
+
+          <p class="text-body-secondary mb-6 mb-md-0">
+            Nos enfocamos en crear una interfaz atractiva y una estructura
+            sólida, optimizada para SEO.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
+        data-aos-delay="150">
+          <div class="row mb-5">
+            <div class="col">
+              <hr class="d-none d-md-block" />
+            </div>
+            <div class="col-auto">
+              <div class="icon text-primary mb-3">
+                <svg fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12.954,17h-4.907c-1.13,0-2.046.916-2.046,2.046v4.907c0,.026.021.046.046.046h8.907c.026,0,.046-.021.046-.046v-4.907c0-1.13-.916-2.046-2.046-2.046Zm-1,4h-2.907c-.026,0-.046-.021-.046-.046v-1.907c0-.026.021-.046.046-.046h2.907c.026,0,.046.021.046.046v1.907c0,.026-.021.046-.046.046Zm12.046-12h-4.473c-.017,0-.03.004-.038.019-.116.205-1.135,2.007-1.332,2.337-1.142,1.909-3.076,3.111-3.377,3.291-.386.231-.829.354-1.279.354-1.452,0-2.756-1.279-2.456-3.014.123-.71.619-1.288,1.231-1.669.88-.548,1.725-1.341,1.725-2.318,0-1.202-1.067-2.16-2.303-1.978-1.007.149-1.697,1.11-1.697,2.128v5.994c0,1.203-1.062,2.158-2.3,1.978-1.007-.146-1.7-1.105-1.7-2.122v-7.954c0-3.339,2.707-6.046,6.046-6.046h11.954v9ZM4,13.731c-.722.414-1.67.361-2.352-.261-.752-.686-.789-1.867-.218-2.711l2.57-3.799v6.77Zm0-6.984l-1.175.534c-1.095.498-2.404-.074-2.753-1.275-.284-.978.302-2.005,1.229-2.426l3.926-1.785c-.773,1.235-1.227,2.689-1.227,4.251v.701Z"/></svg>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <h3 class="fw-bold">Entrega y Optimización</h3>
+
+          <p class="text-body-secondary mb-0">
+            Lanzamos tu app o sitio web y seguimos trabajando para mejorar su
+            rendimiento y posicionamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+    <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
+    <div
+      class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
+      data-aos="fade-up"
+    >
+      <PricingCard
+        title="Básico"
+        description="Tengo un negocio y quiero contar con presencia en línea, para generar más confianza con mis clientes y aumentar mis ventas!"
+        whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Básico para mi página web!!"
+        price="8,499"
+        image={null}
+        features={[
+          "Diseño Personalizado",
+          "Dominio Gratis por 1 año",
+          "Hosting Gratis por 1 año",
+          "Certificado SSL",
+          "Maps",
+          "Botón WhatsApp",
+          "Optimización Web & Móvil",
+          "Soporte Básico",
+          "Links a tus Redes Sociales",
+        ]}
+      />
+
+      <PricingCard
+        title="Landing"
+        description="Lo que todo negocio necesita, un escaparate para ayudar a tus clientes a conocerte un poco mas antes de realizar una compra"
+        whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Landing para mi página web!!"
+        price="12,999"
+        image={null}
+        features={[
+          "Diseño Personalizado",
+          "Dominio Gratis por 1 año",
+          "Hosting Gratis por 1 año",
+          "Certificado SSL",
+          "Maps",
+          "Botón WhatsApp",
+          "Optimización Web & Móvil",
+          "Soporte Avanzado",
+          "Links a tus Redes Sociales",
+          "10 Cuentas de Correo",
+          "Optimización SEO",
+        ]}
+      />
+
+      <PricingCard
+        title="Deluxe"
+        description="La pagina que tu Empresa se merece, de lujo, con la mejor experiencia de usuario para sorprender a tus clientes!"
+        whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Deluxe para mi página web!!"
+        price="15,999"
+        image={null}
+        features={[
+          "Diseño Personalizado",
+          "Dominio Gratis por 1 año",
+          "Hosting Gratis por 1 año",
+          "Certificado SSL",
+          "Maps",
+          "Botón WhatsApp",
+          "Optimización Web & Móvil",
+          "Soporte Premium",
+          "Links a tus Redes Sociales",
+          "20 Cuentas de Correo",
+          "SEO Avanzado",
+          "Blog",
+          "Google Analytics",
+          "Pixel de Meta",
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+    <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
+    <div
+      class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
+      data-aos="fade-up"
+    >
+      <PricingCard
+        title="Mi Tienda en Linea"
+        description="para los que quieren vender sus productos en todo el mundo!"
+        whatsAppMessage="Hola LabStudio, estoy interesado en el paquete Mi Tienda para mi página tienda en linea!!"
+        price="19,999"
+        image={null}
+        features={[
+          "Dominio Personalizado",
+          "Hosting Gratis por 1 año",
+          "Diseño Personalizado",
+          "Certificado SSL",
+          "Optimización Web & Móvil",
+          "Optimización SEO",
+          "Avisos a Clientes por Email",
+        ]}
+      />
+    </div>
+  </section>
+
+  <section
+    class="d-flex justify-content-center align-items-center flex-column w-100 position-relative"
+    style="z-index: 10; overflow: hidden; min-height: 90vh;"
+  >
+    <h2 data-aos="fade-in" class="display-4 fw-bold pb-2 text-center">
+      Transformemos Tu <span class="lab-font-color">Negocio</span>
+      <br />con una <span class="lab-font-color">Web</span> a Tu Medida
+    </h2>
+    <CustomBtn
+      isPrimary={true}
+      href="https://wa.me/526681057964"
+      blank={true}
+      aos="fade-in"
+    >
+      ¡Comencemos hoy con tu proyecto!
+    </CustomBtn>
+
+    <div
+      class="position-absolute"
+      style="left: -10rem; top: 6rem;"
+      data-aos="fade-in"
+      data-aos-duration="600"
+    >
+      <div class="radial-purple" style="width: 22rem; height: 22rem;"></div>
+    </div>
+
+    <div
+      class="position-absolute"
+      style="right: -8rem; bottom: -8rem;"
+      data-aos="fade-in"
+      data-aos-duration="600"
+    >
+      <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
+    </div>
+
+    <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+      <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
+    </div>
+  </section>
+
+  <div class="position-relative" style="z-index: 11;">
+    <Footer useMap={false} />
+  </div>
+
+  <WhatsApp />
+
+  <style>
+    .hero-intro {
+      min-height: calc(100vh - 111px);
+      z-index: 10; 
+      overflow: hidden;
+    }
+
+    .benefits-hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 991px) {
+      .benefits-hero {
+        gap: 1rem;
+      }
+      .benefit-container {
+        width: 60%;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .benefit-container {
+        width: 80%;
+      }
+    }
+
+    .benefit-container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: flex-start; */
+      gap: 1rem;
+    }
     
-    border-radius: 50%;
-    opacity: 0.7;
-    filter: blur(18px);
+    .my-badge {
+			top: -2.6rem;
+			right: -3.1rem;
+			position: absolute;
+			padding: 0.6rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+    }
 
-  }
+    .cards-gap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
 
-  .lab-font-color {
-    color: #633fb9;
-  }
-  .card-badge-icon {
-    fill: #fff;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .badge-container {
-    background-color: #6F46CF;
-  }
-</style>
+    .my-card {
+      padding: 2rem;
+      width: 60rem;
+      background-color: #fff;
+    }
+
+    @media only screen and (max-width: 1033px) {
+      .my-card {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 420px) {
+      .my-card {
+        width: 20rem;
+      }
+    }
+
+    @media only screen and (max-width: 371px) {
+      .my-card {
+        padding: 1.5rem;
+        width: 18rem;
+      }
+    }
+
+    .my-card-body {
+			position: relative;
+    }
+
+    .radial-purple {
+      background: radial-gradient(
+        circle,
+        rgba(92, 33, 240, 0.788) 0%,
+        rgba(93, 32, 235, 0.575) 16%,
+        rgba(99, 27, 207, 0) 67%
+      );
+
+      border-radius: 50%;
+      opacity: 0.7;
+      filter: blur(18px);
+    }
+
+    .card-badge-icon {
+      fill: #fff;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .badge-container {
+      background-color: #6f46cf;
+    }
+  </style>
+</SubPageLayout>
