@@ -22,7 +22,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     class="bg-between d-flex justify-content-center align-items-center position-relative hero-intro"
   >
     <!-- Hero Section Content -->
-    <div class="container-fluid">
+    <div class="hero-content">
       <div class="row justify-content-center">
         <div class="col-12 text-center" data-aos="fade-up">
           <h1 class="display-2 fw-bold mb-1">
@@ -45,7 +45,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
 
           <!-- Benefits -->
           <div class="benefits-hero">
-
             <div class="benefit-container">
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
@@ -69,7 +68,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
                 <p class="m-0 d-inline">Diseño Unico y Profesional</p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -96,85 +94,10 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
   </div> -->
   </section>
-  <style>
-    .hero-sub-text {
-      font-size: 1.1875rem;
-    }
-    .hsg-1 {
-      left: -11rem;
-      top: 1rem;
-    }
-    .hsg-2 {
-      right: -12rem;
-      bottom: 11rem;
-    }
-
-    @media only screen and (max-width: 1295px) {
-      .hsg-1 {
-        top: 0.2rem;
-      }
-      .hsg-2 {
-        bottom: 3rem;
-      }
-    } 
-
-    @media only screen and (max-width: 732px) {
-      .hsg-1 {
-        top: 0.2rem;
-      }
-      .hsg-2 {
-        bottom: -2rem;
-      }
-    } 
-    @media only screen and (max-width: 622px) {
-      .hsg-1 {
-        left: -14rem;
-      }
-      .hsg-2 {
-        right: -16rem;
-      }
-    } 
-    @media only screen and (max-width: 534px) {
-      .benefit-container {
-        width: 400px;
-      }
-    } 
-    @media only screen and (max-width: 436px) {
-      .benefit-container p {
-        font-size: 1rem;
-      }
-    }
-    @media only screen and (max-width: 414px) {
-      .benefit-container p {
-        font-size: 0.9rem;
-      }
-      .benefit-container {
-        width: 332px;
-      }
-    }
-    @media only screen and (max-width: 382px) {
-      .hero-sub-text {
-        font-size: 1.1rem;
-      }
-    }
-    @media only screen and (max-width: 370px) {
-      .benefit-container p {
-        font-size: 0.8rem;
-      }
-    }
-    @media only screen and (max-width: 337px) {
-      .benefit-container p {
-        font-size: 0.75rem;
-      }
-      .benefit-container {
-        width: 100%;
-      }
-    }
-  </style>
   <!-- Hero section -->
 
   <!-- Cards with pro's -->
-  <!-- <section class="mt-10">
+  <section class="mt-10">
     <div class="w-100">
       <div class="cards-gap" data-aos="fade-up" data-aos-delay="50">
         <div class="my-card shadow-light-lg rounded">
@@ -249,11 +172,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- Cards with pro's -->
 
   <!-- Work steps -->
-  <!-- <section class="pt-12">
+  <section class="pt-12">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -377,11 +300,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- Work steps -->
 
   <!-- Pricing cards websites -->
-  <!-- <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
     <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
     <div
       class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
@@ -451,11 +374,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         ]}
       />
     </div>
-  </section> -->
+  </section>
   <!-- Pricing cards websites -->
 
   <!-- Pricing cards stores -->
-  <!-- <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
     <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
     <div
       class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
@@ -478,11 +401,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         ]}
       />
     </div>
-  </section> -->
+  </section>
   <!-- Pricing cards stores -->
 
   <!-- Final CTA -->
-  <!-- <section
+  <section
     class="d-flex justify-content-center align-items-center flex-column w-100 position-relative"
     style="z-index: 10; overflow: hidden; min-height: 90vh;"
   >
@@ -492,6 +415,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     </h2>
     <CustomBtn
       isPrimary={true}
+      extraClasses="hero-btn-font-fix"
       href="https://wa.me/526681057964"
       blank={true}
       aos="fade-in"
@@ -500,8 +424,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     </CustomBtn>
 
     <div
-      class="position-absolute"
-      style="left: -10rem; top: 6rem;"
+      class="position-absolute hsg-3"
       data-aos="fade-in"
       data-aos-duration="600"
     >
@@ -509,18 +432,17 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     </div>
 
     <div
-      class="position-absolute"
-      style="right: -8rem; bottom: -8rem;"
+      class="position-absolute hsg-4"
       data-aos="fade-in"
       data-aos-duration="600"
     >
       <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
     </div>
 
-    <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+    <div class="position-absolute hsg-4">
       <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
     </div>
-  </section> -->
+  </section>
   <!-- Final CTA -->
 
   <!-- Footer -->
@@ -534,6 +456,21 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
   <!-- WhastApp component -->
 
   <style>
+    .hero-content {
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    .hsg-3 {
+      left: -10rem;
+      top: 6rem;
+    }
+
+    .hsg-4 {
+      right: -8rem;
+      bottom: -8rem;
+    }
+
     .hero-intro {
       min-height: calc(100vh - 111px);
       z-index: 10;
@@ -604,6 +541,26 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     .badge-container {
       background-color: #6f46cf;
     }
+    .hero-sub-text {
+      font-size: 1.1875rem;
+    }
+    .hsg-1 {
+      left: -11rem;
+      top: 1rem;
+    }
+    .hsg-2 {
+      right: -12rem;
+      bottom: 11rem;
+    }
+
+    @media only screen and (max-width: 1295px) {
+      .hsg-1 {
+        top: 0.2rem;
+      }
+      .hsg-2 {
+        bottom: 3rem;
+      }
+    }
 
     @media only screen and (max-width: 1033px) {
       .my-card {
@@ -625,19 +582,110 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       }
     }
 
-    
+    @media only screen and (max-width: 732px) {
+      .hsg-1 {
+        top: 0.2rem;
+      }
+      .hsg-2 {
+        bottom: -2rem;
+      }
+    }
+
+    @media only screen and (max-width: 702px) {
+      .hsg-3 {
+        left: -12rem;
+      }
+      .hsg-4 {
+        right: -13rem;
+      }
+    }
+
+    @media only screen and (max-width: 622px) {
+      .hsg-1 {
+        left: -14rem;
+      }
+      .hsg-2 {
+        right: -16rem;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .hsg-3 {
+        left: -14rem;
+      }
+      .hsg-4 {
+        right: -17rem;
+      }
+    }
+
+    @media only screen and (max-width: 534px) {
+      .benefit-container {
+        width: 400px;
+      }
+    }
+
+    @media screen and (max-width: 468px) {
+      .hero-content {
+        padding: 0 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 436px) {
+      .benefit-container p {
+        font-size: 1rem;
+      }
+    }
+
     @media only screen and (max-width: 420px) {
       .my-card {
         width: 20rem;
       }
     }
 
-    @media only screen and (max-width: 371px) {
-      .my-card {
-        padding: 1.5rem;
-        width: 18rem;
+    @media only screen and (max-width: 414px) {
+      .benefit-container p {
+        font-size: 0.9rem;
+      }
+      .benefit-container {
+        width: 332px;
       }
     }
 
+    @media only screen and (max-width: 382px) {
+      .hero-sub-text {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media only screen and (max-width: 371px) {
+      .my-card {
+        padding: 1rem;
+      }
+      .my-badge {
+        top: -1.6rem;
+        right: -1.6rem;
+      }
+    }
+
+    @media only screen and (max-width: 370px) {
+      .benefit-container p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media only screen and (max-width: 337px) {
+      .benefit-container p {
+        font-size: 0.75rem;
+      }
+      .benefit-container {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 324px) {
+      .my-card {
+        width: 16rem;
+      }
+    }
   </style>
 </SubPageLayout>

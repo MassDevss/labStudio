@@ -41,12 +41,14 @@ body {
 
 .text-labs-gradient {
   background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-dark-labs-gradient {
   background: linear-gradient(82deg, rgb(135, 72, 230) 0%, rgb(102, 61, 196) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -67,11 +69,7 @@ body {
   color: #6e45cc !important;
 }
 
-@media only screen and (max-width: 448px) {
-  .hero-btn-font-fix {
-    font-size: 0.8rem;
-  }
-}
+
 
 @media only screen and (max-width: 414px) {
   .benefit-container .check-icon {
@@ -79,15 +77,26 @@ body {
   }
 }
 
-@media only screen and (max-width: 337px) {
-  .benefit-container .check-icon {
-    width: 1.6rem !important;
+@media only screen and (max-width: 377px) {
+  .hero-btn-font-fix {
+    font-size: 0.95rem;
   }
 }
 
-@media only screen and (max-width: 348px) {
+@media only screen and (max-width: 345px) {
   .hero-btn-font-fix {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .hero-btn-font-fix {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .benefit-container .check-icon {
+    width: 1.6rem !important;
   }
 }
