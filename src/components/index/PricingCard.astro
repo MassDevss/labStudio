@@ -1,6 +1,7 @@
 ---
 import {type ImageMetadata} from "astro";
 import CustomBtn from "../shared/CustomBtn.astro";
+import CheckIcon from "../shared/CheckIcon.astro";
 
 interface Props {
   title: string;
@@ -73,13 +74,7 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
 
         { features.map(( f: string ) => 
         <li class="card-text card-list-item d-flex align-items-center">
-          <div class="check-icon">
-            <div
-              class="badge soft-lab-back-color lab-font-color badge-rounded-circle"
-            >
-              <i class="fe fe-check"></i>
-            </div>
-          </div>
+          <CheckIcon />
           <p class="mb-1">{ f }</p>
         </li>
         ) }
@@ -146,25 +141,6 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
     stroke: var(--bs-gray-700);
   }
 
-  .soft-lab-back-color {
-    background-color: #530bff14;
-  }
-
-  .lab-font-color {
-    color: #693572;
-  }
-
-  .lab-font-color:hover {
-    color: #693572;
-  }
-
-  .lab-font-color:active {
-    color: #62326b !important;
-  }
-
-  .lab-font-color:focus {
-    color: #62326b !important;
-  }
   .card-mini-img {
     width: 120px;
     height: auto;

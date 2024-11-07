@@ -1,7 +1,18 @@
+
+:root {
+  --purple-gray: #898197; 
+  /* #716d79 */
+}
+
 html,
 body {
   scroll-behavior: smooth;
 }
+
+.lab-o-back-color {
+  background-color: #633fb9;
+}
+
 .lab-back-color {
   background-color: #633fb9;
 }
@@ -30,12 +41,62 @@ body {
 
 .text-labs-gradient {
   background: linear-gradient(82deg, rgba(153,86,255,1) 0%, rgba(118,69,237,1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-dark-labs-gradient {
   background: linear-gradient(82deg, rgb(135, 72, 230) 0%, rgb(102, 61, 196) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.lab-font-color, .lab-font-color-btn {
+  color: #633fb9;
+}
+
+.lab-font-color-btn:hover {
+  color: #6e45cc;
+}
+
+.lab-font-color-btn:active {
+  color: #6e45cc !important;
+}
+
+.lab-font-color-btn:focus {
+  color: #6e45cc !important;
+}
+
+
+
+@media only screen and (max-width: 414px) {
+  .benefit-container .check-icon {
+    width: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  .hero-btn-font-fix {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .hero-btn-font-fix {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .hero-btn-font-fix {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .benefit-container .check-icon {
+    width: 1.6rem !important;
+  }
 }
