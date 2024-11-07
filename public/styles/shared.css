@@ -66,3 +66,28 @@ body {
 .lab-font-color-btn:focus {
   color: #6e45cc !important;
 }
+
+@media only screen and (max-width: 448px) {
+  .hero-btn-font-fix {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .benefit-container .check-icon {
+    width: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .benefit-container .check-icon {
+    width: 1.6rem !important;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .hero-btn-font-fix {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}

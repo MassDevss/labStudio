@@ -17,103 +17,166 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
 >
   <Nav />
 
-  <section class="bg-between d-flex justify-content-center align-items-center position-relative hero-intro">
+  <!-- Hero section -->
+  <section
+    class="bg-between d-flex justify-content-center align-items-center position-relative hero-intro"
+  >
     <!-- Hero Section Content -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 text-center" data-aos="fade-up">
-          <!-- Heading -->
-          <!--<h1 class="display-2 fw-bold">-->
-          <!--    Transforma tu Negocio con <br />-->
-          <!--    un <span class="text-labs-gradient">Sitio Web</span> Profesional-->
-          <!--</h1>-->
           <h1 class="display-2 fw-bold mb-1">
             Soluciones Web que <span class="text-labs-gradient">Conectan</span>
           </h1>
 
-          <p class="fs-lg text-body-secondary mb-6 text-gray-600">
+          <p class="hero-sub-text text-body-secondary mb-6 text-gray-600">
             Haz que tu Negocio Destaque y Conecta con tus Clientes en Línea:
             Desarrollamos Páginas Web que Venden.
           </p>
 
           <CustomBtn
             isPrimary={true}
-            extraClasses="me-3 "
+            extraClasses="hero-btn-font-fix"
             href="https://wa.me/526681057964"
             blank={true}
           >
-            ¡Desarrollemos la Web que Tu Negocio Merece!
+            Creemos la Web que Tu Negocio Merece
           </CustomBtn>
 
           <!-- Benefits -->
           <div class="benefits-hero">
-            <div class="benefit-container">
 
+            <div class="benefit-container">
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">Diseño Unico y Profesional</p>
+                <p class="m-0 d-inline">
+                  Optimización Para Motores de Busqueda (SEO)
+                </p>
               </div>
-
-              <div class="d-flex align-items-center justify-content-start">
-                <CheckIcon />
-                <p class="m-0 d-inline">Mayor Visibilidad Para tu Negocio</p>
-              </div>
-
-            </div>
-            <div class="benefit-container">
-              
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
                 <p class="m-0 d-inline">Carga Rapida para Mejor Experiencia</p>
               </div>
+            </div>
 
+            <div class="benefit-container">
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">Optimización Para Motores de Busqueda (SEO)</p>
+                <p class="m-0 d-inline">Mayor Visibilidad Para tu Negocio</p>
               </div>
-
+              <div class="d-flex align-items-center justify-content-start">
+                <CheckIcon />
+                <p class="m-0 d-inline">Diseño Unico y Profesional</p>
+              </div>
             </div>
+            
           </div>
-
-
         </div>
       </div>
     </div>
 
     <!-- Hero Section Gradients -->
     <div
-    class="position-absolute"
-    style="left: -11rem; top: 1rem;"
-    data-aos="fade-in"
-    data-aos-duration="600"
-  >
-    <div class="radial-purple" style="width: 22rem; height: 22rem;"></div>
-  </div>
+      class="position-absolute hsg-1"
+      data-aos="fade-in"
+      data-aos-duration="600"
+    >
+      <div class="radial-purple" style="width: 22rem; height: 22rem;"></div>
+    </div>
 
-  <div
-    class="position-absolute"
-    style="right: -12rem; bottom: 11rem;"
-    data-aos="fade-in"
-    data-aos-duration="600"
-  >
-    <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
-  </div>
+    <div
+      class="position-absolute hsg-2"
+      data-aos="fade-in"
+      data-aos-duration="600"
+    >
+      <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
+    </div>
 
-  <!-- <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
+    <!-- <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
     <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
   </div> -->
-
   </section>
+  <style>
+    .hero-sub-text {
+      font-size: 1.1875rem;
+    }
+    .hsg-1 {
+      left: -11rem;
+      top: 1rem;
+    }
+    .hsg-2 {
+      right: -12rem;
+      bottom: 11rem;
+    }
 
+    @media only screen and (max-width: 1295px) {
+      .hsg-1 {
+        top: 0.2rem;
+      }
+      .hsg-2 {
+        bottom: 3rem;
+      }
+    } 
 
-  <section class="mt-10">
+    @media only screen and (max-width: 732px) {
+      .hsg-1 {
+        top: 0.2rem;
+      }
+      .hsg-2 {
+        bottom: -2rem;
+      }
+    } 
+    @media only screen and (max-width: 622px) {
+      .hsg-1 {
+        left: -14rem;
+      }
+      .hsg-2 {
+        right: -16rem;
+      }
+    } 
+    @media only screen and (max-width: 534px) {
+      .benefit-container {
+        width: 400px;
+      }
+    } 
+    @media only screen and (max-width: 436px) {
+      .benefit-container p {
+        font-size: 1rem;
+      }
+    }
+    @media only screen and (max-width: 414px) {
+      .benefit-container p {
+        font-size: 0.9rem;
+      }
+      .benefit-container {
+        width: 332px;
+      }
+    }
+    @media only screen and (max-width: 382px) {
+      .hero-sub-text {
+        font-size: 1.1rem;
+      }
+    }
+    @media only screen and (max-width: 370px) {
+      .benefit-container p {
+        font-size: 0.8rem;
+      }
+    }
+    @media only screen and (max-width: 337px) {
+      .benefit-container p {
+        font-size: 0.75rem;
+      }
+      .benefit-container {
+        width: 100%;
+      }
+    }
+  </style>
+  <!-- Hero section -->
+
+  <!-- Cards with pro's -->
+  <!-- <section class="mt-10">
     <div class="w-100">
-      <div
-        class="cards-gap"
-        data-aos="fade-up"
-        data-aos-delay="50"
-      >
-        <!-- Card -->
+      <div class="cards-gap" data-aos="fade-up" data-aos-delay="50">
         <div class="my-card shadow-light-lg rounded">
           <div class="my-card-body">
             <span class="my-badge rounded-circle lab-o-back-color">
@@ -128,20 +191,16 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
                 ></path></svg
               >
             </span>
-
-            <!-- Heading -->
             <h2 class="fw-bold h4">Credibilidad y Profesionalismo</h2>
-
-            <!-- Text -->
             <p class="text-body-secondary mb-0">
-              Un sitio web bien diseñado mejora la imagen de tu marca, generando confianza en tus clientes y mostrando que eres un negocio serio y profesional.
+              Un sitio web bien diseñado mejora la imagen de tu marca, generando
+              confianza en tus clientes y mostrando que eres un negocio serio y
+              profesional.
             </p>
           </div>
         </div>
-        <!-- Card -->
         <div class="my-card shadow-light-lg rounded">
           <div class="my-card-body">
-            <!-- Badge -->
             <span class="my-badge rounded-circle lab-o-back-color">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -153,17 +212,13 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
                 ></path></svg
               >
             </span>
-
-            <!-- Heading -->
             <h2 class="fw-bold h4">Visibilidad 24/7</h2>
-
-            <!-- Text -->
             <p class="text-body-secondary mb-0">
-              permite que los clientes encuentren tu negocio en cualquier momento y desde cualquier lugar o dispositivo.
+              permite que los clientes encuentren tu negocio en cualquier
+              momento y desde cualquier lugar o dispositivo.
             </p>
           </div>
         </div>
-        <!-- Card -->
         <div class="my-card shadow-light-lg rounded">
           <div class="my-card-body">
             <span class="my-badge rounded-circle lab-o-back-color">
@@ -185,21 +240,20 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
                 ></path></svg
               >
             </span>
-
-            <!-- Heading -->
             <h2 class="fw-bold h4">Aumento de Ventas y Alcance</h2>
-
-            <!-- Text -->
             <p class="text-body-secondary mb-0">
-              llegar a un público mucho más amplio, ofrece tus productos o servicios online y capta nuevos clientes, impulsando tus ventas.
+              llegar a un público mucho más amplio, ofrece tus productos o
+              servicios online y capta nuevos clientes, impulsando tus ventas.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- Cards with pro's -->
 
-  <section class="pt-12">
+  <!-- Work steps -->
+  <!-- <section class="pt-12">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -217,13 +271,27 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         </div>
       </div>
       <div class="row gx-0 mb-7 mb-md-9">
-        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
-        data-aos-delay="50">
+        <div
+          class="col-12 col-md-4 text-center"
+          data-aos="fade-in"
+          data-aos-delay="50"
+        >
           <div class="row mb-5">
             <div class="col"></div>
             <div class="col-auto">
               <div class="icon text-primary mb-3">
-                <svg width="24" height="24" fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m.043,5.543l2.043-2.043L.043,1.457,1.457.043l2.043,2.043L5.543.043l1.414,1.414-2.043,2.043,2.043,2.043-1.414,1.414-2.043-2.043-2.043,2.043L.043,5.543Zm9.414,5.414l2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414Zm10.086,6.086l-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414,2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414Zm4.447-13.879l-2.584-2.582c-.775-.774-2.037-.774-2.812,0l-2.584,2.582,1.414,1.415,1.576-1.584v9.006c0,.551-.448,1-1,1l-12.992-.004c-1.651,0-2.997,1.344-3,2.993l-.005,2.194c-1.163.413-2.003,1.514-2.003,2.817,0,1.654,1.346,3,3,3s3-1.346,3-3c0-1.301-.837-2.4-1.997-2.815l.005-2.19c0-.551.449-.999,1-.999l12.992.004c1.654,0,3-1.346,3-3V3.004l1.576,1.575,1.414-1.415Z"/></svg>
+                <svg
+                  width="24"
+                  height="24"
+                  fill="#633FB9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  ><path
+                    d="m.043,5.543l2.043-2.043L.043,1.457,1.457.043l2.043,2.043L5.543.043l1.414,1.414-2.043,2.043,2.043,2.043-1.414,1.414-2.043-2.043-2.043,2.043L.043,5.543Zm9.414,5.414l2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414Zm10.086,6.086l-2.043,2.043-2.043-2.043-1.414,1.414,2.043,2.043-2.043,2.043,1.414,1.414,2.043-2.043,2.043,2.043,1.414-1.414-2.043-2.043,2.043-2.043-1.414-1.414Zm4.447-13.879l-2.584-2.582c-.775-.774-2.037-.774-2.812,0l-2.584,2.582,1.414,1.415,1.576-1.584v9.006c0,.551-.448,1-1,1l-12.992-.004c-1.651,0-2.997,1.344-3,2.993l-.005,2.194c-1.163.413-2.003,1.514-2.003,2.817,0,1.654,1.346,3,3,3s3-1.346,3-3c0-1.301-.837-2.4-1.997-2.815l.005-2.19c0-.551.449-.999,1-.999l12.992.004c1.654,0,3-1.346,3-3V3.004l1.576,1.575,1.414-1.415Z"
+                  ></path></svg
+                >
               </div>
             </div>
             <div class="col">
@@ -238,15 +306,29 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
             para el desarrollo.
           </p>
         </div>
-        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
-        data-aos-delay="100">
+        <div
+          class="col-12 col-md-4 text-center"
+          data-aos="fade-in"
+          data-aos-delay="100"
+        >
           <div class="row mb-5">
             <div class="col">
               <hr class="d-none d-md-block" />
             </div>
             <div class="col-auto">
               <div class="icon text-primary mb-3">
-                <svg width="24" height="24" fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12.5,9c1.657,0,3,1.343,3,3s-1.343,3-3,3h-5s1-6,5-6Zm4.666,1.246l6.126-6.126c.943-.942.945-2.47.003-3.413-.941-.942-2.467-.943-3.409-.002-.032.032-.063.065-.093.099l-5.859,6.431c1.491.45,2.686,1.564,3.232,3.011Zm-4.666,6.754h-7.361l.388-2.329c.43-2.581,2.121-6.769,5.777-7.536l4.663-5.135H3c-1.654,0-3,1.346-3,3v15h11v2h-4.5v2h11v-2h-4.5v-2h11V6.24l-6.583,6.583c-.396,2.364-2.442,4.177-4.917,4.177Z"/></svg>
+                <svg
+                  width="24"
+                  height="24"
+                  fill="#633FB9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  ><path
+                    d="m12.5,9c1.657,0,3,1.343,3,3s-1.343,3-3,3h-5s1-6,5-6Zm4.666,1.246l6.126-6.126c.943-.942.945-2.47.003-3.413-.941-.942-2.467-.943-3.409-.002-.032.032-.063.065-.093.099l-5.859,6.431c1.491.45,2.686,1.564,3.232,3.011Zm-4.666,6.754h-7.361l.388-2.329c.43-2.581,2.121-6.769,5.777-7.536l4.663-5.135H3c-1.654,0-3,1.346-3,3v15h11v2h-4.5v2h11v-2h-4.5v-2h11V6.24l-6.583,6.583c-.396,2.364-2.442,4.177-4.917,4.177Z"
+                  ></path></svg
+                >
               </div>
             </div>
             <div class="col">
@@ -260,15 +342,27 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
             sólida, optimizada para SEO.
           </p>
         </div>
-        <div class="col-12 col-md-4 text-center" data-aos="fade-in"
-        data-aos-delay="150">
+        <div
+          class="col-12 col-md-4 text-center"
+          data-aos="fade-in"
+          data-aos-delay="150"
+        >
           <div class="row mb-5">
             <div class="col">
               <hr class="d-none d-md-block" />
             </div>
             <div class="col-auto">
               <div class="icon text-primary mb-3">
-                <svg fill="#633FB9" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12.954,17h-4.907c-1.13,0-2.046.916-2.046,2.046v4.907c0,.026.021.046.046.046h8.907c.026,0,.046-.021.046-.046v-4.907c0-1.13-.916-2.046-2.046-2.046Zm-1,4h-2.907c-.026,0-.046-.021-.046-.046v-1.907c0-.026.021-.046.046-.046h2.907c.026,0,.046.021.046.046v1.907c0,.026-.021.046-.046.046Zm12.046-12h-4.473c-.017,0-.03.004-.038.019-.116.205-1.135,2.007-1.332,2.337-1.142,1.909-3.076,3.111-3.377,3.291-.386.231-.829.354-1.279.354-1.452,0-2.756-1.279-2.456-3.014.123-.71.619-1.288,1.231-1.669.88-.548,1.725-1.341,1.725-2.318,0-1.202-1.067-2.16-2.303-1.978-1.007.149-1.697,1.11-1.697,2.128v5.994c0,1.203-1.062,2.158-2.3,1.978-1.007-.146-1.7-1.105-1.7-2.122v-7.954c0-3.339,2.707-6.046,6.046-6.046h11.954v9ZM4,13.731c-.722.414-1.67.361-2.352-.261-.752-.686-.789-1.867-.218-2.711l2.57-3.799v6.77Zm0-6.984l-1.175.534c-1.095.498-2.404-.074-2.753-1.275-.284-.978.302-2.005,1.229-2.426l3.926-1.785c-.773,1.235-1.227,2.689-1.227,4.251v.701Z"/></svg>
+                <svg
+                  fill="#633FB9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  ><path
+                    d="m12.954,17h-4.907c-1.13,0-2.046.916-2.046,2.046v4.907c0,.026.021.046.046.046h8.907c.026,0,.046-.021.046-.046v-4.907c0-1.13-.916-2.046-2.046-2.046Zm-1,4h-2.907c-.026,0-.046-.021-.046-.046v-1.907c0-.026.021-.046.046-.046h2.907c.026,0,.046.021.046.046v1.907c0,.026-.021.046-.046.046Zm12.046-12h-4.473c-.017,0-.03.004-.038.019-.116.205-1.135,2.007-1.332,2.337-1.142,1.909-3.076,3.111-3.377,3.291-.386.231-.829.354-1.279.354-1.452,0-2.756-1.279-2.456-3.014.123-.71.619-1.288,1.231-1.669.88-.548,1.725-1.341,1.725-2.318,0-1.202-1.067-2.16-2.303-1.978-1.007.149-1.697,1.11-1.697,2.128v5.994c0,1.203-1.062,2.158-2.3,1.978-1.007-.146-1.7-1.105-1.7-2.122v-7.954c0-3.339,2.707-6.046,6.046-6.046h11.954v9ZM4,13.731c-.722.414-1.67.361-2.352-.261-.752-.686-.789-1.867-.218-2.711l2.57-3.799v6.77Zm0-6.984l-1.175.534c-1.095.498-2.404-.074-2.753-1.275-.284-.978.302-2.005,1.229-2.426l3.926-1.785c-.773,1.235-1.227,2.689-1.227,4.251v.701Z"
+                  ></path></svg
+                >
               </div>
             </div>
             <div class="col"></div>
@@ -283,9 +377,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- Work steps -->
 
-  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <!-- Pricing cards websites -->
+  <!-- <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
     <h2 class="display-4 fw-bold pb-6 text-center">Sitios Web</h2>
     <div
       class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
@@ -355,9 +451,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         ]}
       />
     </div>
-  </section>
+  </section> -->
+  <!-- Pricing cards websites -->
 
-  <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
+  <!-- Pricing cards stores -->
+  <!-- <section class="pb-2 pt-10 d-flex align-items-center flex-column w-100">
     <h2 class="display-4 fw-bold pb-6 text-center">Tiendas En Linea</h2>
     <div
       class="d-flex flex-wrap justify-content-center gap-6 w-100 align-items-start"
@@ -380,9 +478,11 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         ]}
       />
     </div>
-  </section>
+  </section> -->
+  <!-- Pricing cards stores -->
 
-  <section
+  <!-- Final CTA -->
+  <!-- <section
     class="d-flex justify-content-center align-items-center flex-column w-100 position-relative"
     style="z-index: 10; overflow: hidden; min-height: 90vh;"
   >
@@ -420,18 +520,23 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     <div class="position-absolute" style="right: -8rem; bottom: -8rem;">
       <div class="radial-purple" style="width: 26rem; height: 26rem;"></div>
     </div>
-  </section>
+  </section> -->
+  <!-- Final CTA -->
 
+  <!-- Footer -->
   <div class="position-relative" style="z-index: 11;">
     <Footer useMap={false} />
   </div>
+  <!-- Footer -->
 
+  <!-- WhastApp component -->
   <WhatsApp />
+  <!-- WhastApp component -->
 
   <style>
     .hero-intro {
       min-height: calc(100vh - 111px);
-      z-index: 10; 
+      z-index: 10;
       overflow: hidden;
     }
 
@@ -444,35 +549,14 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       flex-wrap: wrap;
     }
 
-    @media only screen and (max-width: 991px) {
-      .benefits-hero {
-        gap: 1rem;
-      }
-      .benefit-container {
-        width: 60%;
-      }
-    }
-    @media only screen and (max-width: 767px) {
-      .benefit-container {
-        width: 80%;
-      }
-    }
-
-    .benefit-container {
-      display: flex;
-      flex-direction: column;
-      /* justify-content: flex-start; */
-      gap: 1rem;
-    }
-    
     .my-badge {
-			top: -2.6rem;
-			right: -3.1rem;
-			position: absolute;
-			padding: 0.6rem;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+      top: -2.6rem;
+      right: -3.1rem;
+      position: absolute;
+      padding: 0.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .cards-gap {
@@ -489,27 +573,15 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       background-color: #fff;
     }
 
-    @media only screen and (max-width: 1033px) {
-      .my-card {
-        width: 80%;
-      }
-    }
-
-    @media only screen and (max-width: 420px) {
-      .my-card {
-        width: 20rem;
-      }
-    }
-
-    @media only screen and (max-width: 371px) {
-      .my-card {
-        padding: 1.5rem;
-        width: 18rem;
-      }
+    .benefit-container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: flex-start; */
+      gap: 1rem;
     }
 
     .my-card-body {
-			position: relative;
+      position: relative;
     }
 
     .radial-purple {
@@ -519,7 +591,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
         rgba(93, 32, 235, 0.575) 16%,
         rgba(99, 27, 207, 0) 67%
       );
-
       border-radius: 50%;
       opacity: 0.7;
       filter: blur(18px);
@@ -533,5 +604,40 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
     .badge-container {
       background-color: #6f46cf;
     }
+
+    @media only screen and (max-width: 1033px) {
+      .my-card {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      .benefits-hero {
+        gap: 1rem;
+      }
+      .benefit-container {
+        width: 60%;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .benefit-container {
+        width: 80%;
+      }
+    }
+
+    
+    @media only screen and (max-width: 420px) {
+      .my-card {
+        width: 20rem;
+      }
+    }
+
+    @media only screen and (max-width: 371px) {
+      .my-card {
+        padding: 1.5rem;
+        width: 18rem;
+      }
+    }
+
   </style>
 </SubPageLayout>
