@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <url>
     <loc>https://www.labstudiomedia.com/</loc>
-    <lastmod>2024-08-27</lastmod>
+    <lastmod>2024-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,13 +14,13 @@
   </url>
   <url>
     <loc>https://www.labstudiomedia.com/blog</loc>
-    <lastmod>2024-08-09</lastmod>
+    <lastmod>2024-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.labstudiomedia.com/desarrollo-web</loc>
-    <lastmod>2024-08-09</lastmod>
+    <lastmod>2024-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
