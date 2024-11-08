@@ -48,24 +48,22 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
             <div class="benefit-container">
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">
-                  Optimización Para Motores de Busqueda (SEO)
-                </p>
+                <p class="m-0 d-inline">Impresiona a tus clientes con un diseño exclusivo</p>
               </div>
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">Carga Rapida para Mejor Experiencia</p>
+                <p class="m-0 d-inline">Optimización Para Motores de Busqueda (SEO)</p>
               </div>
             </div>
 
             <div class="benefit-container">
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">Mayor Visibilidad Para tu Negocio</p>
+                <p class="m-0 d-inline">Cargas rápidas para que disfrutes sin esperar</p>
               </div>
               <div class="d-flex align-items-center justify-content-start">
                 <CheckIcon />
-                <p class="m-0 d-inline">Diseño Unico y Profesional</p>
+                <p class="m-0 d-inline">Haz que más personas encuentren tu negocio</p>
               </div>
             </div>
           </div>
@@ -322,7 +320,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
           "Diseño Personalizado",
           "Dominio Gratis por 1 año",
           "Hosting Gratis por 1 año",
-          "Certificado SSL",
+          "Certificado SSL 🔒",
           "Maps",
           "Botón WhatsApp",
           "Optimización Web & Móvil",
@@ -341,7 +339,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
           "Diseño Personalizado",
           "Dominio Gratis por 1 año",
           "Hosting Gratis por 1 año",
-          "Certificado SSL",
+          "Certificado SSL 🔒",
           "Maps",
           "Botón WhatsApp",
           "Optimización Web & Móvil",
@@ -362,7 +360,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
           "Diseño Personalizado",
           "Dominio Gratis por 1 año",
           "Hosting Gratis por 1 año",
-          "Certificado SSL",
+          "Certificado SSL 🔒",
           "Maps",
           "Botón WhatsApp",
           "Optimización Web & Móvil",
@@ -396,7 +394,7 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
           "Dominio Personalizado",
           "Hosting Gratis por 1 año",
           "Diseño Personalizado",
-          "Certificado SSL",
+          "Certificado SSL 🔒",
           "Optimización Web & Móvil",
           "Optimización SEO",
           "Avisos a Clientes por Email",
@@ -479,15 +477,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       overflow: hidden;
     }
 
-    .benefits-hero {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-
     .my-badge {
       top: -2.6rem;
       right: -3.1rem;
@@ -512,10 +501,20 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       background-color: #fff;
     }
 
+    .benefits-hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .benefit-container {
+      width: 410px;
       display: flex;
       flex-direction: column;
-      /* justify-content: flex-start; */
       gap: 1rem;
     }
 
@@ -574,14 +573,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       .benefits-hero {
         gap: 1rem;
       }
-      .benefit-container {
-        width: 60%;
-      }
-    }
-    @media only screen and (max-width: 767px) {
-      .benefit-container {
-        width: 80%;
-      }
     }
 
     @media only screen and (max-width: 732px) {
@@ -620,12 +611,6 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       }
     }
 
-    @media only screen and (max-width: 534px) {
-      .benefit-container {
-        width: 400px;
-      }
-    }
-
     @media screen and (max-width: 468px) {
       .hero-content {
         padding: 0 1rem;
@@ -636,6 +621,9 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       .benefit-container p {
         font-size: 1rem;
       }
+      .benefit-container {
+        width: 375px;
+      }
     }
 
     @media only screen and (max-width: 420px) {
@@ -644,12 +632,12 @@ import CheckIcon from "../components/shared/CheckIcon.astro";
       }
     }
 
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 415px) {
       .benefit-container p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
       .benefit-container {
-        width: 332px;
+        width: 306px;
       }
     }
 

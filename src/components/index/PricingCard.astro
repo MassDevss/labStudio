@@ -55,7 +55,7 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
       {
         price === "" ? <div></div> :
         <div class="title-card-service">
-          <p>${ price }</p>
+          <p>${ price }<span class="plus-iva">+ IVA</span></p>
         </div>
       }
 
@@ -84,6 +84,9 @@ const urlEncodedMessage = encodeURIComponent(whatsAppMessage);
 </article>
 
 <style>
+  .plus-iva {
+    font-size: 0.8rem;
+  }
   .card-pricing-new {
     width: 20.5rem;
     position: relative;
